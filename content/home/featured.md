@@ -5,6 +5,7 @@ headless: true
 weight: 40
 title: Featured
 subtitle: Research Highlights
+active: true
 content:
   page_type: publication
   count: 0
