@@ -5,7 +5,7 @@ date: 2022-11-08T14:02:26.147Z
 draft: false
 featured: false
 authors:
-  - Haoyi Zhu
+  - admin
   - Chuting Wang
   - Yuanxin Wang
   - Zhaoxin Fan
