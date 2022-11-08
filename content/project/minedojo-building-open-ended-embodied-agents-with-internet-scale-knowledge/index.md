@@ -10,11 +10,13 @@ authors:
   - Yunfan Jiang
   - Ajay Mandlekar
   - Yuncong Yang
-  - "**Haoyi Zhu**"
+  - Haoyi Zhu
   - Andrew Tang
   - De-An Huang
   - Yuke Zhu
   - Anima Anandkumar
+highlight_name:
+  - Haoyi Zhu
 author_notes:
   - ''
   - ''
