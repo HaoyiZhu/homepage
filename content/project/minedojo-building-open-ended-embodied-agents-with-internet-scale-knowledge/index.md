@@ -63,8 +63,8 @@ links:
     name: Blog
   - url: https://www.youtube.com/watch?v=5LL6z1Ganbw
     name: Video
-video:
-  filename: pull_video.mp4
+image:
+  filename: pull.gif
   focal_point: Smart
   preview_only: false
 ---
