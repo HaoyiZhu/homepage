@@ -27,7 +27,7 @@ experience:
     company_url: "https://www.sjtu.edu.cn/"
     company_logo: org-sjtu
     location: Shanghai, China
-    date_start: '2019-09-01'
+    date_start: '2022-09-01'
     date_end: ''
     description: |2-        
         * Co-author of [AlphaPose](https://github.com/MVIG-SJTU/AlphaPose), an accurate multi-person pose estimator.
