@@ -4,7 +4,7 @@ widget_id: experience
 weight: 80
 title: Experience
 active: true
-date_format: Jan 2006
+---
 experience:
   - title: B.S. in Artificial Intelligence
     company: Shanghai Jiao Tong University
@@ -16,7 +16,4 @@ experience:
     description: |-2
 		* Co-author of [AlphaPose](https://github.com/MVIG-SJTU/AlphaPose), an accurate multi-person pose estimator.
         * Major in the first AI pilot class.
-        * Research on computer vision and robotics at MVIG advised by [Prof. Cewu Lu](https://mvig.sjtu.edu.cn/).
-design:
-  columns: "2"
----
+        * Research on computer vision and robotics at MVIG advised by [Prof. Cewu Lu](https://mvig.sjtu.edu.cn/)
