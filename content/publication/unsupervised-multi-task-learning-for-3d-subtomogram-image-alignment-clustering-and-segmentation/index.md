@@ -17,7 +17,7 @@ doi: 10.1109/ICIP46576.2022.9897919
 publication: IEEE International Conference on Image Processing (ICIP), 2022
 draft: false
 featured: false
-external_link: https://ieeexplore.ieee.org/document/9897919
+# external_link: https://ieeexplore.ieee.org/document/9897919
 tags:
   - Computer Vision
   - Others

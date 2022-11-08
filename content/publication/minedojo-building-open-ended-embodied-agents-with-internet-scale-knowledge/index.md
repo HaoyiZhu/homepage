@@ -29,7 +29,7 @@ publication: *Neural Information Processing Systems (NeurIPS) Dataset & Benchmar
 publication_short: *NeurIPS Dataset & Benchmark, 2022*
 draft: false
 featured: true
-external_link: https://minedojo.org/
+# external_link: https://minedojo.org/
 url_project: https://minedojo.org/
 url_pdf: https://arxiv.org/pdf/2206.08853.pdf
 links:
