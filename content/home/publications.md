@@ -10,6 +10,17 @@ subtitle: Visit my [Google Scholar <i class="fa-solid
 active: true
 content:
   page_type: publication
+  # Filter on criteria
+  filters:
+    folders:
+      - publication
+    tag: ''
+    category: ''
+    publication_type: ''
+    author: ''
+    exclude_featured: false
+    exclude_future: false
+    exclude_past: false
   filter_default: 0
   filter_button:
     - name: All
