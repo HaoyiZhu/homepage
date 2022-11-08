@@ -28,7 +28,7 @@ organizations:
     url: https://www.sjtu.edu.cn/
 education:
   courses:
-    - course: BSc in Artificial Intelligence
+    - course: B.S. in Artificial Intelligence
       institution: Shanghai Jiao Tong University
       year: 2023
 superuser: true
