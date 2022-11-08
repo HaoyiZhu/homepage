@@ -43,7 +43,7 @@ experience:
   - title: Remote Research Intern
     company: Jim Team, Caltech and NVIDIA AI Lab
     company_url: 'https://research.nvidia.com/person/linxi-jim-fan'
-    company_logo: org-sjtu
+    company_logo: org-nvidia
     location: Shanghai, China
     date_start: '2019-09-01'
     date_end: ''
@@ -54,7 +54,7 @@ experience:
   - title: Remote Research Intern
     company: Xu Lab, CMU
     company_url: 'https://xulabs.github.io/'
-    company_logo: org-sjtu
+    company_logo: org-cmu
     location: Shanghai, China
     date_start: '2019-09-01'
     date_end: ''
