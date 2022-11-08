@@ -1,6 +1,7 @@
 ---
 title: "MineDojo: Building Open-Ended Embodied Agents with Internet-Scale Knowledge"
 date: 2022-11-08T13:20:39.545Z
+
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
@@ -10,6 +11,7 @@ publication_types: ["1"]
 # Publication name and optional abbreviated publication name.
 publication: "*Neural Information Processing Systems (NeurIPS), 2022*"
 publication_short: "*NeurIPS 2022*"
+
 summary: ""
 draft: false
 featured: true
