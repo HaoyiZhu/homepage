@@ -7,7 +7,7 @@ title: Featured
 subtitle: Research Highlights
 active: true
 content:
-  page_type: project
+  page_type: publication
   count: 0
   filters:
     featured_only: true
