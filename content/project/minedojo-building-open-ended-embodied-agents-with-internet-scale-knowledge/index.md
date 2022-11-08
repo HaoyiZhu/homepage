@@ -1,6 +1,6 @@
 ---
 title: "MineDojo: Building Open-Ended Embodied Agents with Internet-Scale Knowledge"
-date: 2022-11-08T13:20:39.545Z
+date: 2022-06-17T00:00:00Z
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;

@@ -2,7 +2,7 @@
 title: "X-NeRF: Explicit Neural Radiance Field for Multi-Scene 360 Insufficient
   RGB-D Views"
 subtitle: "*WACV 2023*"
-date: 2022-11-08T14:09:07.631Z
+date: 2022-10-11T00:00:00Z
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
