@@ -38,7 +38,7 @@ categories:
 projects:
   - MineDojo
 image:
-  filename: https://github.com/MineDojo/MineDojo/blob/main/images/pull.gif
+  filename: pull.gif
   focal_point: Smart
   preview_only: false
 date: 2022-11-08T12:16:55.781Z
