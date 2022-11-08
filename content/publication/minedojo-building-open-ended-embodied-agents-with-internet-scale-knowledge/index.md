@@ -49,9 +49,11 @@ url_video: https://www.youtube.com/watch?v=5LL6z1Ganbw
 tags:
   - Robot Learning
   - Computer Vision
+  - Others
 categories:
   - Robot Learning
   - Computer Vision
+  - Others
 projects:
   - MineDojo
 image:
