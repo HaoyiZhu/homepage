@@ -48,8 +48,10 @@ experience:
     date_start: '2022-02-31'
     date_end: ''
     description: |2-
-        * Co-developed [MineDojo](https://minedojo.org/) for open-ended agent learning in Minecraft advised by Dr. Jim Fan and Prof. Anima Anandkumar.
-        * Paper accepted by NeurIPS Dataset & Benchmark 2022.
+        * Co-author of [AlphaPose](https://github.com/MVIG-SJTU/AlphaPose), an accurate multi-person pose estimator. Paper accpted by **TPAMI**.
+        * Proposed [X-NeRF](https://arxiv.org/abs/2210.05135), paper accepted by WACV 2023.
+        * Major in the first AI pilot class.
+        * Research on computer vision and robotics at MVIG advised by [Prof. Cewu Lu](https://mvig.sjtu.edu.cn/).
 
   - title: Remote Research Intern
     company: Xu Lab, CMU
