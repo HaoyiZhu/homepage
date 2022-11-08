@@ -40,7 +40,7 @@ experience:
         * Major in the first AI pilot class.
         * Research on computer vision and robotics at MVIG advised by [Prof. Cewu Lu](https://mvig.sjtu.edu.cn/).
 
-  - title: B.S. in Artificial Intelligence
+  - title: Remote Research Intern
     company: Shanghai Jiao Tong University
     company_url: 'https://www.sjtu.edu.cn/'
     company_logo: org-sjtu
@@ -53,7 +53,7 @@ experience:
         * Major in the first AI pilot class.
         * Research on computer vision and robotics at MVIG advised by [Prof. Cewu Lu](https://mvig.sjtu.edu.cn/).
 
-  - title: B.S. in Artificial Intelligence
+  - title: Remote Research Intern
     company: Shanghai Jiao Tong University
     company_url: 'https://www.sjtu.edu.cn/'
     company_logo: org-sjtu
