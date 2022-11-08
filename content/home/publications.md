@@ -23,3 +23,8 @@ design:
   view: showcase
   flip_alt_rows: false
 ---
+
+{{% callout note %}}
+Quickly discover relevant content by [filtering publications](./publication/).
+{{% /callout %}}
+
