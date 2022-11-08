@@ -9,7 +9,7 @@ subtitle: Visit my [Google Scholar <i class="fa-solid
   page for a comprehensive listing!
 active: true
 content:
-  page_type: publication
+  # page_type: publication
   # Filter on criteria
   filters:
     folders:
