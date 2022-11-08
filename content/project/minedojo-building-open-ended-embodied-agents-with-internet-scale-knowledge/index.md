@@ -15,6 +15,17 @@ authors:
   - De-An Huang
   - Yuke Zhu
   - Anima Anandkumar
+author_notes:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - 'Equal advising'
+  - 'Equal advising'
 tags:
   - Computer Vision
   - Robot Learning
