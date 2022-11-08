@@ -1,5 +1,5 @@
 ---
-widget: collection
+widget: portfolio
 widget_id: publications
 headless: true
 weight: 60
