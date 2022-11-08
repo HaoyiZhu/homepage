@@ -29,7 +29,7 @@ experience:
     location: Shanghai, China
     date_start: '2022-09-01'
     date_end: ''
-    description: |2-        
+    description:
         * Co-author of [AlphaPose](https://github.com/MVIG-SJTU/AlphaPose), an accurate multi-person pose estimator.
         * Proposed [X-NeRF](https://arxiv.org/abs/2210.05135), paper accepted by WACV 2023.
         * Major in the first AI pilot class.
@@ -54,7 +54,7 @@ Dr. Jim Fan and Prof Anima Anandkumar.. .
     location: Shanghai, China
     date_start: '2021-04-31'
     date_end: '2022-02-31'
-    description: |2-        
+    description:
         * Lead a project on unsupervised multi-task learning for subtomogram images advised by Dr. Xiangrui Zeng 
 and Prof. Min Xu.
         * Paper accepted by ICIP 2022.
