@@ -31,6 +31,16 @@ links:
     name: PDF
   - url: https://arxiv.org/abs/2206.08853
     name: Arxiv
+  - name: Twitter
+    url: https://twitter.com/DrJimFan/status/1540381991052247041
+  - name: Code
+    url: https://github.com/MineDojo/MineDojo
+  - url: https://minedojo.org/knowledge_base.html
+    name: Database
+  - url: https://developer.nvidia.com/blog/building-generally-capable-ai-agents-with-minedojo/
+    name: Blog
+  - url: https://www.youtube.com/watch?v=5LL6z1Ganbw
+    name: Video
 image:
   filename: pull.gif
   focal_point: Smart
