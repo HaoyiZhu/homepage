@@ -17,7 +17,5 @@ content:
     tag: ""
   order: desc
 design:
-  view: 3
+  view: 5
 ---
-
-./publication/
