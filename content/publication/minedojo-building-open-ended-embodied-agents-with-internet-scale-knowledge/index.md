@@ -54,8 +54,6 @@ categories:
   - Robot Learning
   - Computer Vision
   - Others
-projects:
-  - MineDojo
 image:
   filename: pull.gif
   focal_point: Smart
