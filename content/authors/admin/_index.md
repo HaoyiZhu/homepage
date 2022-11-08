@@ -1,6 +1,6 @@
 ---
 title: Haoyi Zhu 朱皓怡
-role: Ph.D. Candidate
+role: Undergraduate in AI
 avatar_filename: avatar.jpg
 bio: My research interests include computer vision and robot learning.
 interests:
@@ -13,22 +13,19 @@ social:
     link: /#contact
   - icon: twitter
     icon_pack: fab
-    link: https://twitter.com/GeorgeCushen
+    link: https://twitter.com/HaoyiZhu
     label: Follow me on Twitter
     display:
       header: true
   - icon: graduation-cap
     icon_pack: fas
-    link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+    link: https://scholar.google.com/citations?user=pD1NOyUAAAAJ&hl
   - icon: github
     icon_pack: fab
-    link: https://github.com/gcushen
-  - icon: linkedin
-    icon_pack: fab
-    link: https://www.linkedin.com/
+    link: https://github.com/HaoyiZhu
 organizations:
-  - name: Stanford University
-    url: https://www.stanford.edu/
+  - name: Shanghai Jiao Tong University
+    url: https://www.sjtu.edu.cn/
 education:
   courses:
     - course: PhD in Artificial Intelligence
