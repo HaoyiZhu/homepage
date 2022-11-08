@@ -1,6 +1,7 @@
 ---
 title: "AlphaPose: Whole-Body Regional Multi-Person Pose Estimation and Tracking
   in Real-Time"
+subtitle: ""
 date: 2022-11-08T14:27:25.484Z
 draft: false
 featured: true
