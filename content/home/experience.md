@@ -48,16 +48,16 @@ experience:
     date_start: '2022-02-31'
     date_end: ''
     description: |2-
-        * Co-developed [**MineDojo**](https://minedojo.org/) for open-ended agent learning in Minecraft advised by Dr. Jim Fan and Prof. Anima Anandkumar.
+        * Co-developed [MineDojo](https://minedojo.org/) for open-ended agent learning in Minecraft advised by Dr. Jim Fan and Prof. Anima Anandkumar.
         * Paper accepted by NeurIPS Dataset & Benchmark 2022.
 
-  - title: CEO
-    company: GenCoin
-    company_url: ''
-    company_logo: org-sjtu
-    location: California
-    date_start: '2021-01-01'
-    date_end: ''
+  - title: Remote Research Intern
+    company: Xu Lab, CMU
+    company_url: 'https://xulabs.github.io/'
+    company_logo: org-cmu
+    location: Shanghai, China
+    date_start: '2021-04-31'
+    date_end: '2022-02-31'
     description: |2-
         Responsibilities include:
         
