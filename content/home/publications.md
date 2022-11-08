@@ -27,6 +27,6 @@ content:
   order: desc
 design:
   columns: "2"
-  view: 1
+  view: 2
   flip_alt_rows: true
 ---
