@@ -7,12 +7,6 @@ title: Contact
 subtitle: null
 active: true
 content:
-  form:
-    provider: netlify
-    formspree:
-      ? id
-    netlify:
-      captcha: false
   autolink: true
   contact_links:
     - icon: twitter
