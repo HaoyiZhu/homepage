@@ -27,6 +27,10 @@ external_link: https://minedojo.org/
 links:
   - url: https://minedojo.org/
     name: Project
+  - url: https://arxiv.org/pdf/2206.08853.pdf
+    name: PDF
+  - url: https://arxiv.org/abs/2206.08853
+    name: Arxiv
 image:
   filename: pull.gif
   focal_point: Smart
