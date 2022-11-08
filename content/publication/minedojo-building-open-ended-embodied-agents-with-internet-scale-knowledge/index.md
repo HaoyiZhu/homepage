@@ -9,7 +9,7 @@ authors:
   - Yunfan Jiang
   - Ajay Mandlekar
   - Yuncong Yang
-  - admin
+  - Haoyi Zhu
   - Andrew Tang
   - De-An Huang
   - Yuke Zhu

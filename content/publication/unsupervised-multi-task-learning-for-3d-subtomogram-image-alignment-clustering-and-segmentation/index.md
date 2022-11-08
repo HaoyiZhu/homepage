@@ -4,7 +4,7 @@ title: Unsupervised Multi-Task Learning for 3D Subtomogram Image Alignment,
 publication_types:
   - "1"
 authors:
-  - admin
+  - Haoyi Zhu
   - Chuting Wang
   - Yuanxin Wang
   - Zhaoxin Fan
