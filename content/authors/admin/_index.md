@@ -1,12 +1,12 @@
 ---
 title: Haoyi Zhu 朱皓怡
 role: Ph.D. Candidate
-bio: My research interests include distributed robotics, mobile computing and
-  programmable matter.
+avatar_filename: avatar.jpg
+bio: My research interests include computer vision and robot learning.
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Robotic Manipulation
+  - Robot Learning
+  - Computer Vision
 social:
   - icon: envelope
     icon_pack: fas
