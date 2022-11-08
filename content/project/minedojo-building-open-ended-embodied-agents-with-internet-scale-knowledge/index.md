@@ -10,7 +10,7 @@ authors:
   - Yunfan Jiang
   - Ajay Mandlekar
   - Yuncong Yang
-  - <b>Haoyi Zhu</b>
+  - "**Haoyi Zhu**"
   - Andrew Tang
   - De-An Huang
   - Yuke Zhu
