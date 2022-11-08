@@ -10,14 +10,6 @@ subtitle: Visit my [Google Scholar <i class="fa-solid
 active: true
 content:
   page_type: publication
-  filter_default: 0
-  filter_button:
-    - name: All
-      tag: "*"
-    - name: Computer Vision
-      tag: Computer Vision
-    - name: Robotics
-      tag: Robotics
   # Filter on criteria
   filters:
     folders:
@@ -29,6 +21,14 @@ content:
     exclude_featured: false
     exclude_future: false
     exclude_past: false
+  filter_default: 0
+  filter_button:
+    - name: All
+      tag: "*"
+    - name: Computer Vision
+      tag: Computer Vision
+    - name: Robotics
+      tag: Robotics
 design:
   columns: "2"
   view: showcase
