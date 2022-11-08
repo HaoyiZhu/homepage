@@ -18,13 +18,20 @@ content:
       tag: Computer Vision
     - name: Robotics
       tag: Robotics
+  # Filter on criteria
+  filters:
+    folders:
+      - publication
+    tag: ''
+    category: ''
+    publication_type: ''
+    author: ''
+    exclude_featured: false
+    exclude_future: false
+    exclude_past: false
 design:
   columns: "2"
   view: showcase
   flip_alt_rows: false
 ---
-
-{{% callout note %}}
-Quickly discover relevant content by [filtering publications](./publication/).
-{{% /callout %}}
 
