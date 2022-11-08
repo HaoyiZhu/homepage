@@ -18,8 +18,10 @@ content:
       tag: "*"
     - name: Computer Vision
       tag: Computer Vision
-    - name: Robotics
-      tag: Robotics
+    - name: Robotics Manipulation
+      tag: Robotics Manipulation
+    - name: Robot Learning
+      tag: Robot Learning
     - name: Others
       tag: Others
 design:
