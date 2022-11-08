@@ -2,6 +2,17 @@
 title: Unsupervised Multi-Task Learning for 3D Subtomogram Image Alignment,
   Clustering and Segmentation
 date: 2022-11-08T14:02:26.147Z
+
+# Publication type.
+# Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
+# 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
+# 7 = Thesis; 8 = Patent
+publication_types: ["1"]
+
+# Publication name and optional abbreviated publication name.
+publication: "*IEEE International Conference on Image Processing (ICIP), 2022*"
+publication_short: "*ICIP 2022*"
+
 draft: false
 featured: false
 authors:

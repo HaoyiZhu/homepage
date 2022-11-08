@@ -11,8 +11,8 @@ date: 2022-11-08T14:09:07.631Z
 publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
-publication_short: ""
+publication: "*IEEE Winter Conference on Applications of Computer Vision (WACV), 2023*"
+publication_short: "*WACV 2023*"
 
 draft: false
 featured: false
