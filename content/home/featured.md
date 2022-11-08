@@ -19,3 +19,5 @@ content:
 design:
   view: 3
 ---
+
+./publication/
