@@ -11,7 +11,7 @@ active: true
 content:
   filters:
     folders:
-      - publication
+      - project
   filter_default: 0
   filter_button:
     - name: All
