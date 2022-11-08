@@ -15,16 +15,16 @@ authors:
   - Yuke Zhu
   - Anima Anandkumar
 author_notes:
-  - '""'
-  - '""'
-  - '""'
-  - '""'
-  - '""'
-  - '""'
-  - '""'
-  - '""'
-  - '"Equal advising"'
-  - '"Equaladvising"'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - 'Equal advising'
+  - 'Equal advising'
 publication: Neural Information Processing Systems (NeurIPS) Dataset & Benchmark, 2022
 publication_short: NeurIPS Dataset & Benchmark, 2022
 draft: false
@@ -41,5 +41,5 @@ image:
   filename: pull.gif
   focal_point: Smart
   preview_only: false
-date: 2022-11-08T12:16:55.781Z
+date: 2022-06-17T12:16:55.781Z
 ---
