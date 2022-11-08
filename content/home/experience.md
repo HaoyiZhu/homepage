@@ -25,7 +25,7 @@ experience:
   - title: B.S. in Artificial Intelligence
     company: Shanghai Jiao Tong University
     company_url: "https://www.sjtu.edu.cn/"
-    company_logo: https://bkimg.cdn.bcebos.com/pic/d53f8794a4c27d1ed21b569c7a86ba6eddc451da9212?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UxODA=,g_7,xp_5,yp_5
+    company_logo: org-gc
     location: Shanghai, China
     date_start: '2019-09-01'
     date_end: ''
