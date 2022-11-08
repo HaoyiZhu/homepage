@@ -1,6 +1,6 @@
 ---
 widget: portfolio
-widget_id: Publications
+widget_id: publications
 headless: true
 weight: 65
 title: Publications
