@@ -28,5 +28,5 @@ content:
 design:
   columns: "2"
   view: citation
-  flip_alt_rows: false
+  flip_alt_rows: true
 ---
