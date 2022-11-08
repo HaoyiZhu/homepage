@@ -35,19 +35,6 @@ experience:
         * Major in the first AI pilot class.
         * Research on computer vision and robotics at MVIG advised by [Prof. Cewu Lu](https://mvig.sjtu.edu.cn/).
 
-  - title: Professor of Semiconductor Physics
-    company: University X
-    company_url: ''
-    company_logo: org-x
-    location: California
-    date_start: '2016-01-01'
-    date_end: '2020-12-31'
-    description: |2-
-        * Co-author of [AlphaPose](https://github.com/MVIG-SJTU/AlphaPose), an accurate multi-person pose estimator.
-        * Proposed [X-NeRF](https://arxiv.org/abs/2210.05135), paper accepted by WACV 2023.
-        * Major in the first AI pilot class.
-        * Research on computer vision and robotics at MVIG advised by [Prof. Cewu Lu](https://mvig.sjtu.edu.cn/).
-
 design:
   columns: '2'
 ---
