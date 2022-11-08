@@ -28,19 +28,13 @@ organizations:
     url: https://www.sjtu.edu.cn/
 education:
   courses:
-    - course: PhD in Artificial Intelligence
-      institution: Stanford University
-      year: 2012
-    - course: MEng in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2009
     - course: BSc in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2008
+      institution: Shanghai Jiao Tong University
+      year: 2023
 superuser: true
 last_name: Bighetti
 highlight_name: true
 first_name: Alice
-email: ""
+email: hyizhu1108@gmail.com
 ---
 I﻿ am a fourth year undergraduate majoring in Artificial Intelligence at SJTU with Prof. [Cewu LU](https://mvig.sjtu.edu.cn/). After graduation, I will be a Ph.D. candidate at USTC and Shanghai AI Lab advised by Prof. [Xiaogang Wang](http://www.ee.cuhk.edu.hk/~xgwang/) and Prof. [Wanli Ouyang](https://www.sydney.edu.au/engineering/about/our-people/academic-staff/wanli-ouyang.html). My research interests include robotics manipulation, robot learning and computer vision. Feel free to follow me on [](https://twitter.com/HaoyiZhu) and [{{< icon name="github" >}}](https://github.com/HaoyiZhu) for latest research announcements and updates!
