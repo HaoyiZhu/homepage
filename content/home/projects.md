@@ -2,7 +2,7 @@
 widget: portfolio
 widget_id: publications
 headless: true
-weight: 65
+weight: 60
 title: Publications
 subtitle: Visit my [Google Scholar <i class="fa-solid
   fa-graduation-cap"></i>](https://scholar.google.com/citations?user=pD1NOyUAAAAJ&hl)
