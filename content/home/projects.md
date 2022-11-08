@@ -7,6 +7,7 @@ title: Publications
 subtitle: Visit my [Google Scholar <i class="fa-solid
   fa-graduation-cap"></i>](https://scholar.google.com/citations?user=pD1NOyUAAAAJ&hl)
   page for a comprehensive listing!
+active: true
 content:
   page_type: project
   filter_default: 0
