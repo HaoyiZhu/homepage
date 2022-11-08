@@ -32,9 +32,9 @@ education:
       institution: Shanghai Jiao Tong University
       year: 2023
 superuser: true
-last_name: Bighetti
+last_name: Zhu
 highlight_name: true
-first_name: Alice
+first_name: Haoyi
 email: hyizhu1108@gmail.com
 ---
 I﻿ am a fourth year undergraduate majoring in Artificial Intelligence at SJTU with Prof. [Cewu Lu](https://mvig.sjtu.edu.cn/). After graduation next year, I will be a Ph.D. candidate at USTC and Shanghai AI Lab advised by Prof. [Xiaogang Wang](http://www.ee.cuhk.edu.hk/~xgwang/) and Prof. [Wanli Ouyang](https://www.sydney.edu.au/engineering/about/our-people/academic-staff/wanli-ouyang.html). My research interests include robotics manipulation, robot learning and computer vision. Feel free to follow me on [<i class="fa-brands fa-twitter"></i>](https://twitter.com/HaoyiZhu) and [<i class="fa-brands fa-github"></i>](https://github.com/HaoyiZhu) for latest research announcements and updates!
