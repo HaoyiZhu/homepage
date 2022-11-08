@@ -20,6 +20,8 @@ content:
       tag: Computer Vision
     - name: Robotics
       tag: Robotics
+    - name: Others
+      tag: Others
 design:
   columns: "2"
   view: 2
