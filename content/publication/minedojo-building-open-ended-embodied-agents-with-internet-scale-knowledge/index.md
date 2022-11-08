@@ -32,11 +32,19 @@ featured: true
 external_link: https://minedojo.org/
 url_project: https://minedojo.org/
 url_pdf: https://arxiv.org/pdf/2206.08853.pdf
-url_arxiv: https://arxiv.org/abs/2206.08853
-url_twitter: https://twitter.com/DrJimFan/status/1540381991052247041
+links:
+- name: "Arxiv"
+  url: "https://arxiv.org/abs/2206.08853"
+links:
+- name: "Twitter"
+  url: "https://twitter.com/DrJimFan/status/1540381991052247041"
 url_code: https://github.com/MineDojo/MineDojo
-url_database: https://minedojo.org/knowledge_base.html
-url_blog: https://developer.nvidia.com/blog/building-generally-capable-ai-agents-with-minedojo/
+links:
+- name: "Database"
+  url: "https://minedojo.org/knowledge_base.html"
+links:
+- name: "Blog"
+  url: "https://developer.nvidia.com/blog/building-generally-capable-ai-agents-with-minedojo/"
 url_video: https://www.youtube.com/watch?v=5LL6z1Ganbw
 tags:
   - Robot Learning
