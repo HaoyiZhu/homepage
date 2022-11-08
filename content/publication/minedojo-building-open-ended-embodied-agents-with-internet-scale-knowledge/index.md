@@ -9,7 +9,7 @@ authors:
   - Yunfan Jiang
   - Ajay Mandlekar
   - Yuncong Yang
-  - **Haoyi Zhu**
+  - admin
   - Andrew Tang
   - De-An Huang
   - Yuke Zhu
@@ -25,11 +25,19 @@ author_notes:
   - ''
   - 'Equal advising'
   - 'Equal advising'
-publication: Neural Information Processing Systems (NeurIPS) Dataset & Benchmark, 2022
-publication_short: NeurIPS Dataset & Benchmark, 2022
+publication: *Neural Information Processing Systems (NeurIPS) Dataset & Benchmark, 2022*
+publication_short: *NeurIPS Dataset & Benchmark, 2022*
 draft: false
 featured: true
 external_link: https://minedojo.org/
+url_project: https://minedojo.org/
+url_pdf: https://arxiv.org/pdf/2206.08853.pdf
+url_arxiv: https://arxiv.org/abs/2206.08853
+url_twitter: https://twitter.com/DrJimFan/status/1540381991052247041
+url_code: https://github.com/MineDojo/MineDojo
+url_database: https://minedojo.org/knowledge_base.html
+url_blog: https://developer.nvidia.com/blog/building-generally-capable-ai-agents-with-minedojo/
+url_video: https://www.youtube.com/watch?v=5LL6z1Ganbw
 tags:
   - Robot Learning
   - Computer Vision
@@ -42,5 +50,5 @@ image:
   filename: pull.gif
   focal_point: Smart
   preview_only: false
-date: 2022-06-17T12:16:55.781Z
+date: 2022-06-17T00:00:00Z
 ---
