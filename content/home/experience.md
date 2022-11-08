@@ -48,10 +48,8 @@ experience:
     date_start: '2019-09-01'
     date_end: ''
     description: |2-
-        * Co-author of [AlphaPose](https://github.com/MVIG-SJTU/AlphaPose), an accurate multi-person pose estimator. Paper accpted by **TPAMI**.
-        * Proposed [X-NeRF](https://arxiv.org/abs/2210.05135), paper accepted by WACV 2023.
-        * Major in the first AI pilot class.
-        * Research on computer vision and robotics at MVIG advised by [Prof. Cewu Lu](https://mvig.sjtu.edu.cn/).
+        * Co-developed [**MineDojo**](https://minedojo.org/) for open-ended agent learning in Minecraft advised by Dr. Jim Fan and Prof. Anima Anandkumar.
+        * Paper accepted by NeurIPS Dataset & Benchmark 2022.
 
   - title: Remote Research Intern
     company: Xu Lab, CMU
@@ -61,10 +59,8 @@ experience:
     date_start: '2019-09-01'
     date_end: ''
     description: |2-
-        * Co-author of [AlphaPose](https://github.com/MVIG-SJTU/AlphaPose), an accurate multi-person pose estimator. Paper accpted by **TPAMI**.
-        * Proposed [X-NeRF](https://arxiv.org/abs/2210.05135), paper accepted by WACV 2023.
-        * Major in the first AI pilot class.
-        * Research on computer vision and robotics at MVIG advised by [Prof. Cewu Lu](https://mvig.sjtu.edu.cn/).
+        * Lead a project on unsupervised multi-task learning for subtomogram images advised by Dr. Xiangrui Zeng and Prof. Min Xu.
+        * Paper accepted by ICIP 2022.
 
 design:
   columns: '2'
