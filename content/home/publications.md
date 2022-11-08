@@ -24,8 +24,9 @@ content:
       tag: Robot Learning
     - name: Others
       tag: Others
+  order: desc
 design:
   columns: "2"
-  view: 2
+  view: citation
   flip_alt_rows: true
 ---
