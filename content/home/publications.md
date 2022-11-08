@@ -14,10 +14,10 @@ content:
   filter_button:
     - name: All
       tag: "*"
-    - name: Deep Learning
-      tag: Deep Learning
-    - name: Other
-      tag: Demo
+    - name: Computer Vision
+      tag: Computer Vision
+    - name: Robotics
+      tag: Robotics
 design:
   columns: "2"
   view: showcase
