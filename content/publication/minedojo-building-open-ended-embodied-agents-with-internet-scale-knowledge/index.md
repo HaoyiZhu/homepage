@@ -29,6 +29,7 @@ publication: Neural Information Processing Systems (NeurIPS) Dataset & Benchmark
 publication_short: NeurIPS Dataset & Benchmark, 2022
 draft: false
 featured: true
+external_link: https://minedojo.org/
 tags:
   - Robot Learning
   - Computer Vision
