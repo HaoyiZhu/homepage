@@ -9,18 +9,7 @@ subtitle: Visit my [Google Scholar <i class="fa-solid
   page for a comprehensive listing!
 active: true
 content:
-  # page_type: publication
-  # Filter on criteria
-  filters:
-    folders:
-      - publication
-    tag: ''
-    category: ''
-    publication_type: ''
-    author: ''
-    exclude_featured: false
-    exclude_future: false
-    exclude_past: false
+  page_type: publication
   filter_default: 0
   filter_button:
     - name: All
@@ -31,7 +20,7 @@ content:
       tag: Robotics
 design:
   columns: "2"
-  view: 1
+  view: 2
   flip_alt_rows: true
 ---
 
