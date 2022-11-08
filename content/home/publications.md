@@ -31,7 +31,7 @@ content:
       tag: Robotics
 design:
   columns: "2"
-  view: showcase
-  flip_alt_rows: false
+  view: 1
+  flip_alt_rows: true
 ---
 
