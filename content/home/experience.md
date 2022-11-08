@@ -41,7 +41,7 @@ experience:
         * Research on computer vision and robotics at MVIG advised by [Prof. Cewu Lu](https://mvig.sjtu.edu.cn/).
 
   - title: Remote Research Intern
-    company: Shanghai Jiao Tong University
+    company: Jim Team, Caltech and NVIDIA AI Lab
     company_url: 'https://www.sjtu.edu.cn/'
     company_logo: org-sjtu
     location: Shanghai, China
