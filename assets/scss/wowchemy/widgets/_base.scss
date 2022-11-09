@@ -166,7 +166,8 @@
   font-weight: 400;
   font-size: 1.1rem;
   color: rgba(0, 0, 0, 0.54); // Accessible contrast, matching footer text color.
-  position: relative;
+  position: sticky;
+  position: -webkit-sticky;
 }
 
 .dark .section-heading p {
