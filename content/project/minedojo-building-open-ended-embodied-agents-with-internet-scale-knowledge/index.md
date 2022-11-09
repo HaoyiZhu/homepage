@@ -68,6 +68,9 @@ links:
 #   filename: pull.gif
 #   focal_point: Smart
 #   preview_only: false
+video:
+  src: pull_video.mp4
+  control: yes
 ---
 
 {{< video src="pull_video.mp4" controls="yes" >}}
