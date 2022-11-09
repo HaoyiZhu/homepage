@@ -65,7 +65,7 @@
         {{- if $do_link}}</a>{{end -}}
       </div>
 
-      <div>{{ if $item.Params.publication_short }}
+      <div style="font-size:80%">{{ if $item.Params.publication_short }}
         {{- $item.Params.publication_short | markdownify -}}.
       {{ else if $item.Params.publication }}
         {{- $item.Params.publication | markdownify -}}.
