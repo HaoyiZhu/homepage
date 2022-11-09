@@ -28,6 +28,7 @@ author_notes:
   - Equal advising
   - Equal advising
 title: "MineDojo: Building Open-Ended Embodied Agents with Internet-Scale Knowledge"
+subtitle: "MineDojo"
 date: 2022-06-17T00:00:00.000Z
 featured: true
 tags:

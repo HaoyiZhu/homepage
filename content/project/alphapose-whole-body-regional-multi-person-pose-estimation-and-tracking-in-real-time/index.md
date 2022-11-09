@@ -12,7 +12,7 @@ publication_types: ["2"]
 publication: "*IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)*"
 publication_short: "*TPAMI*"
 
-subtitle: ""
+subtitle: "AlphaPose"
 date: 2022-11-07T00:00:00Z
 draft: false
 featured: true
