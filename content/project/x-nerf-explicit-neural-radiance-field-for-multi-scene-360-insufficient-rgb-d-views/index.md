@@ -12,7 +12,7 @@ publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
 publication: "*IEEE Winter Conference on Applications of Computer Vision (WACV), 2023*"
-publication_short: "*WACV 2023*"
+publication_short: ""
 
 draft: false
 featured: false

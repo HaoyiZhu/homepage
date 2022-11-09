@@ -14,7 +14,7 @@ authors:
   - De-An Huang
   - Yuke Zhu
   - Anima Anandkumar
-publication_short: "*NeurIPS 2022*"
+publication_short: ""
 publication: "*Neural Information Processing Systems (NeurIPS), 2022*"
 author_notes:
   - ""

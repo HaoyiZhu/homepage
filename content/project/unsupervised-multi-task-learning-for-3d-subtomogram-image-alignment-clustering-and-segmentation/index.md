@@ -11,7 +11,7 @@ publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
 publication: "*IEEE International Conference on Image Processing (ICIP), 2022*"
-publication_short: "*ICIP 2022*"
+publication_short: ""
 
 draft: false
 featured: false
