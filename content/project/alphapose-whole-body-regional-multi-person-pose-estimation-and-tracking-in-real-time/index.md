@@ -57,7 +57,7 @@ image:
   filename: logo.jpg
   focal_point: Smart
   preview_only: false
-video: 
+video: alphapose_17.mp4
 ---
 
 **Abstract：**
