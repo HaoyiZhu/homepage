@@ -60,7 +60,7 @@ experience:
         * Co-author of [**AlphaPose**](https://github.com/MVIG-SJTU/AlphaPose), an accurate multi-person pose estimator. Paper accpted by [**TPAMI**](https://arxiv.org/abs/2211.03375).
         * Proposed [**X-NeRF**](https://github.com/HaoyiZhu/XNeRF), paper accepted by [WACV 2023](https://arxiv.org/abs/2210.05135).
         * Major in the first AI pilot class.
-        * Research on computer vision and robotics at MVIG advised by [Prof. Cewu Lu](https://mvig.sjtu.edu.cn/).
+        * Research on computer vision and robotics at MVIG advised by [Dr. Hao-shu Fang](https://fang-haoshu.github.io/) and [Prof. Cewu Lu](https://mvig.sjtu.edu.cn/).
 
 design:
   columns: '2'
