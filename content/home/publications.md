@@ -27,6 +27,6 @@ content:
   order: desc
 design:
   columns: "2"
-  view: 4
+  view: citation
   flip_alt_rows: true
 ---
