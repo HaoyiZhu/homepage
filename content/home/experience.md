@@ -32,7 +32,7 @@ experience:
     company_url: 'https://www.sjtu.edu.cn/'
     company_logo: org-sjtu
     location: Shanghai, China
-    date_start: '2019-09-01'
+    date_start: '2022-09-01'
     date_end: ''
     description: |2-
         * Co-author of [AlphaPose](https://github.com/MVIG-SJTU/AlphaPose), an accurate multi-person pose estimator. Paper accpted by **TPAMI**.
@@ -45,7 +45,7 @@ experience:
     company_url: 'https://research.nvidia.com/person/linxi-jim-fan'
     company_logo: org-nvidia
     location: Shanghai, China
-    date_start: '2019-09-01'
+    date_start: '2022-09-01'
     date_end: ''
     description: |2-
         * Co-developed [**MineDojo**](https://minedojo.org/) for open-ended agent learning in Minecraft advised by Dr. Jim Fan and Prof. Anima Anandkumar.
