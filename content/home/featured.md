@@ -23,6 +23,6 @@ design:
   #   3 = Card
   #   4 = Citation (publication only)
   #   5 = Showcase
-  view: 5
+  view: showcase
 ---
 
