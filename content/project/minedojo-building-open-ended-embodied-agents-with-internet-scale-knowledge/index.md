@@ -61,7 +61,7 @@ image:
   filename: pull.gif
   focal_point: Smart
   preview_only: false
-video: pull.mp4
+video: minedojo.mp4
   
 ---
 **Abstract:**

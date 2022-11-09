@@ -22,7 +22,7 @@
   {{ $summary = $item.Summary }}
 {{ end }}
 
-{{ $order := "" }}
+<!-- {{ $order := "" }} -->
 <!-- {{ if and ($widget.Params.design.flip_alt_rows | default true) (not (modBool $index 2)) }}
   {{ $order = "order-md-2" }}
 {{ end }}
@@ -31,24 +31,6 @@
 <div class="col-lg-12 mb-5 view-showcase">
   <div class="row align-items-center">
     <div class="col-12 col-md-6">
-      <div class="section-subheading article-title mb-0 mt-0">
-        {{- if $do_link}}<a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{end -}}
-        {{ $item.Params.subtitle | markdownify | emojify }}
-        {{- if $do_link}}</a>{{end -}}
-      </div>
-
-      {{ with $summary }}
-      <div class="article-style">
-        {{ . }}
-      </div>
-      {{ end }}
-
-      <div class="btn-links">
-        {{ partial "page_links" (dict "page" $item "is_list" 0) }}
-      </div>
-
-    </div>
-    <div class="col-12 col-md-6 order-first {{$order}}">
       {{ if $item.Params.video }}
         {{ $destination := $item.Params.video }}
         {{ $video_ext_with_dot := path.Ext ($item.Params.video) }}
@@ -84,5 +66,25 @@
         {{end}}
       {{end}}
     </div>
+    
+    <div class="col-12 col-md-6">
+      <div class="section-subheading article-title mb-0 mt-0">
+        {{- if $do_link}}<a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{end -}}
+        {{ $item.Params.subtitle | markdownify | emojify }}
+        {{- if $do_link}}</a>{{end -}}
+      </div>
+
+      {{ with $summary }}
+      <div class="article-style">
+        {{ . }}
+      </div>
+      {{ end }}
+
+      <div class="btn-links">
+        {{ partial "page_links" (dict "page" $item "is_list" 0) }}
+      </div>
+
+    </div>
+    
   </div>
 </div>
