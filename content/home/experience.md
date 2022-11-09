@@ -28,17 +28,6 @@ date_format: Jan 2006
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
   - title: Remote Research Intern
-    company: Xu Lab, CMU
-    company_url: 'https://xulabs.github.io/'
-    company_logo: org-cmu
-    location: Shanghai, China
-    date_start: '2021-04-01'
-    date_end: '2022-02-30'
-    description: |2-
-        * Lead a project on unsupervised multi-task learning for subtomogram images advised by Dr. Xiangrui Zeng and Prof. Min Xu.
-        * Paper accepted by ICIP 2022.
-
-  - title: Remote Research Intern
     company: Jim Team, Caltech and NVIDIA AI Lab
     company_url: 'https://research.nvidia.com/person/linxi-jim-fan'
     company_logo: org-nvidia
@@ -48,6 +37,17 @@ experience:
     description: |2-
         * Co-developed [**MineDojo**](https://minedojo.org/) for open-ended agent learning in Minecraft advised by Dr. Jim Fan and Prof. Anima Anandkumar.
         * Paper accepted by NeurIPS Dataset & Benchmark 2022.
+
+  - title: Remote Research Intern
+    company: Xu Lab, CMU
+    company_url: 'https://xulabs.github.io/'
+    company_logo: org-cmu
+    location: Shanghai, China
+    date_start: '2021-04-01'
+    date_end: '2022-02-30'
+    description: |2-
+        * Lead a project on unsupervised multi-task learning for subtomogram images advised by Dr. Xiangrui Zeng and Prof. Min Xu.
+        * Paper accepted by ICIP 2022.
 
 design:
   columns: '2'
