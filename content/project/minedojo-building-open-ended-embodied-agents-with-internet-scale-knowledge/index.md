@@ -70,5 +70,5 @@ image:
   preview_only: false
 ---
 
-{{< video src="pull.mp4" autoplay="yes">}}
+{{< video src="pull.mp4" controls="yes" autoplay="true" loop="true">}}
 
