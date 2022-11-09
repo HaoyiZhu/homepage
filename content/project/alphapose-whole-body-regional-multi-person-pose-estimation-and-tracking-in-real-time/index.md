@@ -57,6 +57,7 @@ image:
   filename: logo.jpg
   focal_point: Smart
   preview_only: false
+video: 
 ---
 
 **Abstract：**

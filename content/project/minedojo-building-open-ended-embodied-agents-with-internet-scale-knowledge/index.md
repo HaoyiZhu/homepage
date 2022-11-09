@@ -61,6 +61,8 @@ image:
   filename: pull.gif
   focal_point: Smart
   preview_only: false
+video: pull.mp4
+  
 ---
 **Abstract:**
 

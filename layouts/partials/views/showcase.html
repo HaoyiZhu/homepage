@@ -49,14 +49,39 @@
 
     </div>
     <div class="col-12 col-md-6 order-first {{$order}}">
-      {{ $resource := partial "functions/get_featured_image.html" $item }}
+      {{ if $item.Params.video }}
+        {{ $destination := $item.Params.video }}
+        {{ $video_ext_with_dot := path.Ext ($item.Params.video) }}
+        {{ $video_ext := strings.TrimPrefix "." $video_ext_with_dot }}
+        {{ $video_type := $video_ext }}
+        {{ $is_remote := strings.HasPrefix $destination "http" }}
+        {{- $asset := "" -}}
+        {{- if not $is_remote -}}
+          {{- $asset = (.Page.Resources.ByType "video").GetMatch $destination -}}
+          {{- if not $asset -}}
+            {{- $asset = resources.Get (path.Join "media" $destination) -}}
+          {{- end -}}
+          {{ $video_type = $asset.MediaType.SubType }}
+        {{- end -}}
 
-      {{ with $resource }}
-        {{ $image := .Resize "540x webp" }}
-        {{if $do_link}}<a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{end}}
-          <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
-              alt="{{ $item.Title }}" loading="lazy">
-        {{if $do_link}}</a>{{end}}
+        {{ if $asset }}
+          {{ $destination = $asset.RelPermalink }}
+        {{ else }}
+          {{ $destination = $destination | safeURL }}
+        {{ end }}
+
+        <video controls autoplay loop muted>
+          <source src="{{$destination}}" type="video/{{$video_type}}">
+        </video>
+      {{ else }}
+        {{ $resource := partial "functions/get_featured_image.html" $item }}
+        {{ with $resource }}
+          {{ $image := .Resize "540x webp" }}
+          {{if $do_link}}<a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{end}}
+            <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
+                alt="{{ $item.Title }}" loading="lazy">
+          {{if $do_link}}</a>{{end}}
+        {{end}}
       {{end}}
     </div>
   </div>
