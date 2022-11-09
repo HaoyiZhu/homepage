@@ -50,7 +50,7 @@ experience:
         * Paper accepted by ICIP 2022.
 
   - title: B.S. in Artificial Intelligence
-    company: Shanghai Jiao Tong University
+    company: MVIG, SJTU
     company_url: 'https://www.sjtu.edu.cn/'
     company_logo: org-sjtu
     location: Shanghai, China
