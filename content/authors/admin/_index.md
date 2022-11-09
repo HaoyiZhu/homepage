@@ -20,9 +20,15 @@ social:
   - icon: graduation-cap
     icon_pack: fas
     link: https://scholar.google.com/citations?user=pD1NOyUAAAAJ&hl
+    label: Visit my Google Scholar
+    display:
+      header: true
   - icon: github
     icon_pack: fab
     link: https://github.com/HaoyiZhu
+    label: Follow me or star on Github
+    display:
+      header: true
 organizations:
   - name: Shanghai Jiao Tong University
     url: https://www.sjtu.edu.cn/
