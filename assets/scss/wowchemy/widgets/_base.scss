@@ -168,6 +168,7 @@
   color: rgba(0, 0, 0, 0.54); // Accessible contrast, matching footer text color.
   position: sticky;
   position: -webkit-sticky;
+  top: 160px;
 }
 
 .dark .section-heading p {
