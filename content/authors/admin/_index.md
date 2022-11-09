@@ -39,6 +39,8 @@ email: hyizhu1108@gmail.com
 ---
 I﻿ am a fourth year undergraduate majoring in Artificial Intelligence at SJTU with Prof. [Cewu Lu](https://mvig.sjtu.edu.cn/). After graduation next year, I will be a Ph.D. candidate at USTC and Shanghai AI Lab advised by Prof. [Xiaogang Wang](http://www.ee.cuhk.edu.hk/~xgwang/) and Prof. [Wanli Ouyang](https://www.sydney.edu.au/engineering/about/our-people/academic-staff/wanli-ouyang.html). My research interests include robotics manipulation, robot learning and computer vision. Feel free to follow me on [<i class="fa-brands fa-twitter"></i>](https://twitter.com/HaoyiZhu) and [<i class="fa-brands fa-github"></i>](https://github.com/HaoyiZhu) for latest research announcements and updates!
 
+In my daily life, I have great passions in football and traditional Chinese painting!
+
 ### ✨ **News** ✨
 
 - **Nov. 2022**: [AlphaPose paper](http://arxiv.org/abs/2211.03375) is accepted by **TPAMI**! [AlphaPose](https://github.com/MVIG-SJTU/AlphaPose) is an accurate multi-person pose estimator, which has received more than **6.5K** stars on Github. Check out [the paper](https://arxiv.org/pdf/2211.03375.pdf) for more details and feel free to [star on  <i class="fa-brands fa-github"></i>](https://github.com/HaoyiZhu)!
