@@ -9,8 +9,8 @@ title: "AlphaPose: Whole-Body Regional Multi-Person Pose Estimation and Tracking
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2022*"
-publication_short: "*TPAMI 2022*"
+publication: "*IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)*"
+publication_short: "*TPAMI*"
 
 subtitle: ""
 date: 2022-11-07T00:00:00Z
