@@ -149,11 +149,6 @@
 
 .section-heading h1 {
   margin: 0 0 10px;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 150px;
-  bottom: 210px;
-  z-index: 2;
 }
 
 .section-subheading {
@@ -168,11 +163,6 @@
   font-weight: 400;
   font-size: 1.1rem;
   color: rgba(0, 0, 0, 0.54); // Accessible contrast, matching footer text color.
-  position: sticky;
-  position: -webkit-sticky;
-  top: 210px;
-  bottom: 150px;
-  z-index: 1;
 }
 
 .dark .section-heading p {
