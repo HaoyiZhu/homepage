@@ -2,7 +2,7 @@
 title: Haoyi Zhu 朱皓怡
 role: Undergraduate in AI
 avatar_filename: avatar.jpg
-bio: My research interests include computer vision and robot learning.
+bio: My research interests include robotics manipulation, robot learning and computer vision.
 interests:
   - Robotic Manipulation
   - Robot Learning
