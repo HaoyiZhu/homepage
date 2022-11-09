@@ -57,7 +57,7 @@ experience:
     company_logo: org-cmu
     location: Shanghai, China
     date_start: '2021-04-01'
-    date_end: 'Jan 2, 2022'
+    date_end: 'Jan 2022'
     description: |2-
         * Lead a project on unsupervised multi-task learning for subtomogram images advised by Dr. Xiangrui Zeng and Prof. Min Xu.
         * Paper accepted by ICIP 2022.
