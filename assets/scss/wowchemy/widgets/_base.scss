@@ -152,7 +152,8 @@
   position: sticky;
   position: -webkit-sticky;
   top: 150px;
-  z-index:2;
+  bottom: 210px;
+  z-index: 2;
 }
 
 .section-subheading {
@@ -169,8 +170,9 @@
   color: rgba(0, 0, 0, 0.54); // Accessible contrast, matching footer text color.
   position: sticky;
   position: -webkit-sticky;
-  top: 200px;
-  z-index:1;
+  top: 210px;
+  bottom: 150px;
+  z-index: 1;
 }
 
 .dark .section-heading p {
