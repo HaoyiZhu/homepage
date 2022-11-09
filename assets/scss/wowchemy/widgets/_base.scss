@@ -160,14 +160,15 @@
   font-weight: bold;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
-  position: sticky;
-  position: -webkit-sticky;
 }
 
 .section-heading p {
   font-weight: 400;
   font-size: 1.1rem;
   color: rgba(0, 0, 0, 0.54); // Accessible contrast, matching footer text color.
+  position: sticky;
+  position: -webkit-sticky;
+  top: 150px;
 }
 
 .dark .section-heading p {
