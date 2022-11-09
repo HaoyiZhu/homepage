@@ -28,6 +28,17 @@ date_format: Jan 2006
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
   - title: Remote Research Intern
+    company: Jim Team, Caltech and NVIDIA AI Lab
+    company_url: 'https://research.nvidia.com/person/linxi-jim-fan'
+    company_logo: org-nvidia
+    location: Shanghai, China
+    date_start: '2022-02-31'
+    date_end: ''
+    description: |2-
+        * Co-developed [**MineDojo**](https://minedojo.org/) for open-ended agent learning in Minecraft advised by Dr. Jim Fan and Prof. Anima Anandkumar.
+        * Paper accepted by NeurIPS Dataset & Benchmark 2022.
+
+  - title: Remote Research Intern
     company: Xu Lab, CMU
     company_url: 'https://xulabs.github.io/'
     company_logo: org-cmu
@@ -37,19 +48,6 @@ experience:
     description: |2-
         * Lead a project on unsupervised multi-task learning for subtomogram images advised by Dr. Xiangrui Zeng and Prof. Min Xu.
         * Paper accepted by ICIP 2022.
-
-  - title: B.S. in Artificial Intelligence
-    company: Shanghai Jiao Tong University
-    company_url: 'https://www.sjtu.edu.cn/'
-    company_logo: org-sjtu
-    location: Shanghai, China
-    date_start: '2019-09-01'
-    date_end: ''
-    description: |2-
-        * Co-author of [AlphaPose](https://github.com/MVIG-SJTU/AlphaPose), an accurate multi-person pose estimator. Paper accpted by **TPAMI**.
-        * Proposed [X-NeRF](https://arxiv.org/abs/2210.05135), paper accepted by WACV 2023.
-        * Major in the first AI pilot class.
-        * Research on computer vision and robotics at MVIG advised by [Prof. Cewu Lu](https://mvig.sjtu.edu.cn/).
 
 design:
   columns: '2'
