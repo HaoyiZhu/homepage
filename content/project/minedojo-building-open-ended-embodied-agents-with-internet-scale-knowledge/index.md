@@ -64,13 +64,10 @@ links:
   - url: https://www.youtube.com/watch?v=5LL6z1Ganbw
     name: Video
 
-# image:
-#   filename: pull.gif
-#   focal_point: Smart
-#   preview_only: false
-video:
-  src: pull_video.mp4
-  control: yes
+image:
+  filename: pull.gif
+  focal_point: Smart
+  preview_only: false
 ---
 
 {{< video src="pull_video.mp4" controls="yes" >}}
