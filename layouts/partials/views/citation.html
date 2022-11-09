@@ -13,10 +13,7 @@
 {{ $link := $item.Params.external_link | default $item.RelPermalink }}
 {{ $target := .target }}
 
-{{ $order := "" }}
-{{ if and ($widget.Params.design.flip_alt_rows | default true) (not (modBool $index 2)) }}
-  {{ $order = "order-md-2" }}
-{{ end }}
+{{ $order := "order-md-2" }}
 
 <!-- <div class="pub-list-item view-citation" style="margin-bottom: 1rem">
   <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
