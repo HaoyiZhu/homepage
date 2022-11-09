@@ -21,10 +21,19 @@ authors:
   - Jiefeng Li
   - Hongyang Tang
   - Chao Xu
-  - Haoyi Zhu
+  - admin
   - Yuliang Xiu
   - Yong-Lu Li
   - Cewu Lu
+author_notes:
+  - '*Equal contribution'
+  - '*Equal contribution'
+  - ''
+  - '$Equal contribution'
+  - '$Equal contribution'
+  - ''
+  - ''
+  - ''
 tags:
   - Computer Vision
 categories:
