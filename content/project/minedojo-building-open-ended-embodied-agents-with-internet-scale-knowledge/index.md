@@ -70,4 +70,5 @@ image:
   preview_only: false
 ---
 
-{{< video src="pull_video.mp4" controls="yes" >}}
+{{< video src="pull.gif" controls="yes" >}}
+
