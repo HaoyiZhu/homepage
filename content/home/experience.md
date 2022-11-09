@@ -27,6 +27,19 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+  - title: B.S. in Artificial Intelligence
+    company: MVIG, SJTU
+    company_url: 'https://www.sjtu.edu.cn/'
+    company_logo: org-sjtu
+    location: Shanghai, China
+    date_start: '2019-09-01'
+    date_end: ''
+    description: |2-
+        * Co-author of [**AlphaPose**](https://github.com/MVIG-SJTU/AlphaPose), an accurate multi-person pose estimator. Paper accpted by [TPAMI](https://arxiv.org/abs/2211.03375).
+        * Proposed [**X-NeRF**](https://github.com/HaoyiZhu/XNeRF), paper accepted by [WACV 2023](https://arxiv.org/abs/2210.05135).
+        * Major in the first AI pilot class.
+        * Research on computer vision and robotics at MVIG advised by [Dr. Hao-shu Fang](https://fang-haoshu.github.io/) and [Prof. Cewu Lu](https://mvig.sjtu.edu.cn/).
+
   - title: Remote Research Intern
     company: Jim Team, NVIDIA AI Lab and Caltech
     company_url: 'https://research.nvidia.com/person/linxi-jim-fan'
@@ -48,19 +61,6 @@ experience:
     description: |2-
         * Lead a project on unsupervised multi-task learning for subtomogram images advised by [Dr. Xiangrui Zeng](https://scholar.google.com/citations?user=8gQLySoAAAAJ) and [Prof. Min Xu](https://xulabs.github.io/).
         * Paper accepted by [ICIP 2022](https://ieeexplore.ieee.org/abstract/document/9897919).
-
-  - title: B.S. in Artificial Intelligence
-    company: MVIG, SJTU
-    company_url: 'https://www.sjtu.edu.cn/'
-    company_logo: org-sjtu
-    location: Shanghai, China
-    date_start: '2019-09-01'
-    date_end: ''
-    description: |2-
-        * Co-author of [**AlphaPose**](https://github.com/MVIG-SJTU/AlphaPose), an accurate multi-person pose estimator. Paper accpted by [TPAMI](https://arxiv.org/abs/2211.03375).
-        * Proposed [**X-NeRF**](https://github.com/HaoyiZhu/XNeRF), paper accepted by [WACV 2023](https://arxiv.org/abs/2210.05135).
-        * Major in the first AI pilot class.
-        * Research on computer vision and robotics at MVIG advised by [Dr. Hao-shu Fang](https://fang-haoshu.github.io/) and [Prof. Cewu Lu](https://mvig.sjtu.edu.cn/).
 
 design:
   columns: '2'
