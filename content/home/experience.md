@@ -45,7 +45,7 @@ experience:
     company_url: 'https://research.nvidia.com/person/linxi-jim-fan'
     company_logo: org-nvidia
     location: Shanghai, China
-    date_start: '2019-09-01'
+    date_start: '2022-02-21'
     date_end: ''
     description: |2-
         * Co-developed [**MineDojo**](https://minedojo.org/) for open-ended agent learning in Minecraft advised by Dr. Jim Fan and Prof. Anima Anandkumar.
@@ -57,7 +57,7 @@ experience:
     company_logo: org-cmu
     location: Shanghai, China
     date_start: '2021-04-01'
-    date_end: '2022-02-28'
+    date_end: '2022-02-20'
     description: |2-
         * Lead a project on unsupervised multi-task learning for subtomogram images advised by Dr. Xiangrui Zeng and Prof. Min Xu.
         * Paper accepted by ICIP 2022.
