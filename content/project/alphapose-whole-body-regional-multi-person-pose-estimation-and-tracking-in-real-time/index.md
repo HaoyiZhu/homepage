@@ -16,7 +16,7 @@ subtitle: ""
 date: 2022-11-07T00:00:00Z
 draft: false
 featured: true
-summary: ''
+summary: 'An accurate real-time multi-person pose estimator and tracker.'
 authors:
   - Hao-Shu Fang
   - Jiefeng Li
