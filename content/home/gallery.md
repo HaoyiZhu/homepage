@@ -13,7 +13,7 @@ title: Gallery
 subtitle: Some of my traditional Chinese paintings
 
 design:
-  columns: '1'
+  columns: '2'
 ---
 
 {{< gallery album="paintings" >}}
