@@ -33,7 +33,7 @@
     <div class="col-12 col-md-6">
       <div class="section-subheading article-title mb-0 mt-0">
         {{- if $do_link}}<a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{end -}}
-        {{ $item.Subtitle | markdownify | emojify }}
+        {{ $item.Params.subtitle | markdownify | emojify }}
         {{- if $do_link}}</a>{{end -}}
       </div>
 
