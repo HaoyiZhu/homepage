@@ -27,19 +27,6 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: B.S. in Artificial Intelligence
-    company: Shanghai Jiao Tong University
-    company_url: 'https://www.sjtu.edu.cn/'
-    company_logo: org-sjtu
-    location: Shanghai, China
-    date_start: '2019-09-01'
-    date_end: ''
-    description: |2-
-        * Co-author of [AlphaPose](https://github.com/MVIG-SJTU/AlphaPose), an accurate multi-person pose estimator. Paper accpted by **TPAMI**.
-        * Proposed [X-NeRF](https://arxiv.org/abs/2210.05135), paper accepted by WACV 2023.
-        * Major in the first AI pilot class.
-        * Research on computer vision and robotics at MVIG advised by [Prof. Cewu Lu](https://mvig.sjtu.edu.cn/).
-
   - title: Remote Research Intern
     company: Jim Team, Caltech and NVIDIA AI Lab
     company_url: 'https://research.nvidia.com/person/linxi-jim-fan'
@@ -61,6 +48,19 @@ experience:
     description: |2-
         * Lead a project on unsupervised multi-task learning for subtomogram images advised by Dr. Xiangrui Zeng and Prof. Min Xu.
         * Paper accepted by ICIP 2022.
+
+  - title: B.S. in Artificial Intelligence
+    company: Shanghai Jiao Tong University
+    company_url: 'https://www.sjtu.edu.cn/'
+    company_logo: org-sjtu
+    location: Shanghai, China
+    date_start: '2019-09-01'
+    date_end: ''
+    description: |2-
+        * Co-author of [AlphaPose](https://github.com/MVIG-SJTU/AlphaPose), an accurate multi-person pose estimator. Paper accpted by **TPAMI**.
+        * Proposed [X-NeRF](https://arxiv.org/abs/2210.05135), paper accepted by WACV 2023.
+        * Major in the first AI pilot class.
+        * Research on computer vision and robotics at MVIG advised by [Prof. Cewu Lu](https://mvig.sjtu.edu.cn/).
 
 design:
   columns: '2'
