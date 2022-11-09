@@ -39,7 +39,7 @@ categories:
   - Computer Vision
   - Robot Learning
   - Others
-# external_link: https://minedojo.org/
+external_link: https://minedojo.org/
 links:
   - url: https://minedojo.org/
     name: Project

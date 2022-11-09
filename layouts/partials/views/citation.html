@@ -10,7 +10,8 @@
   {{ $do_link = false }}
 {{ end }}
 
-{{ $link := $item.Params.external_link | default $item.RelPermalink }}
+{{ $link := $item.RelPermalink }}
+{{ $external_link := $item.Params.external_link }}
 {{ $target := .target }}
 
 {{ $order := "order-md-2" }}
@@ -83,7 +84,7 @@
 
       {{ with $resource }}
         {{ $image := .Resize "540x webp" }}
-        {{if $do_link}}<a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{end}}
+        {{if $do_link}}<a href="{{ $external_link }}" {{ $target | safeHTMLAttr }}>{{end}}
           <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
               alt="{{ $item.Title }}" loading="lazy">
         {{if $do_link}}</a>{{end}}

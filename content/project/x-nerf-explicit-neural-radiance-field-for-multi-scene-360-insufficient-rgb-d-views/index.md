@@ -24,7 +24,7 @@ tags:
   - Computer Vision
 categories:
   - Computer Vision
-# external_link: https://arxiv.org/abs/2210.05135
+external_link: https://arxiv.org/abs/2210.05135
 links:
   - url: https://arxiv.org/pdf/2210.05135.pdf
     name: PDF

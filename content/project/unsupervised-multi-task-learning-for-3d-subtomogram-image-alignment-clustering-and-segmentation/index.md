@@ -31,7 +31,7 @@ tags:
 categories:
   - Computer Vision
   - Others
-# external_link: https://ieeexplore.ieee.org/abstract/document/9897919/
+external_link: https://ieeexplore.ieee.org/abstract/document/9897919/
 links:
   - url: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9897919&tag=1
     name: PDF

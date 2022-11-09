@@ -39,7 +39,7 @@ tags:
   - Computer Vision
 categories:
   - Computer Vision
-# external_link: https://github.com/MVIG-SJTU/AlphaPose
+external_link: https://github.com/MVIG-SJTU/AlphaPose
 links:
   - url: http://mvig.org/research/alphapose.html
     name: Project
