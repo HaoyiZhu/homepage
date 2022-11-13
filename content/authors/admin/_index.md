@@ -50,5 +50,5 @@ In my daily life, I have great passions in football and [traditional Chinese pai
 ### ✨ **News** ✨
 
 - **Nov. 2022**: [AlphaPose paper](http://arxiv.org/abs/2211.03375) is accepted by **TPAMI**! [AlphaPose](https://github.com/MVIG-SJTU/AlphaPose) is an accurate multi-person pose estimator, which has received more than **6.5K** stars on Github. Check out [the paper](https://arxiv.org/pdf/2211.03375.pdf) for more details and feel free to [star on  <i class="fa-brands fa-github"></i>](https://github.com/MVIG-SJTU/AlphaPose)!
-- **Oct. 2022** [X-NeRF](https://arxiv.org/abs/2210.05135) is accepted by **WACV 2023**! Checkout our [code on  <i class="fa-brands fa-github"></i>](https://github.com/HaoyiZhu/XNeRF)!
+- **Oct. 2022**: [X-NeRF](https://arxiv.org/abs/2210.05135) is accepted by **WACV 2023**! Checkout our [code on  <i class="fa-brands fa-github"></i>](https://github.com/HaoyiZhu/XNeRF)!
 - **Jun. 2022**: [MineDojo](https://minedojo.org/) has been [announced](https://twitter.com/DrJimFan/status/1540381991052247041)! [MineDojo](https://minedojo.org/) is a new framework for building generally capable agents with internet-scale knowledge in Minecraft. [Paper](https://arxiv.org/abs/2206.08853), [code](https://github.com/MineDojo/MineDojo), and [databases](https://minedojo.org/knowledge_base.html) are all open access. Check it out today!
