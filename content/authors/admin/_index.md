@@ -29,6 +29,9 @@ social:
     label: Follow me or star on Github
     display:
       header: true
+  - icon: orcid
+    icon_pack: fab
+    link: https://orcid.org/0000-0003-1153-5230
 organizations:
   - name: Shanghai Jiao Tong University
     url: https://www.sjtu.edu.cn/
