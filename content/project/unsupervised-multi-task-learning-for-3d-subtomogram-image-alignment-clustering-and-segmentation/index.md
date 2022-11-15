@@ -35,6 +35,8 @@ external_link: https://ieeexplore.ieee.org/abstract/document/9897919/
 links:
   - url: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9897919&tag=1
     name: PDF
+  - url: https://doi.org/10.1109/ICIP46576.2022.9897919
+    name: DOI
   - url: https://ieeexplore.ieee.org/abstract/document/9897919
     name: ICIP 2022
 image:
