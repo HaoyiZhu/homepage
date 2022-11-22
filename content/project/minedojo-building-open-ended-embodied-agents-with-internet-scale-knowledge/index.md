@@ -15,7 +15,7 @@ authors:
   - Yuke Zhu
   - Anima Anandkumar
 publication_short: ""
-publication: "*Neural Information Processing Systems (NeurIPS) Dataset & Benchmark, 2022*"
+publication: "💫✨ ***Outstanding Paper Award*** ✨💫. *Neural Information Processing Systems (NeurIPS) Dataset & Benchmark, 2022*"
 author_notes:
   - ""
   - ""
