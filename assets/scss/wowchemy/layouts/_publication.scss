@@ -1,0 +1,33 @@
+/*************************************************
+ *  Publications
+ **************************************************/
+
+.pub-banner {
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pub-row-heading {
+  font-weight: bold;
+}
+
+#container-publications {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.li-cite-author {
+  font-size: 0.7em;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.li-cite-author a {
+  color: inherit;
+}
+
+.dark .li-cite-author a {
+  color: rgb(248, 248, 242);
+}
