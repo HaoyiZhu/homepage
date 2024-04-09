@@ -64,5 +64,5 @@ In contrast to numerous NLP and 2D computer vision foundational models, the lear
 
 
 <p align="center">
-    <img src="assets/pipeline.png" alt="pipeline" />
+    <img src="pipeline.png" alt="pipeline" />
 </p>
