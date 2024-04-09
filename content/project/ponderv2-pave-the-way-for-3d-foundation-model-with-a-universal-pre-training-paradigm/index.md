@@ -1,6 +1,7 @@
 ---
 title: "PonderV2: Pave the Way for 3D Foundation Model with A Universal Pre-training Paradigm"
 subtitle: "PonderV2"
+summary: A general 3D pre-training approach establishing a pathway to 3D foundational models.
 date: 2023-10-13T00:00:00Z
 
 # Publication type.
