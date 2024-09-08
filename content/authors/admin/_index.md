@@ -51,9 +51,11 @@ highlight_name: true
 first_name: Haoyi
 email: hyizhu1108@gmail.com
 ---
-I am a first year Ph.D. student majoring in Computer Science jointly at Shanghai Artificial Intelligence Laboratory and University of Science and Technology of China advised by Prof. [Xiaogang Wang](http://www.ee.cuhk.edu.hk/~xgwang/) and Prof. [Wanli Ouyang](https://wlouyang.github.io/). I obtained my B.S. degree in Artificial Intelligence Honor Class at Shanghai Jiao Tong University supervised by Prof. [Cewu Lu](https://mvig.sjtu.edu.cn/). My research interests include embodied AI, computer vision and robot learning. Feel free to follow me on [<i class="fa-brands fa-twitter"></i>](https://twitter.com/HaoyiZhu) and [<i class="fa-brands fa-github"></i>](https://github.com/HaoyiZhu) for latest research announcements and updates!
+I am a second-year Ph.D. student in Computer Science jointly at Shanghai Artificial Intelligence Laboratory and University of Science and Technology of China advised by Prof. [Xiaogang Wang](http://www.ee.cuhk.edu.hk/~xgwang/) and Prof. [Wanli Ouyang](https://wlouyang.github.io/). I also work closely with Prof. [Tong He](https://tonghe90.github.io/). I earned my B.S. degree in Artificial Intelligence Honor Class at Shanghai Jiao Tong University, advised by Prof. [Cewu Lu](https://mvig.sjtu.edu.cn/). I also have had the privilege of working with Dr. [Haoshu Fang](https://fang-haoshu.github.io/) and Dr. [Jim Fan](https://jimfan.me/). My research interests focus on embodied AI and robotic manipulation. Feel free to follow me on [<i class="fa-brands fa-twitter"></i>](https://twitter.com/HaoyiZhu) and [<i class="fa-brands fa-github"></i>](https://github.com/HaoyiZhu) for latest research announcements and updates!
 
-In my daily life, I have great passions (but amateur) in football, music, literature, philosophy, [traditional Chinese painting](#gallery) and [modern Chinese poems](#poems)!
+In my personal life, I am passionate (but amateur) about football, music, literature, philosophy, [traditional Chinese painting](#gallery), and [modern Chinese poems](#poems)!
+
+*The philosophers have only interpreted the world, in various ways. The point, however, is to change it.*
 
 ### ✨ **News** ✨
 
