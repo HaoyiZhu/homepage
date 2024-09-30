@@ -10,8 +10,8 @@ date: 2023-10-12T00:00:00Z
 publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*arXiv preprint arXiv:2310.08370, 2023.*"
-publication_short: "arXiv preprint"
+publication: "*Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2024.*"
+publication_short: "CVPR, 2024"
 
 draft: false
 featured: false
