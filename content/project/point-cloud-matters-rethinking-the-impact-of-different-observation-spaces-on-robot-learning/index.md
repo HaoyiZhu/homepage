@@ -12,7 +12,7 @@ publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
 publication: "*Neural Information Processing Systems (NeurIPS) Dataset & Benchmark, 2024*"
-publication_short: "NeurIPS D&B, 2024"
+publication_short: ""
 
 draft: false
 featured: false
@@ -55,7 +55,3 @@ image:
 **Abstract:**
 
 In robot learning, the observation space is crucial due to the distinct characteristics of different modalities, which can potentially become a bottleneck alongside policy design. In this study, we explore the influence of various observation spaces on robot learning, focusing on three predominant modalities: RGB, RGB-D, and point cloud. We introduce OBSBench, a benchmark comprising two simulators and 125 tasks, along with standardized pipelines for various encoders and policy baselines. Extensive experiments on diverse contact-rich manipulation tasks reveal a notable trend: point cloud-based methods, even those with the simplest designs, frequently outperform their RGB and RGB-D counterparts. This trend persists in both scenarios: training from scratch and utilizing pre-training. Furthermore, our findings demonstrate that point cloud observations often yield better policy performance and significantly stronger generalization capabilities across various geometric and visual conditions. These outcomes suggest that the 3D point cloud is a valuable observation modality for intricate robotic tasks. We also suggest that incorporating both appearance and coordinate information can enhance the performance of point cloud methods. We hope our work provides valuable insights and guidance for designing more generalizable and robust robotic models.
-
-<p align="center">
-    <img src="pipeline.png" alt="pipeline" />
-</p>
