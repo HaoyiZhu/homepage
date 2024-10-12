@@ -10,7 +10,7 @@ date: 2023-07-02T00:00:00Z
 publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*RSS 2023 Workshop on Learning for Task and Motion Planning*"
+publication: "*IEEE International Conference on Robotics and Automation (ICRA), 2024*"
 publication_short: ""
 
 draft: false

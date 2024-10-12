@@ -15,7 +15,7 @@ publication: "*arXiv preprint arXiv:2310.08586, 2023.*"
 publication_short: "arXiv preprint"
 
 draft: false
-featured: true
+featured: false
 authors:
   - admin
   - Honghui Yang

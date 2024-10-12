@@ -51,14 +51,17 @@ highlight_name: true
 first_name: Haoyi
 email: hyizhu1108@gmail.com
 ---
-I am a second-year Ph.D. student in Computer Science jointly at Shanghai Artificial Intelligence Laboratory and University of Science and Technology of China advised by Prof. [Xiaogang Wang](http://www.ee.cuhk.edu.hk/~xgwang/) and Prof. [Wanli Ouyang](https://wlouyang.github.io/). I work closely with Prof. [Tong He](https://tonghe90.github.io/). I earned my B.S. degree in Artificial Intelligence Honor Class at Shanghai Jiao Tong University, advised by Prof. [Cewu Lu](https://mvig.sjtu.edu.cn/). I also have had the privilege of working with Dr. [Hao-Shu Fang](https://fang-haoshu.github.io/) and Dr. [Jim Fan](https://jimfan.me/). My research interests focus on embodied AI and robot manipulation. Feel free to follow me on [<i class="fa-brands fa-twitter"></i>](https://twitter.com/HaoyiZhu) and [<i class="fa-brands fa-github"></i>](https://github.com/HaoyiZhu) for latest research announcements and updates!
+I am a second-year Ph.D. student in Computer Science jointly at Shanghai AI Lab and USTC advised by Prof. [Xiaogang Wang](http://www.ee.cuhk.edu.hk/~xgwang/) and Prof. [Wanli Ouyang](https://wlouyang.github.io/). I work closely with Prof. [Tong He](https://tonghe90.github.io/). I earned my B.S. degree in Artificial Intelligence Honor Class at Shanghai Jiao Tong University, advised by Prof. [Cewu Lu](https://mvig.sjtu.edu.cn/). I also have had the privilege of working with Dr. [Hao-Shu Fang](https://fang-haoshu.github.io/) and Dr. [Jim Fan](https://jimfan.me/). 
+
+*Research for fun and truth.* My current research interests focus on embodied AI, robot manipulation, and 3D vision. Feel free to follow me on [<i class="fa-brands fa-twitter"></i>](https://twitter.com/HaoyiZhu) and [<i class="fa-brands fa-github"></i>](https://github.com/HaoyiZhu) for latest research announcements and updates!
 
 In my personal life, I am passionate (but amateur) about football, music, literature, philosophy, [traditional Chinese painting](#gallery), and [modern Chinese poems](#poems)!
 
-*The philosophers have only interpreted the world, in various ways. The point, however, is to change it.*
+*"The philosophers have only interpreted the world, in various ways. The point, however, is to change it."*
 
 ### ✨ **News** ✨
 
+- **Oct. 2024** [SPA](https://haoyizhu.github.io/spa/) has been [announced](https://x.com/HaoyiZhu/status/1844675411760013471)! [SPA](https://haoyizhu.github.io/spa/) is a novel representation learning framework that emphasizes the importance of 3D spatial awareness in embodied AI. [Paper](https://arxiv.org/abs/2410.08208),[code](https://github.com/HaoyiZhu/SPA), and [pre-trained models](https://huggingface.co/HaoyiZhu/SPA) are all open-sourced! Check it out!
 - **Sep. 2024**: [PointCloudMatters](https://arxiv.org/abs/2402.02500) is accepted by NeurIPS D&B 2024! We prove that explicit representation like point cloud can significantly enhance the performance and generalization ability of robot learning policies. [Codes <i class="fa-brands fa-github"></i>](https://github.com/HaoyiZhu/PointCloudMatters) are open-sourced!
 - **Feb. 2024**: [UniPAD](https://arxiv.org/abs/2310.08370) is accepted by CVPR 2024! Check out our [code on  <i class="fa-brands fa-github"></i>](https://github.com/Nightmare-n/UniPAD)!
 - **Oct. 2023**: [PonderV2](https://arxiv.org/abs/2310.08586) and [UniPAD](https://arxiv.org/abs/2310.08370) has been announced! [PonderV2](https://arxiv.org/abs/2310.08586) is a universal pre-training paradigm for 3D vision, paving the way for 3D foundation model. It achieves SOTA on 11 indoor and outdoor benchmarks. Check out our [paper](https://arxiv.org/abs/2310.08586) and [code](https://github.com/OpenGVLab/PonderV2)!
