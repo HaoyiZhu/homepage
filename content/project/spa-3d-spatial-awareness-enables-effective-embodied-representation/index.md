@@ -46,7 +46,7 @@ links:
   - url: https://github.com/HaoyiZhu/RealRobot
     name: RealWorld Code
 image:
-  filename: spa_pretrain.gif
+  filename: image.gif
   focal_point: Smart
   preview_only: false
 video: spa_pretrain.mp4
