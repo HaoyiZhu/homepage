@@ -55,6 +55,8 @@ I am a second-year Ph.D. student in Computer Science jointly at Shanghai AI Lab 
 
 *Research for fun and truth.* My current research interests focus on embodied AI, robot manipulation, and 3D vision. Feel free to follow me on [<i class="fa-brands fa-twitter"></i>](https://twitter.com/HaoyiZhu) and [<i class="fa-brands fa-github"></i>](https://github.com/HaoyiZhu) for latest research announcements and updates!
 
+[[Curricilum Vitae](https://www.haoyizhu.site/uploads/CV.pdf)]
+
 In my personal life, I am passionate (but amateur) about football, music, literature, philosophy, [traditional Chinese painting](#gallery), and [modern Chinese poems](#poems)!
 
 *"The philosophers have only interpreted the world, in various ways. The point, however, is to change it."*
