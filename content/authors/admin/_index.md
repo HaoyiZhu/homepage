@@ -33,12 +33,12 @@ social:
     icon_pack: fab
     link: https://orcid.org/0000-0003-1153-5230
 organizations:
-  - name: Shanghai AI Lab
+  - name: Shanghai AI Lab & USTC
     url: https://www.shlab.org.cn/
-  - name: USTC
-    url: https://www.ustc.edu.cn/
-  - name: Curricilum Vitae
-  - url: https://www.haoyizhu.site/uploads/CV.pdf
+  # - name: USTC
+  #   url: https://www.ustc.edu.cn/
+  - name: [Curricilum Vitae]
+    url: https://www.haoyizhu.site/uploads/CV.pdf
 
 education:
   courses:
