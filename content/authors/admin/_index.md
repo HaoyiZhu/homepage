@@ -33,10 +33,13 @@ social:
     icon_pack: fab
     link: https://orcid.org/0000-0003-1153-5230
 organizations:
-  - name: Shanghai Artificial Intelligence Laboratory
+  - name: Shanghai AI Lab
     url: https://www.shlab.org.cn/
-  - name: University of Science and Technology of China
+  - name: USTC
     url: https://www.ustc.edu.cn/
+  - name: Curricilum Vitae
+  - url: https://www.haoyizhu.site/uploads/CV.pdf
+
 education:
   courses:
     - course: B.S. in Artificial Intelligence Honor Class
@@ -54,8 +57,6 @@ email: hyizhu1108@gmail.com
 I am a second-year Ph.D. student in Computer Science jointly at Shanghai AI Lab and USTC advised by Prof. [Xiaogang Wang](http://www.ee.cuhk.edu.hk/~xgwang/) and Prof. [Wanli Ouyang](https://wlouyang.github.io/). I work closely with Prof. [Tong He](https://tonghe90.github.io/). I earned my B.S. degree in Artificial Intelligence Honor Class at Shanghai Jiao Tong University, advised by Prof. [Cewu Lu](https://mvig.sjtu.edu.cn/). I also have had the privilege of working with Dr. [Hao-Shu Fang](https://fang-haoshu.github.io/) and Dr. [Jim Fan](https://jimfan.me/). 
 
 *Research for fun and truth.* My current research interests focus on embodied AI, robot manipulation, and 3D vision. Feel free to follow me on [<i class="fa-brands fa-twitter"></i>](https://twitter.com/HaoyiZhu) and [<i class="fa-brands fa-github"></i>](https://github.com/HaoyiZhu) for latest research announcements and updates!
-
-[[Curricilum Vitae](https://www.haoyizhu.site/uploads/CV.pdf)]
 
 In my personal life, I am passionate (but amateur) about football, music, literature, philosophy, [traditional Chinese painting](#gallery), and [modern Chinese poems](#poems)!
 
