@@ -43,7 +43,7 @@ header:
 
 footer:
   copyright:
-    notice: '© {year} Haoyi Zhu. Published with Wowchemy.'
+    notice: 'Published with Wowchemy.'
     license:
       enable: false
       allow_derivatives: false
