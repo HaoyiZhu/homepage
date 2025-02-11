@@ -28,26 +28,26 @@ date_format: Jan 2006
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
   - title: Ph.D in Computer Science
-    company: Shanghai AI Lab & USTC
-    company_url: 'https://www.shlab.org.cn/'
-    company_logo: org-shailab
+    company: USTC
+    company_url: 'https://en.ustc.edu.cn/'
+    company_logo: org-ustc
     location: Shanghai, China
     date_start: '2023-09-01'
     date_end: ''
     description: |2-
-        * Joint Ph.D. at Shanghai AI Lab and USTC.
-        * Doctoral advisor: Prof. [Wanli Ouyang](https://wlouyang.github.io/) and Prof. [Xiaogang Wang](http://www.ee.cuhk.edu.hk/~xgwang/)
+        * Ph.D. at USTC.
+        * Doctoral advisor: Prof. [Tong He](https://tonghe90.github.io/), Prof. [Wanli Ouyang](https://wlouyang.github.io/) and Prof. [Xiaogang Wang](http://www.ee.cuhk.edu.hk/~xgwang/)
   
   - title: Research Intern
     company: Shanghai AI Lab
     company_url: 'https://www.shlab.org.cn/'
     company_logo: org-shailab
     location: Shanghai, China
-    date_start: '2022-11-01'
+    date_start: '2023-09-01'
     date_end: ''
     description: |2-
-        * Conducting AI research on 3D vision, foundation model and Embodied AI.
-        * Joint Ph.D. with USTC.
+        * Conducting AI research on 3D vision, world model and Embodied AI.
+        * Published several first-author papers at T-PAMI, NeurIPS, ICLR, etc.
 
   - title: B.S. in Artificial Intelligence
     company: MVIG, SJTU
