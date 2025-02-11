@@ -54,7 +54,7 @@ highlight_name: true
 first_name: Haoyi
 email: hyizhu1108@gmail.com
 ---
-I am a second-year Ph.D. student in Computer Science at University of Science and Technology of China (USTC) advised by Prof. [Tong He](https://tonghe90.github.io/), Prof. [Wanli Ouyang](https://wlouyang.github.io/) and Prof. [Xiaogang Wang](http://www.ee.cuhk.edu.hk/~xgwang/). I earned my B.S. degree in Artificial Intelligence Honor Class at Shanghai Jiao Tong University, advised by Prof. [Cewu Lu](https://mvig.sjtu.edu.cn/). I also have had the privilege of working with Dr. [Hao-Shu Fang](https://fang-haoshu.github.io/) and Dr. [Jim Fan](https://jimfan.me/). 
+I am a second-year Ph.D. student in Computer Science at University of Science and Technology of China (USTC) advised by Prof. [Tong He](https://tonghe90.github.io/), Prof. [Wanli Ouyang](https://wlouyang.github.io/) and Prof. [Xiaogang Wang](http://www.ee.cuhk.edu.hk/~xgwang/). I earned my B.S. degree in Artificial Intelligence Honor Class at Shanghai Jiao Tong University (SJTU), advised by Prof. [Cewu Lu](https://mvig.sjtu.edu.cn/). I also have had the privilege of working with Dr. [Hao-Shu Fang](https://fang-haoshu.github.io/) and Dr. [Jim Fan](https://jimfan.me/). 
 
 *Research for fun and truth.* My current research interests focus on embodied AI, robot manipulation, and 3D vision. Feel free to follow me on [<i class="fa-brands fa-twitter"></i>](https://twitter.com/HaoyiZhu) and [<i class="fa-brands fa-github"></i>](https://github.com/HaoyiZhu) for latest research announcements and updates!
 
