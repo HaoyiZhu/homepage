@@ -11,7 +11,7 @@ authors:
   - Limin Wang
   - Tong He
 publication_short: ""
-publication: "*arXiv preprint, 2024*"
+publication: "*The Thirteenth International Conference on Learning Representations (ICLR), 2025.*"
 author_notes:
   - ""
   - ""

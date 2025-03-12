@@ -2,11 +2,11 @@
 title: Haoyi Zhu 朱皓怡
 role: Ph.D student in Computer Science
 avatar_filename: avatar.jpg
-bio: My research interests include embodied AI, computer vision and robot learning.
+bio: My research interests include World Model, Embodied AI and Spatial Intelligence.
 interests:
+  - World Model
   - Embodied AI
-  - Computer Vision
-  - Robot Learning
+  - Spatial Intelligence
 social:
   - icon: envelope
     icon_pack: fas
@@ -56,7 +56,7 @@ email: hyizhu1108@gmail.com
 ---
 I am a second-year Ph.D. student in Computer Science at University of Science and Technology of China (USTC) advised by Prof. [Tong He](https://tonghe90.github.io/), Prof. [Wanli Ouyang](https://wlouyang.github.io/) and Prof. [Xiaogang Wang](http://www.ee.cuhk.edu.hk/~xgwang/). I earned my B.S. degree in Artificial Intelligence Honor Class at Shanghai Jiao Tong University (SJTU), advised by Prof. [Cewu Lu](https://mvig.sjtu.edu.cn/). I also have had the privilege of working with Dr. [Hao-Shu Fang](https://fang-haoshu.github.io/) and Dr. [Jim Fan](https://jimfan.me/). 
 
-*Research for fun and truth.* My current research interests focus on embodied AI, robot manipulation, and 3D vision. Feel free to follow me on [<i class="fa-brands fa-twitter"></i>](https://twitter.com/HaoyiZhu) and [<i class="fa-brands fa-github"></i>](https://github.com/HaoyiZhu) for latest research announcements and updates!
+*Research for fun and truth.* My current research interests focus on World Model, Embodied AI and Spatial Intelligence. The ultimate goal of my life is to *discover myself, find the truth, and change the world*! Feel free to follow me on [<i class="fa-brands fa-twitter"></i>](https://twitter.com/HaoyiZhu) and [<i class="fa-brands fa-github"></i>](https://github.com/HaoyiZhu) for latest research announcements and updates!
 
 In my personal life, I am passionate (but amateur) about football, music, literature, philosophy, [traditional Chinese painting](#gallery), and [modern Chinese poems](#poems)!
 
@@ -64,6 +64,7 @@ In my personal life, I am passionate (but amateur) about football, music, litera
 
 ### ✨ **News** ✨
 
+- **Feb. 2025** [SPA](https://haoyizhu.github.io/spa/) has been accepted by **ICLR 2025** and [Tra-MoE](https://arxiv.org/abs/2411.14519) has been accepted by **CVPR 2025**! Check them out!
 - **Oct. 2024** [SPA](https://haoyizhu.github.io/spa/) has been [announced](https://x.com/HaoyiZhu/status/1844675411760013471)! [SPA](https://haoyizhu.github.io/spa/) is a novel representation learning framework that emphasizes the importance of 3D spatial awareness in embodied AI. [Paper](https://arxiv.org/abs/2410.08208),[code](https://github.com/HaoyiZhu/SPA), and [pre-trained models](https://huggingface.co/HaoyiZhu/SPA) are all open-sourced! Check it out!
 - **Sep. 2024**: [PointCloudMatters](https://arxiv.org/abs/2402.02500) is accepted by NeurIPS D&B 2024! We prove that explicit representation like point cloud can significantly enhance the performance and generalization ability of robot learning policies. [Codes <i class="fa-brands fa-github"></i>](https://github.com/HaoyiZhu/PointCloudMatters) are open-sourced!
 - **Feb. 2024**: [UniPAD](https://arxiv.org/abs/2310.08370) is accepted by CVPR 2024! Check out our [code on  <i class="fa-brands fa-github"></i>](https://github.com/Nightmare-n/UniPAD)!
