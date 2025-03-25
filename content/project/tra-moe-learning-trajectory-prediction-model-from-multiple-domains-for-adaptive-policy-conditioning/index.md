@@ -24,8 +24,10 @@ authors:
   - Limin Wang
 tags:
   - Embodied AI
+  - Robot Learning
 categories:
   - Embodied AI
+  - Robot Learning
 external_link: https://arxiv.org/abs/2411.14519
 links:
   - url: https://arxiv.org/pdf/2411.14519
