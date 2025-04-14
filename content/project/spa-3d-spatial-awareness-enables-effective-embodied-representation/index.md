@@ -45,6 +45,8 @@ links:
     name: HuggingFace Model
   - url: https://github.com/HaoyiZhu/RealRobot
     name: RealWorld Code
+  - url: https://www.youtube.com/watch?v=LS2R-kBxxwY
+    name: YouTube Video
 image:
   filename: image.gif
   focal_point: Smart
