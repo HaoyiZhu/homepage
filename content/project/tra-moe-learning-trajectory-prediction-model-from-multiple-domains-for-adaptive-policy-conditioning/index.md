@@ -10,7 +10,7 @@ date: 2025-02-28T00:00:00Z
 publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025.*"
+publication: "*Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025*"
 publication_short: ""
 
 draft: false

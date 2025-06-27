@@ -15,7 +15,7 @@ authors:
   - Jiangmiao Pang
   - Tong He
 publication_short: ""
-publication: "*arXiv preprint, 2025.*"
+publication: "*International Conference on Computer Vision, (ICCV) 2025*"
 author_notes:
   - ""
   - ""
@@ -44,7 +44,7 @@ links:
   - url: https://aether-world.github.io/assets/aether.pdf
     name: PDF
   - url: https://arxiv.org/abs/2503.18945
-    name: Arxiv
+    name: arXiv
   - name: Code
     url: https://github.com/OpenRobotLab/Aether
 image:

@@ -10,7 +10,7 @@ date: 2023-10-12T00:00:00Z
 publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2024.*"
+publication: "*Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2024*"
 publication_short: ""
 
 draft: false

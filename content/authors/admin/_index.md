@@ -64,7 +64,10 @@ In my personal life, I am passionate (but amateur) about football, music, litera
 
 ### ✨ **News** ✨
 
+- **Jun. 2025**: [Aether](https://aether-world.github.io/) and [VQ-VLA] are accepted by ICCV 2025!
+- **Jun. 2025**: [DeepVerse](https://sotamak1r.github.io/deepverse/) has been released! [DeepVerse](https://sotamak1r.github.io/deepverse/) is an auto-regressive 4D world model. It demonstrates exceptional capabilities in modeling dynamics, geometry, and physical laws. Check out our [paper](https://www.arxiv.org/abs/2506.01103) and [website](https://sotamak1r.github.io/deepverse/) for more details!
 - **Mar. 2025**: [Aether](https://aether-world.github.io/) has been announced! [Aether](https://aether-world.github.io/) is a geometric-aware unified world model, capable of 4D reconstruction, action-conditioned prediction, and visual planning. Check out our [paper](https://arxiv.org/abs/2503.18945) and [website](https://aether-world.github.io/) for more details!
+- **Apr. 2025**: [PonderV2](https://arxiv.org/abs/2310.08586) is accepted by T-PAMI 2025!
 - **Feb. 2025**: [SPA](https://haoyizhu.github.io/spa/) has been accepted by **ICLR 2025** and [Tra-MoE](https://arxiv.org/abs/2411.14519) has been accepted by **CVPR 2025**! Check them out!
 - **Oct. 2024**: [SPA](https://haoyizhu.github.io/spa/) has been [announced](https://x.com/HaoyiZhu/status/1844675411760013471)! [SPA](https://haoyizhu.github.io/spa/) is a novel representation learning framework that emphasizes the importance of 3D spatial awareness in embodied AI. [Paper](https://arxiv.org/abs/2410.08208),[code](https://github.com/HaoyiZhu/SPA), and [pre-trained models](https://huggingface.co/HaoyiZhu/SPA) are all open-sourced! Check it out!
 - **Sep. 2024**: [PointCloudMatters](https://arxiv.org/abs/2402.02500) is accepted by NeurIPS D&B 2024! We prove that explicit representation like point cloud can significantly enhance the performance and generalization ability of robot learning policies. [Codes <i class="fa-brands fa-github"></i>](https://github.com/HaoyiZhu/PointCloudMatters) are open-sourced!
