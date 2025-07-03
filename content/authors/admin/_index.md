@@ -64,7 +64,7 @@ In my personal life, I am passionate (but amateur) about football, music, litera
 
 ### ✨ **News** ✨
 
-- **Jun. 2025**: [Aether](https://aether-world.github.io/) and [VQ-VLA] are accepted by ICCV 2025!
+- **Jun. 2025**: [Aether](https://aether-world.github.io/) and [VQ-VLA](https://xiaoxiao0406.github.io/vqvla.github.io/) are accepted by ICCV 2025!
 - **Jun. 2025**: [DeepVerse](https://sotamak1r.github.io/deepverse/) has been released! [DeepVerse](https://sotamak1r.github.io/deepverse/) is an auto-regressive 4D world model. It demonstrates exceptional capabilities in modeling dynamics, geometry, and physical laws. Check out our [paper](https://www.arxiv.org/abs/2506.01103) and [website](https://sotamak1r.github.io/deepverse/) for more details!
 - **Mar. 2025**: [Aether](https://aether-world.github.io/) has been announced! [Aether](https://aether-world.github.io/) is a geometric-aware unified world model, capable of 4D reconstruction, action-conditioned prediction, and visual planning. Check out our [paper](https://arxiv.org/abs/2503.18945) and [website](https://aether-world.github.io/) for more details!
 - **Apr. 2025**: [PonderV2](https://arxiv.org/abs/2310.08586) is accepted by T-PAMI 2025!

@@ -32,7 +32,7 @@ tags:
   - Computer Vision
 categories:
   - Embodied AI
-  - Robot Learning
+  - Computer Vision
 external_link: https://sotamak1r.github.io/deepverse/
 links:
   - url: https://sotamak1r.github.io/deepverse/
