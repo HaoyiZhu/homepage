@@ -1,6 +1,6 @@
 ---
-title: "DeepVerse: 4D Autoregressive Video Generation as a World Model"
-subtitle: "*arXiv preprint, 2025*"
+title: "VQ-VLA: Improving Vision-Language-Action Models via Scaling Vector-Quantized Action Tokenizers"
+subtitle: "*ICCV, 2025*"
 date: 2025-07-03T00:00:00Z
 
 # Publication type.
