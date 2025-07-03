@@ -15,7 +15,7 @@ authors:
   - Jiangmiao Pang
   - Tong He
 publication_short: ""
-publication: "*International Conference on Computer Vision, (ICCV) 2025*"
+publication: "*International Conference on Computer Vision (ICCV), 2025*"
 author_notes:
   - ""
   - ""
