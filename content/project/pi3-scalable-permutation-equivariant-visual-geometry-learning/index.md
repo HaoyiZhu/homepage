@@ -1,5 +1,5 @@
 ---
-title: "$\pi^3$: Scalable Permutation-Equivariant Visual Geometry Learning"
+title: "$\\pi^3$: Scalable Permutation-Equivariant Visual Geometry Learning"
 subtitle: "*arXiv preprint, 2025*"
 date: 2025-07-22T00:00:00Z
 
