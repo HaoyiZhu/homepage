@@ -64,6 +64,7 @@ In my personal life, I am passionate (but amateur) about football, music, litera
 
 ### ✨ **News** ✨
 
+- **Jul. 2025**: [$\pi^3$](https://yyfz.github.io/pi3/) has been [announced](https://x.com/yyfz321021/status/1947135469294371225)! [$\pi^3$](https://yyfz.github.io/pi3/) is a novel feed-forward neural network that revolutionizes visual geometry reconstruction by eliminating the need for a fixed reference view. [Paper](https://arxiv.org/abs/2507.13347), [code](https://github.com/yyfz/Pi3), and [demo](https://huggingface.co/spaces/yyfz233/Pi3) are all open access. Check it out today!
 - **Jun. 2025**: [Aether](https://aether-world.github.io/) and [VQ-VLA](https://xiaoxiao0406.github.io/vqvla.github.io/) are accepted by ICCV 2025!
 - **Jun. 2025**: [DeepVerse](https://sotamak1r.github.io/deepverse/) has been released! [DeepVerse](https://sotamak1r.github.io/deepverse/) is an auto-regressive 4D world model. It demonstrates exceptional capabilities in modeling dynamics, geometry, and physical laws. Check out our [paper](https://www.arxiv.org/abs/2506.01103) and [website](https://sotamak1r.github.io/deepverse/) for more details!
 - **Mar. 2025**: [Aether](https://aether-world.github.io/) has been announced! [Aether](https://aether-world.github.io/) is a geometric-aware unified world model, capable of 4D reconstruction, action-conditioned prediction, and visual planning. Check out our [paper](https://arxiv.org/abs/2503.18945) and [website](https://aether-world.github.io/) for more details!
