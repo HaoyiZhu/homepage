@@ -11,8 +11,8 @@ date: 2023-10-13T00:00:00Z
 publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI), 2025*"
-publication_short: "arXiv preprint"
+publication: "*IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI), 2025.*"
+publication_short: ""
 
 draft: false
 featured: false

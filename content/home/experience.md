@@ -35,8 +35,9 @@ experience:
     date_start: '2023-09-01'
     date_end: ''
     description: |2-
-        * Ph.D. at USTC.
-        * Doctoral advisor: Prof. [Tong He](https://tonghe90.github.io/), Prof. [Wanli Ouyang](https://wlouyang.github.io/) and Prof. [Xiaogang Wang](http://www.ee.cuhk.edu.hk/~xgwang/)
+        * Ph.D. at USTC, majoring in Computer Science..
+        * Doctoral advisor: Prof. [Tong He](https://tonghe90.github.io/), Prof. [Wanli Ouyang](https://wlouyang.github.io/) and Prof. [Xiaogang Wang](http://www.ee.cuhk.edu.hk/~xgwang/).
+        * Won the **National Scholarship** and the **First Price Academic Scholarship** at USTC.
   
   - title: Research Intern
     company: Shanghai AI Lab
@@ -47,7 +48,8 @@ experience:
     date_end: ''
     description: |2-
         * Conducting AI research on 3D vision, world model and Embodied AI.
-        * Published several first-author papers at T-PAMI, NeurIPS, ICLR, etc.
+        * Published several first-author papers at T-PAMI, NeurIPS, ICLR, ICCV, etc.
+        * [Aether](https://aether-world.github.io/) won the **Outstanding Paper Award** and presented an **Oral Presentation** at ICCV 2025 RIWM workshop.
 
   - title: B.S. in Artificial Intelligence
     company: MVIG, SJTU

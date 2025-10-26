@@ -15,7 +15,7 @@ authors:
   - Jiangmiao Pang
   - Tong He
 publication_short: ""
-publication: "*International Conference on Computer Vision (ICCV), 2025*"
+publication: "*💫✨ Outstanding Paper Award ✨💫 at 1st ICCV workshop on Reliable and Interactive World Models (RIWM), 2025 & International Conference on Computer Vision (ICCV), 2025*"
 author_notes:
   - ""
   - ""
