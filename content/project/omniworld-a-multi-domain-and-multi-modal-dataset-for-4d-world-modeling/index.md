@@ -16,7 +16,7 @@ publication_short: ""
 draft: false
 featured: false
 authors:
-  - "... "
+  - ...
   - admin
   - "... (19 authors)"
 tags:
