@@ -1,5 +1,5 @@
 ---
-title: "WinT3R: Window-Based Streaming Reconstruction With Camera Token Pool"
+title: "OmniWorld: A Multi-Domain and Multi-Modal Dataset for 4D World Modeling"
 subtitle: "*arXiv 2025*"
 date: 2025-09-12T00:00:00Z
 
@@ -16,7 +16,7 @@ publication_short: ""
 draft: false
 featured: false
 authors:
-  - "..."
+  - "... "
   - admin
   - "... (19 authors)"
 tags:
