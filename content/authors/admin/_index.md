@@ -37,8 +37,8 @@ organizations:
     url: https://en.ustc.edu.cn/
   # - name: USTC
   #   url: https://www.ustc.edu.cn/
-  - name: [Curricilum Vitae]
-    url: https://www.haoyizhu.site/uploads/CV.pdf
+  # - name: [Curricilum Vitae]
+  #   url: https://www.haoyizhu.site/uploads/CV.pdf
 
 education:
   courses:
