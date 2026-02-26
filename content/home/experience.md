@@ -38,18 +38,30 @@ experience:
         * Ph.D. at USTC, majoring in Computer Science..
         * Doctoral advisor: Prof. [Tong He](https://tonghe90.github.io/), Prof. [Wanli Ouyang](https://wlouyang.github.io/) and Prof. [Xiaogang Wang](http://www.ee.cuhk.edu.hk/~xgwang/).
         * Won the **National Scholarship** and the **First Price Academic Scholarship** at USTC.
-  
+        * Conducting AI research on 3D vision, world model, and Embodied AI. Published several first-author papers at T-PAMI, NeurIPS, ICLR, ICCV, etc.
+        * [Aether](https://aether-world.github.io/) won the **Outstanding Paper Award** and presented an **Oral Presentation** at ICCV 2025 RIWM workshop.
+
   - title: Research Intern
-    company: Shanghai AI Lab
-    company_url: 'https://www.shlab.org.cn/'
-    company_logo: org-shailab
+    company: SANA team, Efficient AI Lab, NVIDIA
+    company_url: 'https://research.nvidia.com/person/enze-xie'
+    company_logo: org-nvidia
     location: Shanghai, China
-    date_start: '2023-09-01'
+    date_start: '2025-12-01'
     date_end: ''
     description: |2-
-        * Conducting AI research on 3D vision, world model and Embodied AI.
-        * Published several first-author papers at T-PAMI, NeurIPS, ICLR, ICCV, etc.
-        * [Aether](https://aether-world.github.io/) won the **Outstanding Paper Award** and presented an **Oral Presentation** at ICCV 2025 RIWM workshop.
+        * Research on efficient world models.
+    
+  #  - title: Research Intern
+  #    company: Shanghai AI Lab
+  #    company_url: 'https://www.shlab.org.cn/'
+  #    company_logo: org-shailab
+  #    location: Shanghai, China
+  #    date_start: '2023-09-01'
+  #    date_end: '2025-11-30'
+  #    description: |2-
+  #        * Conducting AI research on 3D vision, world model and Embodied AI.
+  #        * Published several first-author papers at T-PAMI, NeurIPS, ICLR, ICCV, etc.
+  #        * [Aether](https://aether-world.github.io/) won the **Outstanding Paper Award** and presented an **Oral Presentation** at ICCV 2025 RIWM workshop.
 
   - title: B.S. in Artificial Intelligence
     company: MVIG, SJTU
@@ -65,7 +77,7 @@ experience:
         * Research on computer vision and robotics at MVIG advised by [Dr. Hao-shu Fang](https://fang-haoshu.github.io/) and [Prof. Cewu Lu](https://mvig.sjtu.edu.cn/).
 
   - title: Remote Research Intern
-    company: Jim Team, NVIDIA AI Lab and Caltech
+    company: Jim Fan's Team (current GEAR Lab), NVIDIA AI Lab & Caltech
     company_url: 'https://research.nvidia.com/person/linxi-jim-fan'
     company_logo: org-nvidia
     location: Shanghai, China
