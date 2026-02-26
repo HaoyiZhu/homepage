@@ -64,6 +64,7 @@ In my personal life, I am passionate (but amateur) about football, music, litera
 
 ### ✨ **News** ✨
 
+- **Jan. 2025**: [$\pi^3$](https://yyfz.github.io/pi3/), [WinT3R](https://lizizun.github.io/WinT3R.github.io/), and [OmniWorld](https://yangzhou24.github.io/OmniWorld/) have been accepted by ICLR 2026!
 - **Oct. 2025**: [Aether](https://aether-world.github.io/) has won 🎉 *Outstanding Paper Award* 🎉 and has presented an *Oral Presentation* at ICCV 2025 RIWM workshop!
 - **Sep. 2025**: [OmniWorld](https://yangzhou24.github.io/OmniWorld/) has been released! It is a multi-domain and multi-modal dataset for 4D world modeling. Check it out today!
 - **Sep. 2025**: [WinT3R](https://lizizun.github.io/WinT3R.github.io/) has been announced! It is a feed-forward reconstruction model capable of online prediction of precise camera poses and high-quality point maps. Check it out!
