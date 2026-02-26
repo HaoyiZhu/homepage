@@ -46,7 +46,7 @@ education:
       institution: Shanghai Jiao Tong University
       year: 2019 - 2023
     - course: Ph.D. in Computer Science
-      institution: USTC
+      institution: University of Science and Technology of China
       year: 2023 - Present
 superuser: true
 last_name: Zhu
