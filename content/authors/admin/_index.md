@@ -37,6 +37,8 @@ organizations:
     url: https://en.ustc.edu.cn/
   - name: Shanghai AI Lab
     url: https://www.shlab.org.cn/
+  - name: Curriculum Vitae
+    url: uploads/CV.pdf
 
 education:
   courses:
