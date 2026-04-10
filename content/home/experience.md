@@ -49,19 +49,20 @@ experience:
     date_start: '2025-12-01'
     date_end: ''
     description: |2-
-        * Research on efficient world models.
+        * Research on efficient world models. Working on [SANA-WM](https://github.com/NVlabs/SANA).
+        * Supervised by [Dr. Enze Xie](https://xieenze.github.io/) and [Prof. Song Han](https://hanlab.mit.edu/songhan).
     
-  #  - title: Research Intern
-  #    company: Shanghai AI Lab
-  #    company_url: 'https://www.shlab.org.cn/'
-  #    company_logo: org-shailab
-  #    location: Shanghai, China
-  #    date_start: '2023-09-01'
-  #    date_end: '2025-11-30'
-  #    description: |2-
-  #        * Conducting AI research on 3D vision, world model and Embodied AI.
-  #        * Published several first-author papers at T-PAMI, NeurIPS, ICLR, ICCV, etc.
-  #        * [Aether](https://aether-world.github.io/) won the **Outstanding Paper Award** and presented an **Oral Presentation** at ICCV 2025 RIWM workshop.
+  - title: Research Intern
+    company: Shanghai AI Lab
+    company_url: 'https://www.shlab.org.cn/'
+    company_logo: org-shailab
+    location: Shanghai, China
+    date_start: '2023-09-01'
+    date_end: '2025-11-30'
+    description: |2-
+        * Conducting AI research on 3D vision, world model and Embodied AI.
+        * Published several first-author papers at T-PAMI, NeurIPS, ICLR, ICCV, etc.
+        * [Aether](https://aether-world.github.io/) won the **Outstanding Paper Award** and presented an **Oral Presentation** at ICCV 2025 RIWM workshop.
 
   - title: B.S. in Artificial Intelligence
     company: MVIG, SJTU
@@ -77,7 +78,7 @@ experience:
         * Research on computer vision and robotics at MVIG advised by [Dr. Hao-shu Fang](https://fang-haoshu.github.io/) and [Prof. Cewu Lu](https://mvig.sjtu.edu.cn/).
 
   - title: Remote Research Intern
-    company: Jim Fan's Team (current GEAR Lab), NVIDIA AI Lab & Caltech
+    company: Jim Fan's Team (current GEAR Lab), NVIDIA AI Lab
     company_url: 'https://research.nvidia.com/person/linxi-jim-fan'
     company_logo: org-nvidia
     location: Shanghai, China

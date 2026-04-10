@@ -22,7 +22,7 @@ author_notes:
 title: "SPA: 3D Spatial-Awareness Enables Effective Embodied Representation"
 subtitle: "SPA"
 date: 2024-10-11T00:00:00.000Z
-featured: true
+featured: false
 tags:
   - Embodied AI
   - Computer Vision
