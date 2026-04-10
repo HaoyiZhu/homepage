@@ -32,13 +32,15 @@ social:
   - icon: orcid
     icon_pack: fab
     link: https://orcid.org/0000-0003-1153-5230
+  - icon: cv
+    icon_pack: ai
+    link: uploads/CV.pdf
+    label: Download my CV
 organizations:
   - name: USTC
     url: https://en.ustc.edu.cn/
   - name: Shanghai AI Lab
     url: https://www.shlab.org.cn/
-  - name: Curriculum Vitae
-    url: uploads/CV.pdf
 
 education:
   courses:
