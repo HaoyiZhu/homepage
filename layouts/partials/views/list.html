@@ -28,7 +28,7 @@
   <i class="{{$icon_pack}} {{$icon}} pub-icon" aria-hidden="true"></i>
   <a href="{{$link}}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>
 
-  {{ if eq $item.Type "event" }}
+  {{ if or (eq $item.Type "event") (eq $item.Type "poem") }}
   <div class="article-metadata">
     <span>
       {{ partial "functions/get_event_dates" $item }}
