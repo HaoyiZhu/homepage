@@ -66,11 +66,19 @@ In my personal life, I am passionate (but amateur) about football, music, litera
 
 ### ✨ **News** ✨
 
-- **Jan. 2026**: [$\pi^3$](https://yyfz.github.io/pi3/), [WinT3R](https://lizizun.github.io/WinT3R.github.io/), and [OmniWorld](https://yangzhou24.github.io/OmniWorld/) have been accepted by **ICLR 2026**!
-- **Oct. 2025**: I have won the **National Scholarship** and the **First Price Academic Scholarship** at USTC!
-- **Oct. 2025**: [Aether](https://aether-world.github.io/) has won **Outstanding Paper Award** and presented an **Oral Presentation** at ICCV 2025 RIWM workshop!
-- **Jun. 2025**: [Aether](https://aether-world.github.io/) and [VQ-VLA](https://xiaoxiao0406.github.io/vqvla.github.io/) are accepted by **ICCV 2025**! [DeepVerse](https://sotamak1r.github.io/deepverse/) released!
+- **Jan. 2026**: [$\pi^3$](https://yyfz.github.io/pi3/), [WinT3R](https://lizizun.github.io/WinT3R.github.io/), and [OmniWorld](https://yangzhou24.github.io/OmniWorld/) accepted by **ICLR 2026**!
+- **Oct. 2025**: Won the **National Scholarship** and the **First Price Academic Scholarship** at USTC!
+- **Oct. 2025**: [Aether](https://aether-world.github.io/) won **Outstanding Paper Award** and **Oral Presentation** at ICCV 2025 RIWM workshop!
+- **Sep. 2025**: [OmniWorld](https://yangzhou24.github.io/OmniWorld/) released — a multi-domain and multi-modal dataset for 4D world modeling.
+- **Sep. 2025**: [WinT3R](https://lizizun.github.io/WinT3R.github.io/) released — feed-forward reconstruction with online camera pose and point map prediction.
+- **Jul. 2025**: [$\pi^3$](https://yyfz.github.io/pi3/) [announced](https://x.com/yyfz321021/status/1947135469294371225) — reference-free visual geometry reconstruction. [Paper](https://arxiv.org/abs/2507.13347), [code](https://github.com/yyfz/Pi3), [demo](https://huggingface.co/spaces/yyfz233/Pi3).
+- **Jun. 2025**: [Aether](https://aether-world.github.io/) and [VQ-VLA](https://xiaoxiao0406.github.io/vqvla.github.io/) accepted by **ICCV 2025**!
+- **Jun. 2025**: [DeepVerse](https://sotamak1r.github.io/deepverse/) released — an auto-regressive 4D world model.
 - **Feb. 2025**: [SPA](https://haoyizhu.github.io/spa/) accepted by **ICLR 2025**; [Tra-MoE](https://arxiv.org/abs/2411.14519) accepted by **CVPR 2025**.
-- **Sep. 2024**: [PointCloudMatters](https://arxiv.org/abs/2402.02500) accepted by **NeurIPS D&B 2024**.
-- **Oct. 2023**: [PonderV2](https://arxiv.org/abs/2310.08586) and [UniPAD](https://arxiv.org/abs/2310.08370) announced.
-- **Nov. 2022**: [MineDojo](https://minedojo.org/) won **Outstanding Paper Award** at **NeurIPS 2022**! [AlphaPose](http://arxiv.org/abs/2211.03375) accepted by **TPAMI**.
+- **Oct. 2024**: [SPA](https://haoyizhu.github.io/spa/) [announced](https://x.com/HaoyiZhu/status/1844675411760013471) — 3D spatial awareness for embodied AI. [Paper](https://arxiv.org/abs/2410.08208), [code](https://github.com/HaoyiZhu/SPA), [models](https://huggingface.co/HaoyiZhu/SPA).
+- **Sep. 2024**: [PointCloudMatters](https://arxiv.org/abs/2402.02500) accepted by **NeurIPS D&B 2024**. [Code](https://github.com/HaoyiZhu/PointCloudMatters).
+- **Oct. 2023**: [PonderV2](https://arxiv.org/abs/2310.08586) and [UniPAD](https://arxiv.org/abs/2310.08370) announced — universal pre-training for 3D vision.
+- **Jul. 2023**: [RH20T](https://rh20t.github.io/) announced — a large-scale real-world robotic dataset.
+- **Nov. 2022**: [MineDojo](https://minedojo.org/) won **Outstanding Paper Award** at **NeurIPS 2022**!
+- **Nov. 2022**: [AlphaPose](http://arxiv.org/abs/2211.03375) accepted by **TPAMI** — 8.3K+ stars on [GitHub](https://github.com/MVIG-SJTU/AlphaPose).
+- **Jun. 2022**: [MineDojo](https://minedojo.org/) [announced](https://twitter.com/DrJimFan/status/1540381991052247041) — open-ended agents with internet-scale knowledge in Minecraft.
