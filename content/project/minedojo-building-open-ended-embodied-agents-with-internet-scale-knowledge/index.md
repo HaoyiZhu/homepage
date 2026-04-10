@@ -30,7 +30,7 @@ author_notes:
 title: "MineDojo: Building Open-Ended Embodied Agents with Internet-Scale Knowledge"
 subtitle: "MineDojo"
 date: 2022-06-17T00:00:00.000Z
-featured: true
+featured: false
 tags:
   - Embodied AI
   - Computer Vision

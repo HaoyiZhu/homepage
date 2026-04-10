@@ -9,7 +9,6 @@ subtitle: Visit my [Google Scholar <i class="fa-solid
   page for a comprehensive listing!
 active: true
 content:
-  count: 5
   filters:
     folders:
       - project
