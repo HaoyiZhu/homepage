@@ -20,8 +20,10 @@ authors:
   - admin
   - "... (19 authors)"
 tags:
+  - World Model
   - Computer Vision
 categories:
+  - World Model
   - Computer Vision
 external_link: https://yangzhou24.github.io/OmniWorld/
 links:

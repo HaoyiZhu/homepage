@@ -7,6 +7,7 @@ title: Poems
 subtitle: Some of my modern Chinese poems
 active: true
 content:
+  count: 5
   filters:
     folders:
       - poem

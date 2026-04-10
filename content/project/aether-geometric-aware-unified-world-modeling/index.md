@@ -32,9 +32,11 @@ subtitle: "Aether"
 date: 2025-03-25T00:00:00.000Z
 featured: true
 tags:
+  - World Model
   - Embodied AI
   - Computer Vision
 categories:
+  - World Model
   - Embodied AI
   - Computer Vision
 external_link: https://aether-world.github.io/

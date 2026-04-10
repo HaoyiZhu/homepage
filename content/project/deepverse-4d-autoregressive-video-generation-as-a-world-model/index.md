@@ -28,9 +28,11 @@ authors:
   - Jiangmiao Pang
   - Tong He
 tags:
+  - World Model
   - Embodied AI
   - Computer Vision
 categories:
+  - World Model
   - Embodied AI
   - Computer Vision
 external_link: https://sotamak1r.github.io/deepverse/
