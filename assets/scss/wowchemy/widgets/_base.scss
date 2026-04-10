@@ -242,14 +242,22 @@
 
 .gallery-grid {
   display: grid !important;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 10px !important;
+  position: relative !important;
 }
 
-.gallery-item {
+.gallery-item,
+.gallery-item.gallery-item--medium,
+.gallery-item.gallery-item--large,
+.gallery-item.gallery-item--full {
+  position: relative !important;
+  width: 100% !important;
+  height: auto !important;
   aspect-ratio: 1 / 1;
   overflow: hidden;
   border-radius: 4px;
+  float: none !important;
 }
 
 .gallery-item a {
@@ -262,4 +270,5 @@
   width: 100% !important;
   height: 100% !important;
   object-fit: cover !important;
+  position: relative !important;
 }
