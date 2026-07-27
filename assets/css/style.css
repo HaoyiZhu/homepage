@@ -169,8 +169,8 @@ html.js .hero-name .ltr {
 /* vertical calligraphy name */
 .name-row { display: flex; align-items: stretch; gap: clamp(24px, 3.5vw, 52px); }
 .name-cjk {
-  display: flex; flex-direction: column; justify-content: space-between;
-  margin: 24px 0 22px;
+  display: flex; flex-direction: column; justify-content: center;
+  gap: clamp(4px, .6vw, 9px); margin: 26px 0;
   font-family: 'NameCJK', 'Kaiti SC', 'STKaiti', serif;
   font-size: clamp(30px, 3.4vw, 46px); line-height: 1;
   color: var(--fg);
