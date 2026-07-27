@@ -1,0 +1,164 @@
+{{ define "main" }}
+{{ $p := hugo.Data.profile }}
+{{ $projects := where site.RegularPages "Section" "project" }}
+{{ $featured := where $projects "Params.featured" true }}
+{{ $selected := where $projects "Params.selected" true }}
+{{ $poems := where site.RegularPages "Section" "poem" }}
+{{ $news := hugo.Data.news }}
+
+<!-- ============ HERO ============ -->
+<section id="about" class="hero">
+  <div class="aurora" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="name-row">
+        <h1 class="hero-name" aria-label="Haoyi Zhu">
+          <span aria-hidden="true"><i class="ltr" style="--i:0">H</i><i class="ltr" style="--i:1">a</i><i class="ltr" style="--i:2">o</i><i class="ltr" style="--i:3">y</i><i class="ltr" style="--i:4">i</i><br><i class="ltr" style="--i:5">Z</i><i class="ltr" style="--i:6">h</i><i class="ltr" style="--i:7">u</i><i class="ltr accent" style="--i:8">.</i></span>
+        </h1>
+        <span class="name-cjk" lang="zh"><i class="cch" style="--i:5">朱</i><i class="cch" style="--i:6">皓</i><i class="cch" style="--i:7">怡</i></span>
+      </div>
+      <div class="hero-bio reveal r3">
+        {{ .Content }}
+      </div>
+    </div>
+    <div class="hero-side reveal r2">
+      <span class="pill"><span class="pill-dot"></span>Ph.D. Student · USTC</span>
+      <figure class="portrait">
+        <img src="{{ $p.avatar }}" alt="Portrait of {{ $p.name }}">
+      </figure>
+      <div class="hero-chips">
+        <span>World Models</span>
+        <span>Video Generation</span>
+        <span>Embodied AI</span>
+      </div>
+      <nav class="hero-links" aria-label="Profiles">
+        {{ $icons := dict "Email" "email" "Google Scholar" "googlescholar" "GitHub" "github" "X/Twitter" "x" "ORCID" "orcid" "Xiaohongshu" "xiaohongshu" "CV" "cv" }}
+        {{ range $p.links }}
+        <a href="{{ .url }}">{{ with index $icons .name }}<span class="ico ico-{{ . }}">{{ partial (printf "icons/%s.svg" .) }}</span>{{ end }}{{ .name }}</a>
+        {{ end }}
+      </nav>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEWS ============ -->
+<section id="news" class="pad">
+  <header class="shead reveal">
+    <h2>News</h2>
+    <span class="smeta">{{ len $news }} updates</span>
+  </header>
+  <div class="news-list reveal">
+    {{ range $i, $n := $news }}
+    <div class="news-row{{ if ge $i 6 }} news-extra{{ end }}">
+      <span class="news-date">{{ $n.date }}</span>
+      <span class="news-text{{ if in (lower $n.text) "award" }} is-award{{ end }}">{{ $n.text | markdownify }}</span>
+    </div>
+    {{ end }}
+  </div>
+  {{ if gt (len $news) 6 }}
+  <button class="news-toggle" type="button">Show all {{ len $news }} updates</button>
+  {{ end }}
+</section>
+
+<!-- ============ FEATURED RESEARCH ============ -->
+{{ with $featured }}
+<section id="research" class="pad">
+  <header class="shead reveal">
+    <h2>Featured Research</h2>
+    <span class="smeta">{{ len . }} projects</span>
+  </header>
+  <div class="feat-grid">
+    {{ range .ByDate.Reverse }}
+    {{ $award := in (lower (.Params.publication | default "")) "award" }}
+    <div class="card card-feature reveal">
+      <a class="card-media" href="{{ .Params.external_link }}">
+        {{ $poster := "" }}
+        {{ with .Resources.GetMatch .Params.image.filename }}
+          {{ $poster = (.Fill "1400x800 q85").RelPermalink }}
+        {{ end }}
+        {{ with .Resources.GetMatch (.Params.video | default "none") }}
+          <video autoplay loop muted playsinline preload="metadata"{{ with $poster }} poster="{{ . }}"{{ end }} src="{{ .RelPermalink }}"></video>
+        {{ else }}
+          {{ with $poster }}<img src="{{ . }}" alt="">{{ end }}
+        {{ end }}
+      </a>
+      <div class="card-body">
+        <span class="card-kicker">{{ .Params.venue_short | default "Featured" }}</span>
+        <h3><a href="{{ .Params.external_link }}">{{ .Title | markdownify }}</a></h3>
+        {{ if $award }}<div class="pub-award">🏆 {{ .Params.publication | markdownify }}</div>{{ end }}
+        <p>{{ .Params.summary }}</p>
+        {{ with .Params.links }}
+        <div class="pub-links">
+          {{ range . }}<a class="pub-btn" href="{{ .url }}">{{ .name }}</a>{{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+<!-- ============ PUBLICATIONS ============ -->
+<section id="publications" class="pad">
+  <header class="shead reveal">
+    <h2>Publications</h2>
+    <span class="smeta"><span class="cite-total" hidden><b></b> citations · </span><a class="smeta-link" href="https://scholar.google.com/citations?user=pD1NOyUAAAAJ&hl">Google Scholar ↗</a></span>
+  </header>
+  <p class="pubs-note reveal">Selected works — awarded, widely cited, or most recent. <a class="pubs-toggle smeta-link" href="/project/">Show all {{ len $projects }} publications →</a></p>
+  <div class="pubs pubs-selected reveal">
+    {{ range $selected.ByDate.Reverse }}
+    {{ partial "project-row.html" (dict "page" .) }}
+    {{ end }}
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section id="experience" class="pad">
+  <header class="shead reveal">
+    <h2>Experience</h2>
+    <span class="smeta">2021 — present</span>
+  </header>
+  <div class="exp reveal">
+    {{ range hugo.Data.experience }}
+    <div class="exp-row{{ if not .date_end }} now{{ end }}">
+      <span class="exp-years"><span class="dot"></span>{{ (time.AsTime .date_start).Format "Jan. 2006" }} — {{ with .date_end }}{{ (time.AsTime .).Format "Jan. 2006" }}{{ else }}now{{ end }}</span>
+      <span class="exp-main"><span class="exp-role">{{ .title }}</span><span class="exp-org"><a href="{{ .company_url }}">{{ .company }}</a></span></span>
+      <span class="exp-loc">{{ .location }}</span>
+    </div>
+    {{ end }}
+  </div>
+</section>
+
+<!-- ============ PAINTINGS ============ -->
+<section id="paintings" class="pad pad-bleed">
+  <header class="shead reveal">
+    <h2>Paintings</h2>
+    <span class="smeta">Traditional Chinese painting · drag to explore <span class="arr">⟶</span></span>
+  </header>
+  <div class="handscroll reveal" tabindex="0" aria-label="Gallery of paintings, scrolls horizontally">
+    {{ range $i, $img := sort (resources.Match "albums/paintings/*") "Name" }}
+      {{ $t := $img.Resize "x1200 q88" }}
+      <figure class="plate">
+        <a href="{{ $img.RelPermalink }}"><img loading="lazy" src="{{ $t.RelPermalink }}" width="{{ $t.Width }}" height="{{ $t.Height }}" alt="Ink painting {{ add $i 1 }}"></a>
+      </figure>
+    {{ end }}
+  </div>
+</section>
+
+<!-- ============ POEMS ============ -->
+<section id="poems" class="pad">
+  <header class="shead reveal">
+    <h2>Poems</h2>
+    <span class="smeta"><a class="smeta-link" href="/poem/">All {{ len $poems }} poems →</a></span>
+  </header>
+  <div class="poem-grid reveal">
+    {{ range first 6 $poems.ByDate.Reverse }}
+    <a class="poem-card" href="{{ .RelPermalink }}">
+      <span class="poem-title">{{ .Title }}</span>
+      <span class="poem-meta"><span>{{ .Date.Format "2006.01.02" }}</span><span class="arr">→</span></span>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

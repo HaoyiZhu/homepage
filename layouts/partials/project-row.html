@@ -1,0 +1,47 @@
+{{ $p := .page }}
+{{ $award := in (lower ($p.Params.publication | default "")) "award" }}
+{{ $notes := $p.Params.author_notes | default (slice) }}
+{{ $repo := "" }}
+{{ range $p.Params.links }}
+  {{ if and (not $repo) (findRE `github\.com/[^/]+/[^/?#]+` .url) }}
+    {{ $repo = replaceRE `^.*github\.com/([^/]+/[^/?#]+).*$` "$1" .url }}
+  {{ end }}
+{{ end }}
+<article class="pub">
+  <a class="pub-media" href="{{ $p.RelPermalink }}">
+    {{ $poster := "" }}
+    {{ with $p.Resources.GetMatch $p.Params.image.filename }}
+      {{ $poster = (.Fill "800x500 q80").RelPermalink }}
+    {{ end }}
+    {{ with $p.Resources.GetMatch ($p.Params.video | default "none") }}
+      <video class="pub-thumb" autoplay loop muted playsinline preload="metadata"{{ with $poster }} poster="{{ . }}"{{ end }} src="{{ .RelPermalink }}"></video>
+    {{ else }}
+      {{ with $poster }}<img class="pub-thumb" src="{{ . }}" alt="" loading="lazy">{{ end }}
+    {{ end }}
+  </a>
+  <div class="pub-body">
+    <div class="pub-title"><a href="{{ $p.RelPermalink }}">{{ $p.Title | markdownify }}</a></div>
+    <p class="pub-authors">
+      {{- range $i, $a := $p.Params.authors -}}
+        {{- if $i }}, {{ end -}}
+        {{- if eq $a "admin" }}<strong>Haoyi Zhu</strong>{{ else }}{{ $a }}{{ end -}}
+        {{- $note := "" }}{{ if lt $i (len $notes) }}{{ $note = index $notes $i }}{{ end -}}
+        {{- if $note }}<sup class="an" title="{{ strings.TrimLeft "*$" $note }}">{{ if hasPrefix $note "$" }}†{{ else }}*{{ end }}</sup>{{ end -}}
+      {{- end -}}
+    </p>
+    {{ if $award }}
+    <div class="pub-award">🏆 {{ $p.Params.publication | markdownify }}</div>
+    {{ end }}
+    <div class="pub-venue">
+      {{ with $p.Params.venue_short }}<span class="tag{{ if $award }} tag-red{{ end }}">{{ . }}</span>{{ end }}
+      {{ with $repo }}<a class="pub-stat gh-stars" data-repo="{{ . }}" href="https://github.com/{{ . }}" hidden>★ <b></b></a>{{ end }}
+      <span class="pub-stat pub-cite" data-title="{{ $p.Title | plainify }}" hidden><b></b> citations</span>
+    </div>
+    {{ with $p.Params.links }}
+    <div class="pub-links">
+      {{ range . }}<a class="pub-btn" href="{{ .url }}">{{ .name }}</a>{{ end }}
+    </div>
+    {{ end }}
+  </div>
+  <span class="pub-year">{{ $p.Date.Format "2006" }}</span>
+</article>

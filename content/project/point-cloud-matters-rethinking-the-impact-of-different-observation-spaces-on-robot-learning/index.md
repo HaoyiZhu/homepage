@@ -3,6 +3,7 @@ title: "Point Cloud Matters: Rethinking the Impact of Different Observation Spac
 subtitle: "Point Cloud Matters"
 summary: Extensive experiments prove that point cloud observations are beneficial for robot learning.
 date: 2024-09-26T00:00:00Z
+venue_short: "NeurIPS 2024"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;

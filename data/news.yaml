@@ -1,0 +1,36 @@
+- date: May 2026
+  text: "🚀 [SANA-WM](https://nvlabs.github.io/Sana/WM/) released — efficient minute-scale world modeling with hybrid linear diffusion transformer. [Announcement](https://x.com/HaoyiZhu/status/2055132732339126764), reposted by [NVIDIA AI](https://x.com/NVIDIAAI/status/2056806466317701446). [Paper](https://arxiv.org/abs/2605.15178), [code](https://github.com/NVlabs/SANA)."
+- date: Apr. 2026
+  text: "🏅 [$\\pi^3$](https://yyfz.github.io/pi3/) is selected as **China3DV 2026 Top 1 Paper** (1 / 154)!"
+- date: Jan. 2026
+  text: "🎉 [$\\pi^3$](https://yyfz.github.io/pi3/), [WinT3R](https://lizizun.github.io/WinT3R.github.io/), and [OmniWorld](https://yangzhou24.github.io/OmniWorld/) accepted by **ICLR 2026**!"
+- date: Oct. 2025
+  text: "Won the **National Scholarship** and the **First Price Academic Scholarship** at USTC!"
+- date: Oct. 2025
+  text: "🏆 [Aether](https://aether-world.github.io/) won **Outstanding Paper Award** and **Oral Presentation** at ICCV 2025 RIWM workshop!"
+- date: Sep. 2025
+  text: "[OmniWorld](https://yangzhou24.github.io/OmniWorld/) released — a multi-domain and multi-modal dataset for 4D world modeling."
+- date: Sep. 2025
+  text: "[WinT3R](https://lizizun.github.io/WinT3R.github.io/) released — feed-forward reconstruction with online camera pose and point map prediction."
+- date: Jul. 2025
+  text: "[$\\pi^3$](https://yyfz.github.io/pi3/) [announced](https://x.com/yyfz321021/status/1947135469294371225) — reference-free visual geometry reconstruction. [Paper](https://arxiv.org/abs/2507.13347), [code](https://github.com/yyfz/Pi3), [demo](https://huggingface.co/spaces/yyfz233/Pi3)."
+- date: Jun. 2025
+  text: "[Aether](https://aether-world.github.io/) and [VQ-VLA](https://xiaoxiao0406.github.io/vqvla.github.io/) accepted by **ICCV 2025**!"
+- date: Jun. 2025
+  text: "[DeepVerse](https://sotamak1r.github.io/deepverse/) released — an auto-regressive 4D world model."
+- date: Feb. 2025
+  text: "[SPA](https://haoyizhu.github.io/spa/) accepted by **ICLR 2025**; [Tra-MoE](https://arxiv.org/abs/2411.14519) accepted by **CVPR 2025**."
+- date: Oct. 2024
+  text: "[SPA](https://haoyizhu.github.io/spa/) [announced](https://x.com/HaoyiZhu/status/1844675411760013471) — 3D spatial awareness for embodied AI. [Paper](https://arxiv.org/abs/2410.08208), [code](https://github.com/HaoyiZhu/SPA), [models](https://huggingface.co/HaoyiZhu/SPA)."
+- date: Sep. 2024
+  text: "[PointCloudMatters](https://arxiv.org/abs/2402.02500) accepted by **NeurIPS D&B 2024**. [Code](https://github.com/HaoyiZhu/PointCloudMatters)."
+- date: Oct. 2023
+  text: "[PonderV2](https://arxiv.org/abs/2310.08586) and [UniPAD](https://arxiv.org/abs/2310.08370) announced — universal pre-training for 3D vision."
+- date: Jul. 2023
+  text: "[RH20T](https://rh20t.github.io/) announced — a large-scale real-world robotic dataset."
+- date: Nov. 2022
+  text: "🏆 [MineDojo](https://minedojo.org/) won **Outstanding Paper Award** at **NeurIPS 2022**!"
+- date: Nov. 2022
+  text: "[AlphaPose](http://arxiv.org/abs/2211.03375) accepted by **TPAMI** — 8.3K+ stars on [GitHub](https://github.com/MVIG-SJTU/AlphaPose)."
+- date: Jun. 2022
+  text: "[MineDojo](https://minedojo.org/) [announced](https://twitter.com/DrJimFan/status/1540381991052247041) — open-ended agents with internet-scale knowledge in Minecraft."

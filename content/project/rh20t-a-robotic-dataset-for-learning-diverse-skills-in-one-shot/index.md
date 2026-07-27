@@ -2,6 +2,7 @@
 title: "RH20T: A Robotic Dataset for Learning Diverse Skills in One-Shot"
 subtitle: "RH20T"
 date: 2023-07-02T00:00:00Z
+venue_short: "ICRA 2024"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;

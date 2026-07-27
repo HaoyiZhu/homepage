@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="{{ site.Language.Locale | default "en" }}" id="top">
+<head>
+  <script>try { var t = localStorage.getItem('theme'); if (t === 'dark') document.documentElement.classList.add('theme-dark'); } catch (e) {} document.documentElement.className += ' js';</script>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  {{ partial "nav.html" . }}
+  <main>
+    {{ block "main" . }}{{ end }}
+    {{ partial "footer.html" . }}
+  </main>
+  {{ $js := resources.Get "js/main.js" | minify | fingerprint "sha512" }}
+  <script defer src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+  {{ partial "katex.html" . }}
+</body>
+</html>

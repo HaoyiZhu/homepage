@@ -14,7 +14,9 @@ publication_short: ""
 
 subtitle: "AlphaPose"
 date: 2022-11-07T00:00:00Z
+venue_short: "T-PAMI"
 draft: false
+selected: true
 featured: false
 summary: 'An accurate real-time multi-person pose estimator and tracker.'
 authors:

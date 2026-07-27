@@ -2,6 +2,7 @@
 title: "CoMo: Learning Continuous Latent Motion from Internet Videos for Scalable Robot Learning"
 subtitle: "*arXiv preprint, 2025*"
 date: 2025-05-30T00:00:00Z
+venue_short: "arXiv 2025"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;

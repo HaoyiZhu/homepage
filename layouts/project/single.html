@@ -1,0 +1,23 @@
+{{ define "main" }}
+{{ $award := in (lower (.Params.publication | default "")) "award" }}
+<article class="article">
+  <div class="article-kicker label">Research — {{ .Params.venue_short | default "Project" }}</div>
+  <h1 class="article-title">{{ .Title }}</h1>
+  <p class="authors">{{ range $i, $a := .Params.authors }}{{ if $i }}, {{ end }}{{ if eq $a "admin" }}<strong>Haoyi Zhu</strong>{{ else }}{{ $a }}{{ end }}{{ end }}</p>
+  <div class="venue-line">
+    {{ with .Params.venue_short }}<span class="tag{{ if $award }} tag-red{{ end }}">{{ . }}</span>{{ end }}
+    {{ if $award }}<span class="tag tag-red">★ Award</span>{{ end }}
+    {{ with .Params.publication }}<span class="it">{{ . | markdownify }}</span>{{ end }}
+  </div>
+  <div class="article-links">{{ range .Params.links }}<a class="btn" href="{{ .url }}">{{ .name }} ↗</a>{{ end }}</div>
+  {{ with .Resources.GetMatch .Params.video }}
+    <video class="article-figure" src="{{ .RelPermalink }}" controls loop muted playsinline></video>
+  {{ else }}
+    {{ with .Resources.GetMatch .Params.image.filename }}
+      {{ $img := .Fill "1600x1000 q85" }}
+      <img class="article-figure" src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="">
+    {{ end }}
+  {{ end }}
+  <div class="article-content">{{ .Content }}</div>
+</article>
+{{ end }}

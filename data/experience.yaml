@@ -1,0 +1,70 @@
+- title: Ph.D in Computer Science
+  company: USTC
+  company_url: https://en.ustc.edu.cn/
+  logo: org-ustc
+  location: Shanghai, China
+  date_start: "2023-09-01"
+  date_end: ""
+  description: |
+    * Doctoral advisor: Prof. [Tong He](https://tonghe90.github.io/), Prof. [Wanli Ouyang](https://wlouyang.github.io/) and Prof. [Xiaogang Wang](http://www.ee.cuhk.edu.hk/~xgwang/).
+    * Won the **National Scholarship** and the **First Price Academic Scholarship** at USTC.
+    * Research on 3D vision, world models, and Embodied AI. Published first-author papers at T-PAMI, NeurIPS, ICLR, ICCV, etc.
+    * [Aether](https://aether-world.github.io/) won the **Outstanding Paper Award** and was presented as an **Oral Presentation** at the ICCV 2025 RIWM workshop.
+
+- title: Research Intern
+  company: SANA team, Efficient AI Lab, NVIDIA
+  company_url: https://research.nvidia.com/person/enze-xie
+  logo: org-nvidia
+  location: Shanghai, China
+  date_start: "2025-12-01"
+  date_end: "2026-07-01"
+  description: |
+    * Research on efficient world models. First author of [SANA-WM](https://nvlabs.github.io/Sana/WM/).
+    * Supervised by [Dr. Enze Xie](https://xieenze.github.io/) and [Prof. Song Han](https://hanlab.mit.edu/songhan).
+
+- title: Research Intern
+  company: Shanghai AI Lab
+  company_url: https://www.shlab.org.cn/
+  logo: org-shailab
+  location: Shanghai, China
+  date_start: "2023-09-01"
+  date_end: "2025-11-30"
+  description: |
+    * Research on 3D vision, world models and Embodied AI.
+    * Published first-author papers at T-PAMI, NeurIPS, ICLR, ICCV, etc.
+    * [Aether](https://aether-world.github.io/) won the **Outstanding Paper Award** and was presented as an **Oral Presentation** at the ICCV 2025 RIWM workshop.
+
+- title: B.S. in Artificial Intelligence
+  company: MVIG, SJTU
+  company_url: https://www.sjtu.edu.cn/
+  logo: org-sjtu
+  location: Shanghai, China
+  date_start: "2019-09-01"
+  date_end: "2023-06-30"
+  description: |
+    * Co-author of [**AlphaPose**](https://github.com/MVIG-SJTU/AlphaPose), an accurate multi-person pose estimator. Paper accepted by [TPAMI](https://arxiv.org/abs/2211.03375).
+    * Proposed [**X-NeRF**](https://github.com/HaoyiZhu/XNeRF), paper accepted by [WACV 2023](https://arxiv.org/abs/2210.05135).
+    * Member of the first AI Honor Class.
+    * Research on computer vision and robotics at MVIG advised by [Dr. Hao-shu Fang](https://fang-haoshu.github.io/) and [Prof. Cewu Lu](https://mvig.sjtu.edu.cn/).
+
+- title: Research Intern
+  company: Jim Fan's Team (GEAR Lab), NVIDIA
+  company_url: https://research.nvidia.com/person/linxi-jim-fan
+  logo: org-nvidia
+  location: Shanghai, China
+  date_start: "2022-02-01"
+  date_end: "2023-02-01"
+  description: |
+    * Co-developed [**MineDojo**](https://minedojo.org/) for open-ended agent learning in Minecraft, advised by [Dr. Jim Fan](https://jimfan.me/) and [Prof. Anima Anandkumar](https://research.nvidia.com/person/anima-anandkumar).
+    * Paper won the **Outstanding Paper Award** at [NeurIPS Datasets & Benchmarks 2022](https://arxiv.org/abs/2206.08853).
+
+- title: Research Intern
+  company: Xu Lab, CMU
+  company_url: https://xulabs.github.io/
+  logo: org-cmu
+  location: Shanghai, China
+  date_start: "2021-04-01"
+  date_end: "2022-02-01"
+  description: |
+    * Led a project on unsupervised multi-task learning for subtomogram images, advised by [Dr. Xiangrui Zeng](https://scholar.google.com/citations?user=8gQLySoAAAAJ) and [Prof. Min Xu](https://xulabs.github.io/).
+    * Paper accepted by [ICIP 2022](https://ieeexplore.ieee.org/abstract/document/9897919).

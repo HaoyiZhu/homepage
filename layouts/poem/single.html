@@ -1,0 +1,8 @@
+{{ define "main" }}
+<article class="article">
+  <div class="article-kicker label">Poem</div>
+  <h1 class="article-title cjk">{{ .Title }}</h1>
+  <div class="article-meta">{{ .Date.Format "2006.01.02" }}</div>
+  <div class="article-content poem-content">{{ .Content }}</div>
+</article>
+{{ end }}

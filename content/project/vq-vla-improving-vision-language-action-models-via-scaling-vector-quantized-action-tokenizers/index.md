@@ -2,6 +2,7 @@
 title: "VQ-VLA: Improving Vision-Language-Action Models via Scaling Vector-Quantized Action Tokenizers"
 subtitle: "*ICCV, 2025*"
 date: 2025-07-03T00:00:00Z
+venue_short: "ICCV 2025"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;

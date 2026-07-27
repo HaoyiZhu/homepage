@@ -2,6 +2,7 @@
 title: "UniPAD: A Universal Pre-training Paradigm for Autonomous Driving"
 subtitle: "UniPAD"
 date: 2023-10-12T00:00:00Z
+venue_short: "CVPR 2024"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;

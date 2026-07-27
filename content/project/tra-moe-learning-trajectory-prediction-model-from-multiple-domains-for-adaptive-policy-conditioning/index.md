@@ -2,6 +2,7 @@
 title: "Tra-MoE: Learning Trajectory Prediction Model from Multiple Domains for Adaptive Policy Conditioning"
 subtitle: "*CVPR 2025*"
 date: 2025-02-28T00:00:00Z
+venue_short: "CVPR 2025"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;

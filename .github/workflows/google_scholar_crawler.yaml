@@ -1,0 +1,68 @@
+name: Update Google Scholar Citations
+
+on:
+  schedule:
+    - cron: '0 8 * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/google_scholar_crawler.yaml'
+      - 'google_scholar_crawler/**'
+
+jobs:
+  scrape-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    permissions:
+      contents: write
+
+    steps:
+    - name: Checkout main branch code
+      uses: actions/checkout@v4
+      with:
+        ref: 'main'
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+        cache: 'pip'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r google_scholar_crawler/requirements.txt
+
+    - name: Run Scraper
+      env:
+        GOOGLE_SCHOLAR_ID: pD1NOyUAAAAJ
+        PYTHONUNBUFFERED: "1"
+      run: |
+        python google_scholar_crawler/main.py
+
+    - name: Deploy data to orphan branch
+      run: |
+        find . -maxdepth 1 -type f -name "*.json" > files-to-purge.txt
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git checkout --orphan google-scholar-stats
+        git rm -rf . || exit 0
+        git add -f ./*.json
+        git commit -m "Deploy latest citation data at $(date -u)"
+        git push origin google-scholar-stats --force
+
+    - name: Purge jsDelivr Cache
+      run: |
+        if [ ! -f files-to-purge.txt ]; then
+            echo "files-to-purge.txt not found. Skipping purge."
+            exit 0
+        fi
+        while IFS= read -r file; do
+          filename=$(basename "$file")
+          purge_url="https://purge.jsdelivr.net/gh/${{ github.repository }}@google-scholar-stats/${filename}"
+          echo "Purging: $purge_url"
+          curl -s -o /dev/null -w "%{http_code}\n" "$purge_url"
+          sleep 1
+        done < files-to-purge.txt

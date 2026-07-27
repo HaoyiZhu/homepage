@@ -2,6 +2,7 @@
 title: "AlphaTracker: a multi-animal tracking and behavioral analysis tool"
 subtitle: "AlphaTracker"
 date: 2023-05-30T00:00:00Z
+venue_short: "Frontiers 2023"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;

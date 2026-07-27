@@ -2,6 +2,7 @@
 title: "DeepVerse: 4D Autoregressive Video Generation as a World Model"
 subtitle: "*arXiv preprint, 2025*"
 date: 2025-06-01T00:00:00Z
+venue_short: "arXiv 2025"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -49,6 +50,7 @@ image:
   filename: teaser.png
   focal_point: Smart
   preview_only: false
+video: teaser_480p.mp4
 ---
 
 **Abstract:**

@@ -1,0 +1,14 @@
+{{ define "main" }}
+<section class="pad page">
+  <header class="shead">
+    <h2>Publications</h2>
+    <span class="smeta"><span class="cite-total" hidden><b></b> citations · </span><a class="smeta-link" href="https://scholar.google.com/citations?user=pD1NOyUAAAAJ&hl">Google Scholar ↗</a></span>
+  </header>
+  <p class="pubs-note">All {{ len .Pages }} publications in chronological order. <a class="smeta-link" href="/#publications">← Back to selected</a></p>
+  <div class="pubs">
+    {{ range .Pages.ByDate.Reverse }}
+    {{ partial "project-row.html" (dict "page" .) }}
+    {{ end }}
+  </div>
+</section>
+{{ end }}

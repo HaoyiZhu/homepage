@@ -3,6 +3,7 @@ title: "PonderV2: Pave the Way for 3D Foundation Model with A Universal Pre-trai
 subtitle: "PonderV2"
 summary: A general 3D pre-training approach establishing a pathway to 3D foundational models.
 date: 2023-10-13T00:00:00Z
+venue_short: "T-PAMI"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -15,6 +16,7 @@ publication: "*IEEE Transactions on Pattern Analysis and Machine Intelligence (T
 publication_short: ""
 
 draft: false
+selected: true
 featured: false
 authors:
   - admin

@@ -1,7 +1,8 @@
 ---
 title: "$\\pi^3$: Scalable Permutation-Equivariant Visual Geometry Learning"
-subtitle: "*arXiv preprint, 2025*"
+subtitle: "*ICLR 2026*"
 date: 2025-07-22T00:00:00Z
+venue_short: "ICLR 2026"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -10,10 +11,11 @@ date: 2025-07-22T00:00:00Z
 publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*arXiv preprint, 2025*"
+publication: "*The Fourteenth International Conference on Learning Representations (ICLR), 2026*"
 publication_short: ""
 
 draft: false
+selected: true
 featured: false
 authors:
   - Yifan Wang
@@ -44,6 +46,7 @@ image:
   filename: teaser.png
   focal_point: Smart
   preview_only: false
+video: teaser_480p.mp4
 ---
 
 **Abstract:**

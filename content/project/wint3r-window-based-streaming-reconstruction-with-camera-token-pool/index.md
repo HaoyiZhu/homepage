@@ -1,7 +1,8 @@
 ---
 title: "WinT3R: Window-Based Streaming Reconstruction With Camera Token Pool"
-subtitle: "*arXiv 2025*"
+subtitle: "*ICLR 2026*"
 date: 2025-09-05T00:00:00Z
+venue_short: "ICLR 2026"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -10,7 +11,7 @@ date: 2025-09-05T00:00:00Z
 publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*arXiv preprint, 2025*"
+publication: "*The Fourteenth International Conference on Learning Representations (ICLR), 2026*"
 publication_short: ""
 
 draft: false
@@ -42,6 +43,7 @@ image:
   filename: teaser.jpg
   focal_point: Smart
   preview_only: false
+video: teaser_480p.mp4
 ---
 
 **Abstract:**

@@ -1,0 +1,16 @@
+{{ define "main" }}
+<section class="pad page">
+  <header class="shead">
+    <h2>Poems</h2>
+    <span class="smeta">{{ len .Pages }} poems</span>
+  </header>
+  <div class="news-list">
+    {{ range .Pages.ByDate.Reverse }}
+    <a class="news-row" href="{{ .RelPermalink }}">
+      <span class="news-date">{{ .Date.Format "2006.01.02" }}</span>
+      <span class="news-text">{{ .Title }}</span>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
