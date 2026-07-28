@@ -105,7 +105,7 @@
     <h2>Publications</h2>
     <span class="smeta"><span class="cite-total" hidden><b></b> citations · </span><a class="smeta-link" href="https://scholar.google.com/citations?user=pD1NOyUAAAAJ&hl">Google Scholar ↗</a></span>
   </header>
-  <p class="pubs-note reveal">Selected works — awarded, widely cited, or most recent. <a class="pubs-toggle smeta-link" href="/project/">Show all {{ len $projects }} publications →</a></p>
+  <p class="pubs-note reveal">Selected works. <a class="pubs-toggle smeta-link" href="/project/">Show all {{ len $projects }} publications →</a></p>
   <div class="pubs pubs-selected reveal">
     {{ range $selected.ByDate.Reverse }}
     {{ partial "project-row.html" (dict "page" .) }}

@@ -34,7 +34,10 @@
     {{ end }}
     <div class="pub-venue">
       {{ with $p.Params.venue_short }}<span class="tag{{ if $award }} tag-red{{ end }}">{{ . }}</span>{{ end }}
-      {{ with $repo }}<a class="pub-stat gh-stars" data-repo="{{ . }}" href="https://github.com/{{ . }}" hidden>★ <b></b></a>{{ end }}
+      {{ with $repo }}
+        {{ $baked := index (hugo.Data.stars | default dict) . }}
+        <a class="pub-stat gh-stars" data-repo="{{ . }}" href="https://github.com/{{ . }}"{{ if not $baked }} hidden{{ end }}>★ <b>{{ with $baked }}{{ if ge . 1000 }}{{ printf "%.1f" (div (float .) 1000) | strings.TrimSuffix ".0" }}k{{ else }}{{ . }}{{ end }}{{ end }}</b></a>
+      {{ end }}
       <span class="pub-stat pub-cite" data-title="{{ $p.Title | plainify }}" hidden><b></b> citations</span>
     </div>
     {{ with $p.Params.links }}

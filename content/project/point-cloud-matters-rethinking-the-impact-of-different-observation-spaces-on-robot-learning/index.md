@@ -16,6 +16,7 @@ publication: "*Neural Information Processing Systems (NeurIPS) Dataset & Benchma
 publication_short: ""
 
 draft: false
+selected: true
 featured: false
 authors:
   - admin

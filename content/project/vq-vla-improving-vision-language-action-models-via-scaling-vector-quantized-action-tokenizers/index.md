@@ -15,6 +15,7 @@ publication: "*Proceedings of the IEEE/CVF International Conference on Computer 
 publication_short: ""
 
 draft: false
+selected: true
 featured: false
 authors:
   - Yating Wang

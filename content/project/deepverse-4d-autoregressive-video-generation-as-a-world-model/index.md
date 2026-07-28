@@ -15,6 +15,7 @@ publication: "*arXiv preprint, 2025*"
 publication_short: ""
 
 draft: false
+selected: true
 featured: false
 authors:
   - Junyi Chen

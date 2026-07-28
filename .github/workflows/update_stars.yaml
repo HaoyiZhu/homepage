@@ -1,0 +1,49 @@
+name: Update GitHub star counts
+
+on:
+  schedule:
+    - cron: '30 8 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-stars:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Regenerate data/stars.json
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - <<'EOF'
+          import json, os, pathlib, re, urllib.request
+          repos = set()
+          for f in pathlib.Path('content/project').glob('*/index.md'):
+              for m in re.finditer(r'github\.com/([\w.-]+/[\w.-]+)', f.read_text()):
+                  repos.add(m.group(1).rstrip('.'))
+          stars = {}
+          for r in sorted(repos):
+              try:
+                  req = urllib.request.Request(
+                      f'https://api.github.com/repos/{r}',
+                      headers={'User-Agent': 'homepage-build',
+                               'Authorization': 'Bearer ' + os.environ['GH_TOKEN']})
+                  stars[r] = json.load(urllib.request.urlopen(req, timeout=15))['stargazers_count']
+              except Exception as e:
+                  print('skip', r, e)
+          pathlib.Path('data/stars.json').write_text(json.dumps(stars, indent=1) + '\n')
+          EOF
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/stars.json
+          if git diff --cached --quiet; then
+            echo "stars.json unchanged."
+          else
+            git commit -m "Update GitHub star counts"
+            git push
+          fi
