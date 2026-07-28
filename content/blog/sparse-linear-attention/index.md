@@ -1,5 +1,6 @@
 ---
 title: "Sparse Linear Attention: 当稀疏遇上线性注意力"
+title_en: "Sparse Linear Attention: When Sparsity Meets Linear Attention"
 date: 2026-07-28
 draft: false
 ---

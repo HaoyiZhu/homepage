@@ -1,9 +1,17 @@
 {{ define "main" }}
 <div class="blog-progress" aria-hidden="true"><span></span></div>
+{{ $en := .Resources.GetMatch "translation-en.md" }}
 <article class="article blog-article">
   <header class="blog-head">
-    <div class="article-kicker label">Blog</div>
-    <h1 class="article-title">{{ .Title }}</h1>
+    <div class="blog-head-top">
+      <div class="article-kicker label">Blog</div>
+      {{ if $en }}
+      <button class="lang-toggle" type="button" aria-label="Switch language">
+        <span class="lang-zh active">中</span><span class="lang-en">EN</span>
+      </button>
+      {{ end }}
+    </div>
+    <h1 class="article-title"{{ with .Params.title_en }} data-title-en="{{ . }}"{{ end }} data-title-zh="{{ .Title }}">{{ .Title }}</h1>
     <div class="article-meta">
       <span>{{ .Date.Format "2006.01.02" }}</span>
       <span class="dotsep">·</span>
@@ -13,7 +21,15 @@
     </div>
   </header>
   <div class="blog-layout">
-    <div class="article-content blog-content">{{ .Content }}</div>
+    <div class="blog-body">
+      <div class="article-content blog-content lang-body-zh">{{ .Content }}</div>
+      {{ if $en }}
+      <div class="article-content blog-content lang-body-en" hidden>
+        <p class="trans-note">This is an automatic translation by <strong>Qoder</strong>. The <button class="trans-note-switch" type="button">Chinese original</button> is authoritative.</p>
+        {{ .RenderString (dict "display" "block") $en.Content }}
+      </div>
+      {{ end }}
+    </div>
     {{ if gt (len (plainify .TableOfContents)) 3 }}
     <aside class="blog-toc" aria-label="Table of contents">
       <span class="toc-label label">On this page</span>
@@ -26,5 +42,40 @@
     <a class="smeta-link" href="https://twitter.com/HaoyiZhu">Discuss on X ↗</a>
     <a class="smeta-link" href="#top">Back to top ↑</a>
   </div>
+  <section class="blog-cite">
+    <h2 class="comments-title">Citation</h2>
+    <p class="cite-hint">If you find this post useful, please cite as:</p>
+    <div class="cite-box">
+      <button class="cite-copy" type="button">Copy</button>
+      <pre><code class="cite-bib">@misc{zhu{{ .Date.Format "2006" }}{{ replace .File.ContentBaseName "-" "" }},
+    title  = { {{- .Params.title_en | default .Title -}} },
+    author = {Zhu, Haoyi},
+    year   = { {{- .Date.Format "2006" -}} },
+    month  = { {{- .Date.Format "Jan" -}} },
+    url    = {https://haoyizhu.site{{- .RelPermalink -}} },
+    note   = {Blog post}
+}</code></pre>
+    </div>
+  </section>
+  <section class="blog-comments">
+    <h2 class="comments-title">Comments</h2>
+    <div class="giscus-wrap">
+      <script src="https://giscus.app/client.js"
+        data-repo="HaoyiZhu/homepage"
+        data-repo-id="R_kgDOIZHedw"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOIZHed84DCJdM"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async></script>
+    </div>
+  </section>
 </article>
 {{ end }}

@@ -169,6 +169,64 @@
     });
   })();
 
+  // Blog: language toggle (zh default, en auto-translation)
+  var langToggle = document.querySelector('.lang-toggle');
+  if (langToggle) {
+    var zhBody = document.querySelector('.lang-body-zh');
+    var enBody = document.querySelector('.lang-body-en');
+    var toc = document.querySelector('.blog-toc');
+    var titleEl = document.querySelector('.article-title');
+    var setLang = function (lang) {
+      var en = lang === 'en';
+      zhBody.hidden = en;
+      enBody.hidden = !en;
+      if (toc) toc.style.display = en ? 'none' : '';
+      if (titleEl && titleEl.getAttribute('data-title-en')) {
+        titleEl.textContent = titleEl.getAttribute(en ? 'data-title-en' : 'data-title-zh');
+      }
+      langToggle.querySelector('.lang-zh').classList.toggle('active', !en);
+      langToggle.querySelector('.lang-en').classList.toggle('active', en);
+    };
+    langToggle.addEventListener('click', function () {
+      setLang(enBody.hidden ? 'en' : 'zh');
+    });
+    var noteSwitch = document.querySelector('.trans-note-switch');
+    if (noteSwitch) noteSwitch.addEventListener('click', function () { setLang('zh'); });
+  }
+
+  // Citation copy button
+  var citeCopy = document.querySelector('.cite-copy');
+  if (citeCopy && navigator.clipboard) {
+    citeCopy.addEventListener('click', function () {
+      navigator.clipboard.writeText(document.querySelector('.cite-bib').textContent).then(function () {
+        citeCopy.textContent = 'Copied ✓';
+        citeCopy.classList.add('copied');
+        setTimeout(function () {
+          citeCopy.textContent = 'Copy';
+          citeCopy.classList.remove('copied');
+        }, 1600);
+      });
+    });
+  }
+
+  // Giscus: keep theme in sync with site theme
+  var syncGiscus = function () {
+    var frame = document.querySelector('iframe.giscus-frame');
+    if (!frame) return;
+    frame.contentWindow.postMessage(
+      { giscus: { setConfig: { theme: root.classList.contains('theme-dark') ? 'dark' : 'light' } } },
+      'https://giscus.app'
+    );
+  };
+  if (document.querySelector('.giscus-wrap')) {
+    window.addEventListener('message', function (e) {
+      if (e.origin === 'https://giscus.app') syncGiscus();
+    });
+    document.querySelectorAll('.theme-toggle').forEach(function (tgl) {
+      tgl.addEventListener('click', function () { setTimeout(syncGiscus, 600); });
+    });
+  }
+
   // Blog: reading progress bar
   var prog = document.querySelector('.blog-progress span');
   if (prog) {
