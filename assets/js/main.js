@@ -69,66 +69,52 @@
 
   // Citation counts — Google Scholar data only (daily crawl deployed to the
   // google-scholar-stats branch, served via jsDelivr; bundled snapshot as backup).
+  // The full GS publication list is cached so matching works on every page.
   (function () {
     var els = document.querySelectorAll('.pub-cite');
     if (!els.length || !window.fetch) return;
-    var KEY = 'gs-cites-v3';
+    var KEY = 'gs-cites-v4';
     var norm = function (s) {
       return (s || '').toLowerCase().replace(/\$[^$]*\$/g, '').replace(/[^a-z0-9]/g, '');
     };
     var totalEl = document.querySelector('.cite-total');
-    var setTotal = function (n) {
-      if (totalEl && n > 0) {
-        totalEl.querySelector('b').textContent = Number(n).toLocaleString();
+    var applyData = function (data) {
+      if (totalEl && data.total > 0) {
+        totalEl.querySelector('b').textContent = Number(data.total).toLocaleString();
         totalEl.hidden = false;
       }
-    };
-    var setEl = function (el, n) {
-      el.querySelector('b').textContent = Number(n).toLocaleString();
-      el.hidden = false;
-    };
-    var applyMap = function (data) {
-      setTotal(data.total);
-      els.forEach(function (el) {
-        var k = norm(el.getAttribute('data-title'));
-        if (k && k in data.map) setEl(el, data.map[k]);
-      });
-    };
-    var save = function (data) {
-      data.t = Date.now();
-      try { localStorage.setItem(KEY, JSON.stringify(data)); } catch (e) {}
-    };
-    try {
-      var c = JSON.parse(localStorage.getItem(KEY) || 'null');
-      if (c && Date.now() - c.t < 43200000) { applyMap(c); return; }
-    } catch (e) {}
-
-    var applyGs = function (gs) {
-      var pubs = gs.publications || {};
-      var gsList = Object.keys(pubs).map(function (k) {
-        return { t: norm(pubs[k].bib && pubs[k].bib.title), n: pubs[k].num_citations || 0 };
-      });
-      var map = {};
       els.forEach(function (el) {
         var title = el.getAttribute('data-title') || '';
         var key = norm(title);
         if (!key || key.length < 8) return;
         var nick = norm(title.split(':')[0]);
-        for (var i = 0; i < gsList.length; i++) {
-          var g = gsList[i];
+        for (var i = 0; i < data.list.length; i++) {
+          var g = data.list[i];
           if (!g.t) continue;
           if (g.t === key || g.t.indexOf(key) !== -1 || key.indexOf(g.t) !== -1 ||
               (nick.length >= 5 && g.t.indexOf(nick) === 0)) {
-            map[key] = g.n;
+            el.querySelector('b').textContent = Number(g.n).toLocaleString();
+            el.hidden = false;
             break;
           }
         }
       });
-      var data = { total: gs.citedby || 0, map: map };
-      save(data);
-      applyMap(data);
     };
-
+    try {
+      var c = JSON.parse(localStorage.getItem(KEY) || 'null');
+      if (c && Date.now() - c.t < 43200000 && Array.isArray(c.list)) { applyData(c); return; }
+    } catch (e) {}
+    var applyGs = function (gs) {
+      var pubs = gs.publications || {};
+      var data = {
+        total: gs.citedby || 0,
+        list: Object.keys(pubs).map(function (k) {
+          return { t: norm(pubs[k].bib && pubs[k].bib.title), n: pubs[k].num_citations || 0 };
+        })
+      };
+      try { localStorage.setItem(KEY, JSON.stringify({ t: Date.now(), total: data.total, list: data.list })); } catch (e) {}
+      applyData(data);
+    };
     // Freshest first: daily-crawled branch via jsDelivr, then the snapshot bundled with the site.
     fetch('https://cdn.jsdelivr.net/gh/HaoyiZhu/homepage@google-scholar-stats/gs_data.json')
       .then(function (r) { if (!r.ok) throw new Error('no gs data'); return r.json(); })
