@@ -169,6 +169,44 @@
     });
   })();
 
+  // Blog: reading progress bar
+  var prog = document.querySelector('.blog-progress span');
+  if (prog) {
+    var updateProg = function () {
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      prog.style.width = (h > 0 ? (window.scrollY / h) * 100 : 0) + '%';
+    };
+    window.addEventListener('scroll', updateProg, { passive: true });
+    updateProg();
+  }
+
+  // Blog: TOC scrollspy (position-based)
+  var tocLinks = document.querySelectorAll('.blog-toc a[href^="#"]');
+  if (tocLinks.length) {
+    var tocHeads = [];
+    tocLinks.forEach(function (a) {
+      var el = document.getElementById(decodeURIComponent(a.getAttribute('href').slice(1)));
+      if (el) tocHeads.push({ el: el, link: a });
+    });
+    tocHeads.sort(function (a, b) { return a.el.offsetTop - b.el.offsetTop; });
+    var tocCurrent = null;
+    var spy = function () {
+      var y = window.scrollY + window.innerHeight * 0.28;
+      var cur = null;
+      for (var i = 0; i < tocHeads.length; i++) {
+        if (tocHeads[i].el.offsetTop <= y) cur = tocHeads[i].link;
+        else break;
+      }
+      if (cur !== tocCurrent) {
+        if (tocCurrent) tocCurrent.classList.remove('active');
+        if (cur) cur.classList.add('active');
+        tocCurrent = cur;
+      }
+    };
+    window.addEventListener('scroll', spy, { passive: true });
+    spy();
+  }
+
   // Nav scrollspy
   var navLinks = document.querySelectorAll('.nav-links a[href^="/#"]');
   if (navLinks.length && 'IntersectionObserver' in window) {

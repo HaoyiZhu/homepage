@@ -1,0 +1,20 @@
+{{ define "main" }}
+<section class="pad page">
+  <header class="shead">
+    <h2>Blog</h2>
+    <span class="smeta">{{ len .Pages }} post{{ if ne (len .Pages) 1 }}s{{ end }}</span>
+  </header>
+  <div class="post-list">
+    {{ range $i, $p := .Pages.ByDate.Reverse }}
+    <a class="post-card" href="{{ $p.RelPermalink }}">
+      <span class="post-num">{{ printf "%02d" (add $i 1) }}</span>
+      <div class="post-main">
+        <h3 class="post-title">{{ $p.Title }}</h3>
+        <span class="post-meta">{{ $p.Date.Format "2006.01.02" }} · {{ $p.ReadingTime }} min read</span>
+      </div>
+      <span class="arr">→</span>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

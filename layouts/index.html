@@ -130,6 +130,29 @@
   </div>
 </section>
 
+<!-- ============ BLOG ============ -->
+{{ $posts := where site.RegularPages "Section" "blog" }}
+{{ with $posts }}
+<section id="blog" class="pad">
+  <header class="shead reveal">
+    <h2>Blog</h2>
+    <span class="smeta"><a class="smeta-link" href="/blog/">All {{ len . }} posts →</a></span>
+  </header>
+  <div class="post-list reveal">
+    {{ range $i, $p := first 4 .ByDate.Reverse }}
+    <a class="post-card" href="{{ $p.RelPermalink }}">
+      <span class="post-num">{{ printf "%02d" (add $i 1) }}</span>
+      <div class="post-main">
+        <h3 class="post-title">{{ $p.Title }}</h3>
+        <span class="post-meta">{{ $p.Date.Format "2006.01.02" }} · {{ $p.ReadingTime }} min read</span>
+      </div>
+      <span class="arr">→</span>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
 <!-- ============ PAINTINGS ============ -->
 <section id="paintings" class="pad pad-bleed">
   <header class="shead reveal">

@@ -1,0 +1,30 @@
+{{ define "main" }}
+<div class="blog-progress" aria-hidden="true"><span></span></div>
+<article class="article blog-article">
+  <header class="blog-head">
+    <div class="article-kicker label">Blog</div>
+    <h1 class="article-title">{{ .Title }}</h1>
+    <div class="article-meta">
+      <span>{{ .Date.Format "2006.01.02" }}</span>
+      <span class="dotsep">·</span>
+      <span>{{ .ReadingTime }} min read</span>
+      <span class="dotsep">·</span>
+      <span>Haoyi Zhu</span>
+    </div>
+  </header>
+  <div class="blog-layout">
+    <div class="article-content blog-content">{{ .Content }}</div>
+    {{ if gt (len (plainify .TableOfContents)) 3 }}
+    <aside class="blog-toc" aria-label="Table of contents">
+      <span class="toc-label label">On this page</span>
+      {{ .TableOfContents }}
+    </aside>
+    {{ end }}
+  </div>
+  <div class="blog-foot">
+    <a class="smeta-link" href="/blog/">← All posts</a>
+    <a class="smeta-link" href="https://twitter.com/HaoyiZhu">Discuss on X ↗</a>
+    <a class="smeta-link" href="#top">Back to top ↑</a>
+  </div>
+</article>
+{{ end }}
