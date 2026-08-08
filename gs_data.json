@@ -1,0 +1,479 @@
+{
+  "container_type": "Author",
+  "filled": [
+    "basics",
+    "publications",
+    "indices",
+    "counts"
+  ],
+  "scholar_id": "pD1NOyUAAAAJ",
+  "source": "AUTHOR_PROFILE_PAGE",
+  "name": "Haoyi Zhu",
+  "url_picture": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=pD1NOyUAAAAJ&citpid=7",
+  "affiliation": "NVIDIA | USTC | SJTU",
+  "organization": 8123924430127665534,
+  "interests": [
+    "World Model",
+    "Spatial Intelligence",
+    "Robot Learning",
+    "Embodied AI"
+  ],
+  "email_domain": "@mail.ustc.edu.cn",
+  "homepage": "https://www.haoyizhu.site/",
+  "citedby": 3366,
+  "publications": {
+    "pD1NOyUAAAAJ:UeHWp8X0CEIC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Alphapose: Whole-body regional multi-person pose estimation and tracking in real-time",
+        "pub_year": "2022",
+        "citation": "IEEE transactions on pattern analysis and machine intelligence 45 (6), 7157-7173, 2022"
+      },
+      "filled": false,
+      "author_pub_id": "pD1NOyUAAAAJ:UeHWp8X0CEIC",
+      "num_citations": 1129,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13684672788136223420,5008371574717295727,8183172677108464038,4601138821231104028",
+      "cites_id": [
+        "13684672788136223420",
+        "5008371574717295727",
+        "8183172677108464038",
+        "4601138821231104028"
+      ]
+    },
+    "pD1NOyUAAAAJ:u-x6o8ySG0sC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Minedojo: Building open-ended embodied agents with internet-scale knowledge",
+        "pub_year": "2022",
+        "citation": "Advances in Neural Information Processing Systems (Outstanding Paper Award …, 2022"
+      },
+      "filled": false,
+      "author_pub_id": "pD1NOyUAAAAJ:u-x6o8ySG0sC",
+      "num_citations": 731,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=231281729668967714",
+      "cites_id": [
+        "231281729668967714"
+      ]
+    },
+    "pD1NOyUAAAAJ:ULOm3_A8WrAC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Rh20t: A comprehensive robotic dataset for learning diverse skills in one-shot",
+        "pub_year": "2024",
+        "citation": "2024 IEEE International Conference on Robotics and Automation (ICRA), 653-660, 2024"
+      },
+      "filled": false,
+      "author_pub_id": "pD1NOyUAAAAJ:ULOm3_A8WrAC",
+      "num_citations": 335,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3699964435265806217",
+      "cites_id": [
+        "3699964435265806217"
+      ]
+    },
+    "pD1NOyUAAAAJ:-f6ydRqryjwC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": ": Permutation-Equivariant Visual Geometry Learning",
+        "pub_year": "2026",
+        "citation": "International Conference on Learning Representations 2026, 10481-10497, 2026"
+      },
+      "filled": false,
+      "author_pub_id": "pD1NOyUAAAAJ:-f6ydRqryjwC",
+      "num_citations": 311,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17601076018968579099",
+      "cites_id": [
+        "17601076018968579099"
+      ]
+    },
+    "pD1NOyUAAAAJ:ufrVoPGSRksC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Unipad: A universal pre-training paradigm for autonomous driving",
+        "pub_year": "2024",
+        "citation": "2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR …, 2024"
+      },
+      "filled": false,
+      "author_pub_id": "pD1NOyUAAAAJ:ufrVoPGSRksC",
+      "num_citations": 105,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4354953188435144047",
+      "cites_id": [
+        "4354953188435144047"
+      ]
+    },
+    "pD1NOyUAAAAJ:YsMSGLbcyi4C": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "AlphaTracker: a multi-animal tracking and behavioral analysis tool",
+        "pub_year": "2023",
+        "citation": "Frontiers in Behavioral Neuroscience 17, 1111908, 2023"
+      },
+      "filled": false,
+      "author_pub_id": "pD1NOyUAAAAJ:YsMSGLbcyi4C",
+      "num_citations": 105,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1510173750597224384",
+      "cites_id": [
+        "1510173750597224384"
+      ]
+    },
+    "pD1NOyUAAAAJ:KlAtU1dfN6UC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Aether: Geometric-aware unified world modeling",
+        "pub_year": "2025",
+        "citation": "arXiv preprint arXiv:2503.18945, 2025"
+      },
+      "filled": false,
+      "author_pub_id": "pD1NOyUAAAAJ:KlAtU1dfN6UC",
+      "num_citations": 93,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14780802410592260837",
+      "cites_id": [
+        "14780802410592260837"
+      ]
+    },
+    "pD1NOyUAAAAJ:WF5omc3nYNoC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Pointcept: A codebase for point cloud perception research",
+        "pub_year": "2023",
+        "citation": "Github. Available online: https://github. com/Pointcept/Pointcept (accessed …, 2023"
+      },
+      "filled": false,
+      "author_pub_id": "pD1NOyUAAAAJ:WF5omc3nYNoC",
+      "num_citations": 89,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2279025882257731664",
+      "cites_id": [
+        "2279025882257731664"
+      ]
+    },
+    "pD1NOyUAAAAJ:hqOjcs7Dif8C": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "PonderV2: Pave the Way for 3D Foundation Model with A Universal Pre-training Paradigm",
+        "pub_year": "2025",
+        "citation": "IEEE Transactions on Pattern Analysis and Machine Intelligence, 2025"
+      },
+      "filled": false,
+      "author_pub_id": "pD1NOyUAAAAJ:hqOjcs7Dif8C",
+      "num_citations": 80,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5467549230087178174,4195068769639443251",
+      "cites_id": [
+        "5467549230087178174",
+        "4195068769639443251"
+      ]
+    },
+    "pD1NOyUAAAAJ:qxL8FJ1GzNcC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Vq-vla: Improving vision-language-action models via scaling vector-quantized action tokenizers",
+        "pub_year": "2025",
+        "citation": "2025 IEEE/CVF International Conference on Computer Vision (ICCV), 11089-11099, 2025"
+      },
+      "filled": false,
+      "author_pub_id": "pD1NOyUAAAAJ:qxL8FJ1GzNcC",
+      "num_citations": 76,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2165695756654813124",
+      "cites_id": [
+        "2165695756654813124"
+      ]
+    },
+    "pD1NOyUAAAAJ:Se3iqnhoufwC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Point Cloud Matters: Rethinking the Impact of Different Observation Spaces on Robot Learning",
+        "pub_year": "2024",
+        "citation": "Advances in Neural Information Processing Systems, 2024"
+      },
+      "filled": false,
+      "author_pub_id": "pD1NOyUAAAAJ:Se3iqnhoufwC",
+      "num_citations": 76,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16917988730485794394",
+      "cites_id": [
+        "16917988730485794394"
+      ]
+    },
+    "pD1NOyUAAAAJ:9ZlFYXVOiuMC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Spa: 3d spatial-awareness enables effective embodied representation",
+        "pub_year": "2024",
+        "citation": "arXiv preprint arXiv:2410.08208, 2024"
+      },
+      "filled": false,
+      "author_pub_id": "pD1NOyUAAAAJ:9ZlFYXVOiuMC",
+      "num_citations": 49,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6215844762536715985",
+      "cites_id": [
+        "6215844762536715985"
+      ]
+    },
+    "pD1NOyUAAAAJ:QIV2ME_5wuYC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Omniworld: A multi-domain and multi-modal dataset for 4d world modeling",
+        "pub_year": "2025",
+        "citation": "arXiv preprint arXiv:2509.12201, 2025"
+      },
+      "filled": false,
+      "author_pub_id": "pD1NOyUAAAAJ:QIV2ME_5wuYC",
+      "num_citations": 43,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11830546481183007144",
+      "cites_id": [
+        "11830546481183007144"
+      ]
+    },
+    "pD1NOyUAAAAJ:M3ejUd6NZC8C": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Deepverse: 4d autoregressive video generation as a world model",
+        "pub_year": "2025",
+        "citation": "arXiv preprint arXiv:2506.01103, 2025"
+      },
+      "filled": false,
+      "author_pub_id": "pD1NOyUAAAAJ:M3ejUd6NZC8C",
+      "num_citations": 30,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7535728474086890337",
+      "cites_id": [
+        "7535728474086890337"
+      ]
+    },
+    "pD1NOyUAAAAJ:4TOpqqG69KYC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Como: Learning continuous latent motion from internet videos for scalable robot learning",
+        "pub_year": "2026",
+        "citation": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern …, 2026"
+      },
+      "filled": false,
+      "author_pub_id": "pD1NOyUAAAAJ:4TOpqqG69KYC",
+      "num_citations": 27,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13413618762298388910",
+      "cites_id": [
+        "13413618762298388910"
+      ]
+    },
+    "pD1NOyUAAAAJ:Wp0gIr-vW9MC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Wint3r: Window-based streaming reconstruction with camera token pool",
+        "pub_year": "2026",
+        "citation": "International Conference on Learning Representations 2026, 59686-59702, 2026"
+      },
+      "filled": false,
+      "author_pub_id": "pD1NOyUAAAAJ:Wp0gIr-vW9MC",
+      "num_citations": 24,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=18292906825765265308",
+      "cites_id": [
+        "18292906825765265308"
+      ]
+    },
+    "pD1NOyUAAAAJ:kNdYIx-mwKoC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Tra-moe: Learning trajectory prediction model from multiple domains for adaptive policy conditioning",
+        "pub_year": "2025",
+        "citation": "2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR …, 2025"
+      },
+      "filled": false,
+      "author_pub_id": "pD1NOyUAAAAJ:kNdYIx-mwKoC",
+      "num_citations": 24,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6579897122652990298,8244679826946669641",
+      "cites_id": [
+        "6579897122652990298",
+        "8244679826946669641"
+      ]
+    },
+    "pD1NOyUAAAAJ:2osOgNQ5qMEC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "X-NeRF: Explicit Neural Radiance Field for Multi-Scene 360° Insufficient RGB-D Views",
+        "pub_year": "2023",
+        "citation": "2023 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV …, 2023"
+      },
+      "filled": false,
+      "author_pub_id": "pD1NOyUAAAAJ:2osOgNQ5qMEC",
+      "num_citations": 8,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3777582196588660403",
+      "cites_id": [
+        "3777582196588660403"
+      ]
+    },
+    "pD1NOyUAAAAJ:hFOr9nPyWt4C": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Sana-wm: Efficient minute-scale world modeling with hybrid linear diffusion transformer",
+        "pub_year": "2026",
+        "citation": "arXiv preprint arXiv:2605.15178, 2026"
+      },
+      "filled": false,
+      "author_pub_id": "pD1NOyUAAAAJ:hFOr9nPyWt4C",
+      "num_citations": 7,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17857066654020717769",
+      "cites_id": [
+        "17857066654020717769"
+      ]
+    },
+    "pD1NOyUAAAAJ:ZeXyd9-uunAC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Learning primitive embodied world models: Towards scalable robotic learning",
+        "pub_year": "2025",
+        "citation": "arXiv preprint arXiv:2508.20840, 2025"
+      },
+      "filled": false,
+      "author_pub_id": "pD1NOyUAAAAJ:ZeXyd9-uunAC",
+      "num_citations": 7,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13447531430945850706",
+      "cites_id": [
+        "13447531430945850706"
+      ]
+    },
+    "pD1NOyUAAAAJ:3fE2CSJIrl8C": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Datap-sfm: Dynamic-aware tracking any point for robust structure from motion in the wild",
+        "pub_year": "2024",
+        "citation": "arXiv preprint arXiv:2411.13291, 2024"
+      },
+      "filled": false,
+      "author_pub_id": "pD1NOyUAAAAJ:3fE2CSJIrl8C",
+      "num_citations": 7,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9006865818087622517",
+      "cites_id": [
+        "9006865818087622517"
+      ]
+    },
+    "pD1NOyUAAAAJ:qjMakFHDy7sC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Unsupervised multi-task learning for 3D subtomogram image alignment, Clustering and Segmentation",
+        "pub_year": "2022",
+        "citation": "2022 IEEE International Conference on Image Processing (ICIP), 2751-2755, 2022"
+      },
+      "filled": false,
+      "author_pub_id": "pD1NOyUAAAAJ:qjMakFHDy7sC",
+      "num_citations": 5,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8776732686345459364",
+      "cites_id": [
+        "8776732686345459364"
+      ]
+    },
+    "pD1NOyUAAAAJ:R3hNpaxXUhUC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "X-NeRF: Explicit Neural Radiance Field for Multi-Scene 360 Insufficient RGB-D Views",
+        "pub_year": "2022",
+        "citation": "arXiv preprint arXiv:2210.05135, 2022"
+      },
+      "filled": false,
+      "author_pub_id": "pD1NOyUAAAAJ:R3hNpaxXUhUC",
+      "num_citations": 3,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16086137677908333929",
+      "cites_id": [
+        "16086137677908333929"
+      ]
+    },
+    "pD1NOyUAAAAJ:IWHjjKOFINEC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Bridge Thinking and Acting: Unleashing Physical Potential of VLM with Generalizable Action Expert",
+        "pub_year": "2025",
+        "citation": "arXiv e-prints, arXiv: 2510.03896, 2025"
+      },
+      "filled": false,
+      "author_pub_id": "pD1NOyUAAAAJ:IWHjjKOFINEC",
+      "num_citations": 1,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2792018924692111434",
+      "cites_id": [
+        "2792018924692111434"
+      ]
+    },
+    "pD1NOyUAAAAJ:d1gkVwhDpl0C": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Multi-Person Full Body Pose Estimation",
+        "pub_year": "2020",
+        "citation": "arXiv preprint arXiv:2008.10060, 2020"
+      },
+      "filled": false,
+      "author_pub_id": "pD1NOyUAAAAJ:d1gkVwhDpl0C",
+      "num_citations": 1,
+      "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2899630243509859001",
+      "cites_id": [
+        "2899630243509859001"
+      ]
+    },
+    "pD1NOyUAAAAJ:HDshCWvjkbEC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "Light Interaction: Training-Free Inference Acceleration for Interactive Video World Models",
+        "pub_year": "2026",
+        "citation": "arXiv preprint arXiv:2605.31158, 2026"
+      },
+      "filled": false,
+      "author_pub_id": "pD1NOyUAAAAJ:HDshCWvjkbEC",
+      "num_citations": 0
+    },
+    "pD1NOyUAAAAJ:TQgYirikUcIC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "GAE: Unleashing Physical Potential of VLM with Generalizable Action Expert",
+        "pub_year": "2025",
+        "citation": "Forty-third International Conference on Machine Learning, 2025"
+      },
+      "filled": false,
+      "author_pub_id": "pD1NOyUAAAAJ:TQgYirikUcIC",
+      "num_citations": 0
+    },
+    "pD1NOyUAAAAJ:mB3voiENLucC": {
+      "container_type": "Publication",
+      "source": "AUTHOR_PUBLICATION_ENTRY",
+      "bib": {
+        "title": "CoMo: Learning Continuous Latent Motion from Internet Videos for Scalable Robot Learning Supplementary Material",
+        "citation": ""
+      },
+      "filled": false,
+      "author_pub_id": "pD1NOyUAAAAJ:mB3voiENLucC",
+      "num_citations": 0
+    }
+  },
+  "citedby5y": 3354,
+  "hindex": 17,
+  "hindex5y": 17,
+  "i10index": 17,
+  "i10index5y": 17,
+  "cites_per_year": {
+    "2022": 37,
+    "2023": 328,
+    "2024": 681,
+    "2025": 1112,
+    "2026": 1183
+  },
+  "updated": "2026-08-08 08:56:42"
+}
