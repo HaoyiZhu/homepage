@@ -157,16 +157,44 @@
 
   // Blog: language toggle (zh default, en auto-translation)
   var langToggle = document.querySelector('.lang-toggle');
+  var tocSpyRefresh = null;
   if (langToggle) {
     var zhBody = document.querySelector('.lang-body-zh');
     var enBody = document.querySelector('.lang-body-en');
     var toc = document.querySelector('.blog-toc');
+    var tocNav = toc ? toc.querySelector('nav') : null;
+    var zhTocUl = tocNav ? tocNav.querySelector('ul') : null;
     var titleEl = document.querySelector('.article-title');
+    var buildTocFrom = function (body) {
+      var top = document.createElement('ul');
+      var lastLi = null, sub = null;
+      body.querySelectorAll('h2[id], h3[id]').forEach(function (h) {
+        var a = document.createElement('a');
+        a.setAttribute('href', '#' + h.id);
+        a.textContent = h.textContent;
+        if (h.tagName === 'H2') {
+          lastLi = document.createElement('li');
+          sub = null;
+          lastLi.appendChild(a);
+          top.appendChild(lastLi);
+        } else if (lastLi) {
+          if (!sub) { sub = document.createElement('ul'); lastLi.appendChild(sub); }
+          var li = document.createElement('li');
+          li.appendChild(a);
+          sub.appendChild(li);
+        }
+      });
+      return top;
+    };
     var setLang = function (lang) {
       var en = lang === 'en';
       zhBody.hidden = en;
       enBody.hidden = !en;
-      if (toc) toc.style.display = en ? 'none' : '';
+      if (zhTocUl) {
+        if (en) tocNav.replaceChildren(buildTocFrom(enBody));
+        else tocNav.replaceChildren(zhTocUl);
+        if (tocSpyRefresh) tocSpyRefresh();
+      }
       if (titleEl && titleEl.getAttribute('data-title-en')) {
         titleEl.textContent = titleEl.getAttribute(en ? 'data-title-en' : 'data-title-zh');
       }
@@ -225,14 +253,9 @@
   }
 
   // Blog: TOC scrollspy (position-based)
-  var tocLinks = document.querySelectorAll('.blog-toc a[href^="#"]');
-  if (tocLinks.length) {
+  (function () {
+    if (!document.querySelector('.blog-toc')) return;
     var tocHeads = [];
-    tocLinks.forEach(function (a) {
-      var el = document.getElementById(decodeURIComponent(a.getAttribute('href').slice(1)));
-      if (el) tocHeads.push({ el: el, link: a });
-    });
-    tocHeads.sort(function (a, b) { return a.el.offsetTop - b.el.offsetTop; });
     var tocCurrent = null;
     var spy = function () {
       var y = window.scrollY + window.innerHeight * 0.28;
@@ -247,9 +270,20 @@
         tocCurrent = cur;
       }
     };
+    var refresh = function () {
+      if (tocCurrent) { tocCurrent.classList.remove('active'); tocCurrent = null; }
+      tocHeads = [];
+      document.querySelectorAll('.blog-toc a[href^="#"]').forEach(function (a) {
+        var el = document.getElementById(decodeURIComponent(a.getAttribute('href').slice(1)));
+        if (el) tocHeads.push({ el: el, link: a });
+      });
+      tocHeads.sort(function (a, b) { return a.el.offsetTop - b.el.offsetTop; });
+      spy();
+    };
+    refresh();
     window.addEventListener('scroll', spy, { passive: true });
-    spy();
-  }
+    tocSpyRefresh = refresh;
+  })();
 
   // Nav scrollspy
   var navLinks = document.querySelectorAll('.nav-links a[href^="/#"]');

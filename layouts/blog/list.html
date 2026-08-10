@@ -7,7 +7,7 @@
   <div class="post-list">
     {{ range $i, $p := .Pages.ByDate.Reverse }}
     <a class="post-card" href="{{ $p.RelPermalink }}">
-      <span class="post-num">{{ printf "%02d" (add $i 1) }}</span>
+      <span class="post-num">{{ printf "%02d" (sub (len $.Pages) $i) }}</span>
       <div class="post-main">
         <h3 class="post-title">{{ $p.Title }}</h3>
         <span class="post-meta">{{ $p.Date.Format "2006.01.02" }} · {{ $p.ReadingTime }} min read</span>
