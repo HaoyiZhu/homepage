@@ -49,7 +49,7 @@
       <button class="cite-copy" type="button">Copy</button>
       <pre><code class="cite-bib">@misc{zhu{{ .Date.Format "2006" }}{{ replace .File.ContentBaseName "-" "" }},
     title  = { {{- .Params.title_en | default .Title -}} },
-    author = {Zhu, Haoyi},
+    author = { {{- .Params.authors | default "Zhu, Haoyi" -}} },
     year   = { {{- .Date.Format "2006" -}} },
     month  = { {{- .Date.Format "Jan" -}} },
     url    = {https://haoyizhu.site{{- .RelPermalink -}} },
