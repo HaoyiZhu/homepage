@@ -58,7 +58,7 @@ links:
   - url: https://www.youtube.com/watch?v=5LL6z1Ganbw
     name: Video
 image:
-  filename: pull.gif
+  filename: pull.jpg
   focal_point: Smart
   preview_only: false
 video: minedojo.mp4

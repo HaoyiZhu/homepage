@@ -52,7 +52,7 @@ links:
   - url: http://xhslink.cn/o/8Q6hk88SKLE
     name: Xiaohongshu
 image:
-  filename: image.gif
+  filename: image.jpg
   focal_point: Smart
   preview_only: false
 video: spa_pretrain.mp4
