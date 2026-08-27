@@ -2,7 +2,7 @@ name: Update GitHub star counts
 
 on:
   schedule:
-    - cron: '30 8 * * *'
+    - cron: '30 8 * * 1'
   workflow_dispatch:
 
 jobs:

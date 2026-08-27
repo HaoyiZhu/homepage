@@ -67,7 +67,7 @@
     });
   }
 
-  // Citation counts — Google Scholar data only (daily crawl deployed to the
+  // Citation counts — Google Scholar data only (monthly crawl deployed to the
   // google-scholar-stats branch, served via jsDelivr; bundled snapshot as backup).
   // The full GS publication list is cached so matching works on every page.
   (function () {
@@ -115,7 +115,7 @@
       try { localStorage.setItem(KEY, JSON.stringify({ t: Date.now(), total: data.total, list: data.list })); } catch (e) {}
       applyData(data);
     };
-    // Freshest first: daily-crawled branch via jsDelivr, then the snapshot bundled with the site.
+    // Freshest first: monthly-crawled branch via jsDelivr, then the snapshot bundled with the site.
     fetch('https://cdn.jsdelivr.net/gh/HaoyiZhu/homepage@google-scholar-stats/gs_data.json')
       .then(function (r) { if (!r.ok) throw new Error('no gs data'); return r.json(); })
       .then(applyGs)

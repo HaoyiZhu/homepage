@@ -38,9 +38,10 @@ links:
   - url: https://arxiv.org/abs/2307.00595
     name: Arxiv
 image:
-  filename: rh20t.gif
+  filename: rh20t.jpg
   focal_point: Smart
   preview_only: false
+video: rh20t.mp4
 ---
 
 **Abstract:**

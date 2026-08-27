@@ -2,7 +2,7 @@ name: Update Google Scholar Citations
 
 on:
   schedule:
-    - cron: '0 8 * * *'
+    - cron: '0 8 1 * *'
   workflow_dispatch:
   push:
     branches:
@@ -35,6 +35,11 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r google_scholar_crawler/requirements.txt
 
+    - name: Seed existing citation data (enables skip/fallback in the scraper)
+      run: |
+        git fetch origin google-scholar-stats
+        git checkout origin/google-scholar-stats -- '*.json' || echo "No existing citation data; first run."
+
     - name: Run Scraper
       env:
         GOOGLE_SCHOLAR_ID: pD1NOyUAAAAJ
@@ -50,7 +55,7 @@ jobs:
         git checkout --orphan google-scholar-stats
         git rm -rf . || exit 0
         git add -f ./*.json
-        git commit -m "Deploy latest citation data at $(date -u)"
+        git commit -m "Deploy latest citation data at $(date -u) [skip netlify]" || echo "No changes to commit."
         git push origin google-scholar-stats --force
 
     - name: Purge jsDelivr Cache
