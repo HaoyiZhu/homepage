@@ -13,7 +13,7 @@ draft: false
 
 ## 训练目标
 
-先看 [Flow Matching](https://arxiv.org/abs/2210.02747) 中最常见的线性插值。全文约定 $t=0$ 是数据端，$t=1$ 是噪声端；文本等条件先固定，省略在记号里。数据 $X_0$ 与独立的标准高斯噪声 $\varepsilon$ 之间有
+先看 [Flow Matching](https://arxiv.org/abs/2210.02747) 中最常见的线性插值。全文约定 $t=0$ 是数据端，$t=1$ 是噪声端；文本等条件先固定，省略在记号里。将数据 $X_0$ 与独立的标准高斯噪声 $\varepsilon$ 线性插值，得到
 
 $$
 \begin{aligned}
@@ -50,7 +50,7 @@ $$
 
 ## 采样等价
 
-有了速度和 score，就可以按照 [Score-based SDE](https://arxiv.org/abs/2011.13456) 中的对应关系构造随机采样。设 ODE 的速度为 $v_t$，它的密度 $p_t$ 满足连续性方程：
+有了速度和 score，就可以按照 [Score-based SDE](https://arxiv.org/abs/2011.13456) 中的对应关系构造 SDE。设 ODE 的速度为 $v_t$，样本分布的密度 $p_t$ 满足连续性方程：
 
 $$
 \partial_t p_t=-\nabla\cdot(p_tv_t).
@@ -94,7 +94,7 @@ $$
 
 ## 实际误差
 
-上面的抵消依赖真实 score。实际情况里网络只能近似它：即使 $v_t$ 精确，若预测的 score 为 $s_\theta=s_t+e_t$，$(5)$ 中仍会多出
+上面的抵消依赖真实 score。实际网络只能给出近似：即使 $v_t$ 精确，若预测的 score 为 $s_\theta=s_t+e_t$，$(5)$ 中仍会多出
 
 $$
 -\lambda_t\nabla\cdot(p_te_t). \tag{7}
@@ -122,7 +122,7 @@ $$
 =1+\lambda^2h^2.
 $$
 
-当然，这个例子并不意味着随机采样总是更差。[EDM](https://arxiv.org/abs/2206.00364) 将随机采样解释为 ODE 加 Langevin 修正，用来减小此前积累的分布误差；但过量加噪、去噪也会损失细节。因此，真实模型和有限步采样的效果，需要结合具体误差来判断，不能只凭理想情况下的等价性决定。
+当然，这个例子并不意味着随机采样总是更差。[EDM](https://arxiv.org/abs/2206.00364) 将随机采样解释为 ODE 加 Langevin 修正，用来减小此前积累的分布误差；但过量加噪、去噪也会损失细节。因此，实际采样效果还要结合模型误差和求解误差来判断，不能只凭理想情况下的等价性决定。
 
 ## 高斯之外
 
@@ -144,7 +144,7 @@ X_t&=(1-t)X_0+tY.
 \end{aligned} \tag{9}
 $$
 
-Waver 原文训练时在 $[0.85,0.95]$ 内随机采样 $w_d$，回归目标为 $X_0-Y$。下面分析固定 $0\lt w_d\lt 1$ 训练的同类 refiner，且 $X_{\mathrm{lr}}$ 只用于构造 source、不额外输入网络。沿用本文的时间方向，最优速度记为 $v_t(x)=\mathbb E[Y-X_0\mid X_t=x]$，与原文的预测方向相反。由于 $N$ 是与 $(X_0,X_{\mathrm{lr}})$ 独立的高斯噪声，沿用 $(2)$ 的求导方法，在 $0\lt t\lt 1$ 时有
+Waver 原文训练时在 $[0.85,0.95]$ 内随机采样 $w_d$，回归目标为 $X_0-Y$。下面考虑训练时固定混合系数 $0\lt w_d\lt 1$ 的同类 refiner，并假设 $X_{\mathrm{lr}}$ 只用于构造 source、不额外输入网络。沿用本文的时间方向，最优速度记为 $v_t(x)=\mathbb E[Y-X_0\mid X_t=x]$，与原文的预测方向相反。由于 $N$ 是与 $(X_0,X_{\mathrm{lr}})$ 独立的高斯噪声，沿用 $(2)$ 的求导方法，在 $0\lt t\lt 1$ 时有
 
 $$
 s_t(x)=-\frac{x+(1-t)v_t(x)-(1-w_d)\mathbb E[X_{\mathrm{lr}}\mid X_t=x]}{tw_d^2}. \tag{10}
@@ -163,7 +163,7 @@ g_t=\nabla_\theta\mathrm{KL}(Q_{\theta,t}\|P_t)
 =(1-t)\mathbb E\big[J^\top(s_Q-s_P)\big]. \tag{11}
 $$
 
-**第一种，loss 也沿用 noise blend。** 假设 fake 同样按这条路径训练，记 $m_P(x)=\mathbb E_P[X_{\mathrm{lr}}\mid X_t=x]$，$m_Q$ 同理。由 $(10)$ 相减，若只取速度差、补偿已知的 $w_d^2$ 缩放，所得更新 $\hat g_t$ 与真实梯度之间有
+**第一种，loss 也沿用 noise blend。** 假设 fake 同样按这条路径训练，记 $m_P(x)=\mathbb E_P[X_{\mathrm{lr}}\mid X_t=x]$，$m_Q$ 同理。根据 $(10)$，若只取速度差，并补偿已知的 $w_d^2$ 缩放，所得更新 $\hat g_t$ 与真实梯度的关系为
 
 $$
 \begin{aligned}
@@ -176,7 +176,7 @@ s_Q-s_P
 \end{aligned} \tag{12}
 $$
 
-遗漏的是两侧对 ref 的条件均值之差。它们足够接近时，这个近似可能有效；但复用同一个 ref，并不保证两个模型对它的后验均值相同。
+遗漏的是 ref 在目标分布与学生分布下的条件均值之差。它们足够接近时，这个近似可能有效；但复用同一个 ref，并不保证两个模型对它的后验均值相同。
 
 **第二种，loss 改用纯高斯加噪** $X_t=(1-t)X+tN$。fake 可以通过相应的去噪训练学习 score，[DMD2 官方实现](https://github.com/tianweiy/DMD2/blob/8d8fa55633d47cfb81bbc7a892e7248f9518763f/main/sd_guidance.py#L257-L297)中的 fake model 就采用独立高斯加噪监督。但 teacher 仍然预测 noise blend 路径上的速度 $v_P$。如果直接按 $(3)$ 换算，记得到的预测为 $\tilde s_P^G$、真实的高斯加噪 score 为 $s_P^G$，则在 fake 精确时
 
@@ -188,7 +188,7 @@ $$
 \end{aligned} \tag{13}
 $$
 
-这里的误差来自把 noise blend 训练出的 teacher 当成普通高斯去噪模型：查询的加噪方式和 score 换算都没有对齐。即使 fake 学得准确，也不能自动补上 teacher 的偏差。
+teacher 是沿 noise blend 路径训练的，但计算 DMD loss 时，输入它的却是纯高斯加噪的学生样本，随后又按纯高斯加噪下的公式，把它输出的速度换算成 score。偏差就来自这两处不匹配。即使 fake 学得准确，也不能自动补上 teacher 的偏差。
 
 因此，这类用 FM 训练的 noise blend refiner，直接在 DMD 中把速度换成 score，一般会引入偏差。实践中仍可以把它当作一种近似来做蒸馏，也可能得到不错的结果；只是这种近似可能改变优化方向，最终学到的分布未必对应原本 KL 目标的最优解。
 

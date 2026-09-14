@@ -1,12 +1,12 @@
 I've recently been studying diffusion / flow matching and wanted to write down a few things I've learned about ODE and SDE sampling.
 
-One interesting observation is that, under ideal conditions, the same model can be sampled with either an ODE or an SDE, and the two can share the same marginal distributions. The prediction target in the pretraining code often doesn't tell you which sampler will be used.
+One interesting observation is that, under ideal conditions, the same model can be used with either ODE or SDE sampling, and the two can share the same marginal distributions. The prediction target in the pretraining code often doesn't tell you which sampler will be used.
 
-For example, FM trains a velocity field, and the most direct way to use it is to solve the ODE. So why does adding random noise still give the same distribution? And what conditions does this equivalence depend on?
+For example, FM learns a velocity field, and the most direct way to use it is to solve the ODE. So why does adding random noise still give the same distribution? And what conditions does this equivalence depend on?
 
 ## Training Targets
 
-Start with the most common linear interpolation in [Flow Matching](https://arxiv.org/abs/2210.02747). Throughout, $t=0$ is the data end and $t=1$ is the noise end; conditions such as text are held fixed and omitted from the notation. Between the data $X_0$ and independent standard Gaussian noise $\varepsilon$ we have
+Start with the most common linear interpolation in [Flow Matching](https://arxiv.org/abs/2210.02747). Throughout, $t=0$ is the data end and $t=1$ is the noise end; conditions such as text are held fixed and omitted from the notation. Linearly interpolating between the data $X_0$ and independent standard Gaussian noise $\varepsilon$ gives
 
 $$
 \begin{aligned}
@@ -16,7 +16,7 @@ v_t(x)&=\mathbb E[\varepsilon-X_0\mid X_t=x].
 \end{aligned} \tag{1}
 $$
 
-At training time, we regress $\varepsilon-X_0$ with MSE, and the optimal prediction is the conditional mean velocity from the equation above. It defines the ODE $\mathrm{d}X_t=v_t(X_t)\,\mathrm{d}t$. Under suitable regularity conditions, starting from the correct initial distribution and solving exactly, this ODE has the same distribution at each time as the interpolation distribution in $(1)$, though the trajectories need not be straight lines.
+We train with MSE using $\varepsilon-X_0$ as the target, so the optimal prediction is the conditional mean velocity above. It defines the ODE $\mathrm{d}X_t=v_t(X_t)\,\mathrm{d}t$. Under suitable regularity conditions, an exact solution starting from the correct initial distribution has the same marginal distributions as the interpolation in $(1)$, though the trajectories need not be straight lines.
 
 Constructing the corresponding SDE also requires the score. Let $p_t$ be the density of $X_t$ and $s_t(x)=\nabla_x\log p_t(x)$. For general independent Gaussian noising $X_t=\alpha_tX_0+\sigma_t\varepsilon$, when $\sigma_t>0$,
 
@@ -43,7 +43,7 @@ Here $\hat x_0=\mathbb E[X_0\mid X_t=x]$ and $\hat\varepsilon=\mathbb E[\varepsi
 
 ## Equivalent Sampling
 
-With velocity and score in hand, we can construct stochastic sampling following the correspondence in [Score-based SDE](https://arxiv.org/abs/2011.13456). Let the ODE velocity be $v_t$; its density $p_t$ satisfies the continuity equation:
+Given the velocity and score, we can construct an SDE using the correspondence in [Score-based SDE](https://arxiv.org/abs/2011.13456). Let the ODE velocity be $v_t$; the density $p_t$ of the samples satisfies the continuity equation:
 
 $$
 \partial_t p_t=-\nabla\cdot(p_tv_t).
@@ -81,13 +81,13 @@ $$
 +\sqrt{2\lambda_t}\,\mathrm{d}\bar W_t,\qquad \mathrm{d}t<0, \tag{6}
 $$
 
-where $\bar W_t$ is a reverse-time Brownian motion. Setting $\lambda_t=0$ returns the ODE; a positive value injects randomness along the way while adjusting the drift. As long as the velocity and score are both accurate, we start from the correct $p_1$, and solve exactly, the two can have the same $p_t$ at every time. This also explains why the same pretrained network can be used with different samplers.
+where $\bar W_t$ is a reverse-time Brownian motion. Setting $\lambda_t=0$ returns the ODE; a positive value injects randomness along the way while adjusting the drift. With accurate velocity and score, the correct initial distribution $p_1$, and exact integration, the two can have the same $p_t$ at every time. This also explains why the same pretrained network can be used with different samplers.
 
 Here "same" refers only to the marginal distribution at each time. Given an initial state, the ODE trajectory is uniquely determined, while the SDE still introduces new randomness; the two need not generate samples along the same trajectory.
 
 ## Errors in Practice
 
-The cancellation above relies on the true score. In practice the network can only approximate it: even if $v_t$ is exact, if the predicted score is $s_\theta=s_t+e_t$, an extra term appears in $(5)$:
+The cancellation above relies on the true score. A real network can only approximate it: even with exact $v_t$, a predicted score of $s_\theta=s_t+e_t$ introduces an extra term in $(5)$:
 
 $$
 -\lambda_t\nabla\cdot(p_te_t). \tag{7}
@@ -115,7 +115,7 @@ $$
 =1+\lambda^2h^2.
 $$
 
-Of course, this example does not mean stochastic sampling is always worse. [EDM](https://arxiv.org/abs/2206.00364) interprets stochastic sampling as an ODE plus a Langevin correction, to reduce distribution error accumulated earlier; but excessive noising and denoising also loses detail. So the performance of a real model with finite-step sampling has to be judged together with the specific errors involved, and cannot be decided by the ideal-case equivalence alone.
+Of course, this example does not mean stochastic sampling is always worse. [EDM](https://arxiv.org/abs/2206.00364) interprets stochastic sampling as an ODE plus a Langevin correction that reduces accumulated distribution error. But excessive noising and denoising can also erase detail. Sampling performance therefore depends on model and solver errors; equivalence under ideal conditions alone does not settle the question.
 
 ## Beyond Gaussian Noise
 
@@ -137,7 +137,7 @@ X_t&=(1-t)X_0+tY.
 \end{aligned} \tag{9}
 $$
 
-Waver samples $w_d$ from $[0.85,0.95]$ during training, with regression target $X_0-Y$. Below I analyze a refiner of the same kind trained with a fixed $0\lt w_d\lt 1$, where $X_{\mathrm{lr}}$ is used only to construct the source and is not additionally fed to the network. Following the time direction of this post, the optimal velocity is denoted $v_t(x)=\mathbb E[Y-X_0\mid X_t=x]$, opposite to the prediction direction in the original paper. Since $N$ is Gaussian noise independent of $(X_0,X_{\mathrm{lr}})$, following the derivation in $(2)$, for $0\lt t\lt 1$ we have
+Waver samples $w_d$ from $[0.85,0.95]$ during training, with regression target $X_0-Y$. Below I consider a refiner of the same kind trained with a fixed mixing coefficient $0\lt w_d\lt 1$, assuming that $X_{\mathrm{lr}}$ is used only to construct the source and is not fed separately to the network. With this post's time convention, the optimal velocity is $v_t(x)=\mathbb E[Y-X_0\mid X_t=x]$, opposite to the prediction direction in the original paper. Since $N$ is Gaussian noise independent of $(X_0,X_{\mathrm{lr}})$, the same derivation as in $(2)$ gives, for $0\lt t\lt 1$,
 
 $$
 s_t(x)=-\frac{x+(1-t)v_t(x)-(1-w_d)\mathbb E[X_{\mathrm{lr}}\mid X_t=x]}{tw_d^2}. \tag{10}
@@ -156,7 +156,7 @@ g_t=\nabla_\theta\mathrm{KL}(Q_{\theta,t}\|P_t)
 =(1-t)\mathbb E\big[J^\top(s_Q-s_P)\big]. \tag{11}
 $$
 
-**Case one: the loss likewise uses the noise blend.** Suppose the fake model is also trained along this path; write $m_P(x)=\mathbb E_P[X_{\mathrm{lr}}\mid X_t=x]$, and $m_Q$ likewise. Subtracting via $(10)$, if we take only the velocity difference and compensate for the known $w_d^2$ scaling, the resulting update $\hat g_t$ differs from the true gradient by
+**Case one: the loss also uses the noise blend.** Suppose the fake model is also trained along this path; write $m_P(x)=\mathbb E_P[X_{\mathrm{lr}}\mid X_t=x]$, and define $m_Q$ similarly. Using $(10)$, if we keep only the velocity difference and compensate for the known $w_d^2$ scaling, the resulting update $\hat g_t$ differs from the true gradient as follows:
 
 $$
 \begin{aligned}
@@ -169,7 +169,7 @@ s_Q-s_P
 \end{aligned} \tag{12}
 $$
 
-What is dropped is the difference between the two sides' conditional means over the ref. When they are close enough, this approximation may work well; but reusing the same ref does not guarantee that the two models have the same posterior mean over it.
+The missing term is the difference in the reference latent's conditional mean under the target and student distributions. When these means are close enough, the approximation may work well. But reusing the same reference latent does not guarantee that the two models have the same posterior mean for it.
 
 **Case two: the loss switches to pure Gaussian noising** $X_t=(1-t)X+tN$. The fake model can learn the score through the corresponding denoising training, and the fake model in the [official DMD2 implementation](https://github.com/tianweiy/DMD2/blob/8d8fa55633d47cfb81bbc7a892e7248f9518763f/main/sd_guidance.py#L257-L297) is supervised with independent Gaussian noising. But the teacher still predicts the velocity $v_P$ along the noise blend path. If we convert directly via $(3)$, denoting the resulting prediction as $\tilde s_P^G$ and the true Gaussian-noised score as $s_P^G$, then when the fake model is exact,
 
@@ -181,7 +181,7 @@ $$
 \end{aligned} \tag{13}
 $$
 
-The error here comes from treating a teacher trained on the noise blend as an ordinary Gaussian denoising model: neither the noising scheme of the query nor the score conversion is aligned. Even if the fake model is accurate, it cannot automatically compensate for the teacher's bias.
+The teacher was trained along the noise blend path, but when computing the DMD loss, we feed it student samples with pure Gaussian noise added, then convert its predicted velocity into a score using the formula for pure Gaussian noising. These two mismatches introduce the bias. Even if the fake model is accurate, it cannot automatically compensate for the teacher's bias.
 
 So for this kind of FM-trained noise blend refiner, directly converting velocity into score in DMD generally introduces bias. In practice it can still be used as an approximation for distillation and may give good results. But the approximation may change the optimization direction, and the distribution ultimately learned need not correspond to the optimum of the original KL objective.
 
