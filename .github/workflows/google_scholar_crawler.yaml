@@ -39,6 +39,8 @@ jobs:
       run: |
         git fetch origin google-scholar-stats
         git checkout origin/google-scholar-stats -- '*.json' || echo "No existing citation data; first run."
+        # Keep seeded JSONs untracked so the orphan-branch deploy does not delete the fresh scrape
+        git reset
 
     - name: Run Scraper
       env:
@@ -53,9 +55,7 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git checkout --orphan google-scholar-stats
-        # Unstage seeded JSONs so git rm does not delete the freshly scraped data
-        git reset
-        git rm -rf . || exit 0
+        git rm -rf .
         git add -f ./*.json
         git commit -m "Deploy latest citation data at $(date -u) [skip netlify]" || echo "No changes to commit."
         git push origin google-scholar-stats --force
