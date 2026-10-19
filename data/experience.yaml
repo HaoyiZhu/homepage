@@ -1,3 +1,13 @@
+- title: Research Intern
+  company: ATH, Alibaba
+  company_url: https://www.alibaba.com/
+  location: Beijing, China
+  date_start: "2026-07-01"
+  date_end: ""
+  description: |
+    * Research on video generation and sparse linear attention.
+    * Supervised by [Dr. Xinlong Wang](https://www.xloong.wang/).
+
 - title: Ph.D in Computer Science
   company: USTC
   company_url: https://en.ustc.edu.cn/
@@ -6,7 +16,7 @@
   date_start: "2023-09-01"
   date_end: ""
   description: |
-    * Doctoral advisor: Prof. [Tong He](https://tonghe90.github.io/), Prof. [Wanli Ouyang](https://wlouyang.github.io/) and Prof. [Xiaogang Wang](http://www.ee.cuhk.edu.hk/~xgwang/).
+    * Doctoral advisor: Prof. [Tong He](https://tonghe90.github.io/) and Prof. [Chunhua Shen](https://cshen.github.io/).
     * Won the **National Scholarship** and the **First Price Academic Scholarship** at USTC.
     * Research on 3D vision, world models, and Embodied AI. Published first-author papers at T-PAMI, NeurIPS, ICLR, ICCV, etc.
     * [Aether](https://aether-world.github.io/) won the **Outstanding Paper Award** and was presented as an **Oral Presentation** at the ICCV 2025 RIWM workshop.
