@@ -53,6 +53,8 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git checkout --orphan google-scholar-stats
+        # Unstage seeded JSONs so git rm does not delete the freshly scraped data
+        git reset
         git rm -rf . || exit 0
         git add -f ./*.json
         git commit -m "Deploy latest citation data at $(date -u) [skip netlify]" || echo "No changes to commit."
