@@ -68,12 +68,13 @@
   }
 
   // Citation counts — Google Scholar data only (monthly crawl deployed to the
-  // google-scholar-stats branch, served via jsDelivr; bundled snapshot as backup).
-  // The full GS publication list is cached so matching works on every page.
+  // google-scholar-stats branch, served via raw GitHub / jsDelivr; bundled snapshot as backup).
+  // Raw GitHub and both jsDelivr endpoints are queried; the freshest payload
+  // wins, since branch aliases can stay stale on a CDN after a force-push.
   (function () {
     var els = document.querySelectorAll('.pub-cite');
     if (!els.length || !window.fetch) return;
-    var KEY = 'gs-cites-v4';
+    var KEY = 'gs-cites-v5';
     var norm = function (s) {
       return (s || '').toLowerCase().replace(/\$[^$]*\$/g, '').replace(/[^a-z0-9]/g, '');
     };
@@ -115,16 +116,25 @@
       try { localStorage.setItem(KEY, JSON.stringify({ t: Date.now(), total: data.total, list: data.list })); } catch (e) {}
       applyData(data);
     };
-    // Freshest first: monthly-crawled branch via jsDelivr, then the snapshot bundled with the site.
-    fetch('https://cdn.jsdelivr.net/gh/HaoyiZhu/homepage@google-scholar-stats/gs_data.json')
-      .then(function (r) { if (!r.ok) throw new Error('no gs data'); return r.json(); })
-      .then(applyGs)
-      .catch(function () {
-        fetch('/data/gs_data.json')
-          .then(function (r) { if (!r.ok) throw new Error('no snapshot'); return r.json(); })
-          .then(applyGs)
-          .catch(function () {});
-      });
+    // Raw GitHub updates immediately, jsDelivr is the faster CDN, and the bundled
+    // snapshot is the fallback. Apply whichever payload is newest as it arrives.
+    var urls = [
+      'https://raw.githubusercontent.com/HaoyiZhu/homepage/google-scholar-stats/gs_data.json',
+      'https://cdn.jsdelivr.net/gh/HaoyiZhu/homepage@google-scholar-stats/gs_data.json',
+      'https://fastly.jsdelivr.net/gh/HaoyiZhu/homepage@google-scholar-stats/gs_data.json',
+      '/data/gs_data.json'
+    ];
+    var bestTime = -1;
+    urls.forEach(function (url) {
+      fetch(url)
+        .then(function (r) { if (!r.ok) throw new Error('no gs data'); return r.json(); })
+        .then(function (gs) {
+          // updated is "YYYY-MM-DD HH:MM:SS" in UTC; normalize for Safari
+          var t = Date.parse((gs.updated || '').replace(' ', 'T') + 'Z') || 0;
+          if (t > bestTime) { bestTime = t; applyGs(gs); }
+        })
+        .catch(function () {});
+    });
   })();
 
   // GitHub stars, cached 12h per repo
